@@ -16,8 +16,10 @@ jobs:
     - uses: astral-sh/setup-uv@v5
       with:
         enable-cache: true
+    # --all-extras: `plays` is opt-in for readers, but its module and tests
+    # are part of this repo, so CI has to be able to import them.
     - name: Install dependencies
-      run: uv sync --locked
+      run: uv sync --locked --all-extras
     - name: ruff format --check
       run: uv run ruff format --check .
     - name: ruff check
@@ -33,7 +35,9 @@ jobs:
     - uses: astral-sh/setup-uv@v5
       with:
         enable-cache: true
+    # --all-extras: `plays` is opt-in for readers, but its module and tests
+    # are part of this repo, so CI has to be able to import them.
     - name: Install dependencies
-      run: uv sync --locked
+      run: uv sync --locked --all-extras
     - name: pytest
       run: uv run pytest

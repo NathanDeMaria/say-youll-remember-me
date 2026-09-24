@@ -29,3 +29,20 @@ def test_a_school_nobody_knows() -> None:
 def test_a_team_with_no_football_name_is_still_named() -> None:
     # A program new to football, known so far only by its basketball teams.
     assert current_name("2130") == "Chicago State Cougars"
+
+
+def test_a_rebuild_replaces_only_the_seasons_it_read() -> None:
+    from .data import COACHING_STAFFS, HEAD_COACH_CHANGES, coaching_staffs
+    from .data import head_coach_changes as changes
+    from .sync import _replaced
+
+    staff_2019 = next(r for r in coaching_staffs() if r.season == 2019)
+    assert _replaced(COACHING_STAFFS, staff_2019, 2019, 2019)
+    assert not _replaced(COACHING_STAFFS, staff_2019, 2020, 2026)
+    # A coaching change is replaced by re-reading the article it came from,
+    # whichever season it lands in: the 2019 article's December hires are 2020's.
+    december = next(
+        r for r in changes() if r.source.startswith("2019 ") and r.season == 2020
+    )
+    assert _replaced(HEAD_COACH_CHANGES, december, 2019, 2019)
+    assert not _replaced(HEAD_COACH_CHANGES, december, 2020, 2020)

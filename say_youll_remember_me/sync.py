@@ -1,24 +1,26 @@
 """Rebuilding the bundled files from their sources.
 
-    syrm coaches --first 2013 --last 2025   # head-coach changes, season articles
-    syrm staffs --first 2014 --last 2026    # coaches and coordinators, infoboxes
+    syrm coaches --first 2013 --last 2025      # season articles
+    syrm staffs --first 2014 --last 2026       # team-season infoboxes
+    syrm quarterbacks --first 2013 --last 2026 # play-by-play; the `plays` extra
 
 Run from a checkout: the files are written into the package's `data/`
-directory, to be reviewed and committed like any other change. `--cache`
-keeps the fetched wikitext, so a rerun that only changes the parsing costs
-no requests.
+directory, to be reviewed and committed like any other change. Only the
+seasons asked for are replaced -- the rest of the file is kept -- so
+refreshing the season in progress is `--first 2026 --last 2026`. For
+coaches the seasons are the articles read, since one article's changes
+land in two seasons. `--cache` keeps the fetched wikitext, so a rerun that
+only changes the parsing costs no requests.
 
-The quarterback file is not rebuilt here. It is read out of ESPN
-play-by-play priced by an expected points model, which lives with the
-models; see the README for how it was built.
-
-Not imported by the package, like `wikipedia`.
+Not imported by the package, like `wikipedia` and `plays`.
 """
 
 import argparse
+import asyncio
 import sys
-from collections.abc import Sequence
+from collections.abc import Callable, Sequence
 from pathlib import Path
+from typing import Any
 
 from call_it_what_you_want import (
     NCAA,
@@ -32,7 +34,13 @@ from call_it_what_you_want import (
 )
 
 from . import wikipedia
-from .data import COACHING_STAFFS, HEAD_COACH_CHANGES, to_csv
+from .data import (
+    COACHING_STAFFS,
+    HEAD_COACH_CHANGES,
+    QUARTERBACKS,
+    rows_from_csv,
+    to_csv,
+)
 from .types import NCAAFB, CoachChange, CoachingStaff
 
 DATA = Path(__file__).parent / "data"
@@ -165,25 +173,53 @@ def staffs(
     return rows, missing
 
 
+def _replaced(kind: str, row: Any, first: int, last: int) -> bool:
+    """Whether a rebuild of `first` through `last` replaces this existing row."""
+    if kind == HEAD_COACH_CHANGES:
+        read = {wikipedia.season_article(s) for s in range(first, last + 1)}
+        return row.source in read
+    return first <= row.season <= last
+
+
+_ORDER: dict[str, Callable[[Any], tuple]] = {
+    HEAD_COACH_CHANGES: lambda r: (r.season, r.date or "9999", r.team),
+    COACHING_STAFFS: lambda r: (r.season, r.team),
+    QUARTERBACKS: lambda r: (r.season, r.team, -r.starts, -(r.attempts or 0)),
+}
+
+
 def main(argv: Sequence[str] | None = None) -> None:
     parser = argparse.ArgumentParser(prog="syrm", description=__doc__.split("\n\n")[0])
-    parser.add_argument("what", choices=["coaches", "staffs"])
+    parser.add_argument("what", choices=["coaches", "staffs", "quarterbacks"])
     parser.add_argument("--first", type=int, required=True)
     parser.add_argument("--last", type=int, required=True)
     parser.add_argument("--cache", type=Path, help="keep fetched wikitext here")
     parser.add_argument("--output", type=Path, help="write here instead of data/")
     args = parser.parse_args(argv)
 
+    rows: Sequence[Any]
     if args.what == "coaches":
         rows, problems = coaches(args.first, args.last, args.cache)
         kind = HEAD_COACH_CHANGES
-    else:
+    elif args.what == "staffs":
         rows, problems = staffs(args.first, args.last, args.cache)
         kind = COACHING_STAFFS
+    else:
+        # Only here: it needs the `plays` extra, which the other two don't.
+        from .plays import build
+
+        rows, problems = asyncio.run(build(args.first, args.last))
+        kind = QUARTERBACKS
+
     output = args.output or DATA / NCAAFB / f"{kind}.csv"
+    kept: list[Any] = []
+    if output.exists():
+        existing = rows_from_csv(kind, output.read_text(encoding="utf-8").splitlines())
+        kept = [r for r in existing if not _replaced(kind, r, args.first, args.last)]
+    merged = sorted([*kept, *rows], key=_ORDER[kind])
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(to_csv(kind, rows), encoding="utf-8")
-    print(f"wrote {len(rows)} rows to {output}")
+    output.write_text(to_csv(kind, merged), encoding="utf-8")
+    print(f"wrote {len(rows)} rebuilt rows and kept {len(kept)} to {output}")
     if problems:
         print(f"{len(problems)} not placed:", file=sys.stderr)
         for problem in problems:

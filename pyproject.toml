@@ -10,6 +10,20 @@ requires-python = ">=3.12"
 # third-party beyond it. `imports_test.py` keeps that true.
 dependencies = ["call-it-what-you-want"]
 
+# `plays` is for building the quarterback file rather than reading it: the
+# stored schedules and the processed play store (endgame-aws, which brings
+# aiobotocore), and the expected points model that prices each snap
+# (lucky-ones, and pyarrow through its `data` extra). Kept out of the base
+# install so reading the data stays a one-dependency operation.
+#
+# lucky-ones needs Python 3.14 where the rest of this package doesn't, so
+# the extra says so rather than raising the floor for every reader.
+[project.optional-dependencies]
+plays = [
+    "endgame-aws; python_version >= '3.14'",
+    "lucky-ones[data]; python_version >= '3.14'",
+]
+
 [project.scripts]
 syrm = "say_youll_remember_me.sync:main"
 
@@ -17,6 +31,12 @@ syrm = "say_youll_remember_me.sync:main"
 # keyed, and which ids count as the same team is that package's answer.
 [tool.uv.sources]
 call-it-what-you-want = { git = "https://github.com/NathanDeMaria/call-it-what-you-want.git", rev = "f185eb03ac5bc3d9e0ff27f9a4172520e62af132" }
+# The same revs cassandra pins, so the quarterback file is read from the same
+# play store and priced by the same expected points fit as cassandra's EPA
+# index. Moving either is a change to what `epa` means; the file's `source`
+# column names the fit's run.
+endgame-aws = { git = "https://github.com/NathanDeMaria/EndGame.git", rev = "78f76618b2b81cebb4a161775e057fb97d691d18", subdirectory = "py-endgame-aws" }
+lucky-ones = { git = "https://github.com/NathanDeMaria/the-lucky-ones.git", rev = "99e79fb9ed68deef0800b53d580677d1036b1dca" }
 
 [dependency-groups]
 dev = [
