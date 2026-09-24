@@ -86,19 +86,29 @@ Coverage: head coach 1,697, offensive coordinator's year 1,429, defensive
 coordinator's year 1,545. Missing: UAB 2015-16, when the program was shut
 down.
 
-### `quarterbacks.csv` -- 7,720 quarterback-team-seasons, 2013-2026
+### `quarterbacks.csv` -- 6,903 quarterback-team-seasons, 2013-2026
 
-From ESPN play-by-play: every quarterback who started a game, plus any
-passer with 50+ attempts who didn't.
+From ESPN play-by-play, by `syrm quarterbacks`: every quarterback who
+started a game, plus any passer with 50+ attempts who didn't.
 
 | column | |
 |---|---|
 | `player` | as the play text spells it -- "Joe Burrow" or "F.Mendoza" depending on the season's format |
 | `player_key` | "last first-initial", what matches a quarterback across spellings and schools |
 | `starts` | games he started: threw the team's early passes, not the most of them |
-| `started_week_one` | started the team's first game |
+| `started_week_one` | started the team's first game with play-by-play |
 | `attempts`, `epa` | his pass attempts and their summed expected points added |
 | `source` | `espn-pbp/ep-<run>`: which expected points fit priced the plays |
+
+"First game with play-by-play" is usually the opener. When ESPN has no
+plays for the opener -- most often against a lower-division school -- it's
+the first game it does have, the nearest thing to a preseason depth chart
+the plays offer.
+
+Starters are credited by the offense's team id, so a game counts whichever
+side was home. Pricing a snap needs the home side, which is inferred from
+the scoring plays; the few games where the scoring doesn't say (8 to 11 a
+season) are counted for starts and left unpriced.
 
 `epa` is `lucky_ones`' ncaafb model (expected points run 20260920-230959),
 each play bounded at +/-3, the same call and bound as cassandra's EPA
@@ -115,19 +125,25 @@ the country, so check the team before treating two rows as one player.
 ```bash
 uv run syrm coaches --first 2013 --last 2025 --cache ~/.cache/syrm
 uv run syrm staffs --first 2014 --last 2026 --cache ~/.cache/syrm
+uv run syrm quarterbacks --first 2026 --last 2026
 ```
 
 Writes into `data/`, to be reviewed and committed like any other change.
-`--cache` keeps the fetched wikitext, so a rerun that only changes the
-parsing costs no requests. Requests go 20 titles at a time, 4 seconds
-apart, identified by this repo's URL -- the Wikimedia API rate-limits a
-generic client within a few dozen.
+Only the seasons asked for are replaced and the rest of the file is kept,
+so refreshing the season in progress is a one-season run. For `coaches`
+the seasons are the articles read, since one article's changes land in two
+seasons.
 
-The quarterback file isn't rebuilt here yet. It was built from
-cassandra's play-text parser (`cassandra.qb`) and `lucky_ones`' expected
-points model, reading the processed play store; moving that builder here,
-with the parser cassandra's quarterback-availability index also uses, is
-the next step.
+The coaching files come from Wikipedia. `--cache` keeps the fetched
+wikitext, so a rerun that only changes the parsing costs no requests.
+Requests go 20 titles at a time, 4 seconds apart, identified by this repo's
+URL -- the Wikimedia API rate-limits a generic client within a few dozen.
+
+The quarterback file comes from endgame's bucket -- the stored schedules
+and the processed play store -- so it needs AWS credentials that can read
+it, and the `plays` extra (`uv sync --extra plays`; Python 3.14, which
+`lucky-ones` requires). The play-text parser is `say_youll_remember_me.qb`,
+the one cassandra's quarterback-availability index uses too.
 
 ## Sources
 

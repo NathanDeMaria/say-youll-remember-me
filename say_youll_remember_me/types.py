@@ -93,7 +93,7 @@ class QuarterbackSeason(NamedTuple):
 
     `starts` counts the games he started -- threw the team's early passes,
     not the most of them. `started_week_one` is whether he started the
-    team's first game. `attempts` and `epa` are every pass attempt credited
+    team's first game with play-by-play -- usually the opener. `attempts` and `epa` are every pass attempt credited
     to him and their summed expected points added, bounded per play the
     way the EPA index cassandra reads is; None before the expected points
     fit covers a season.

@@ -1,4 +1,4 @@
-FROM python:3.13-bookworm
+FROM python:3.14-bookworm
 
 # For persisting bash history
 RUN SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.bash_history" && echo $SNIPPET >> "/root/.bashrc"

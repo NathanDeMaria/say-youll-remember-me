@@ -12,6 +12,7 @@ import sys
 _FETCHING = (
     "say_youll_remember_me.wikipedia",
     "say_youll_remember_me.sync",
+    "say_youll_remember_me.plays",
     "urllib.request",
 )
 _THIRD_PARTY_ALLOWED = ("call_it_what_you_want",)
