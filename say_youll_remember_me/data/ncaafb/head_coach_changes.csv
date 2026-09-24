@@ -1,0 +1,469 @@
+espn_id,team,season,table,midseason,date,outgoing,outgoing_interim,reason,reason_text,incoming,incoming_interim,source
+30,USC Trojans,2013,in_season,true,2013-09-29,Lane Kiffin,false,fired,Fired,Ed Orgeron,true,2013 NCAA Division I FBS football season
+41,UConn Huskies,2013,in_season,true,2013-09-30,Paul Pasqualoni,false,fired,Fired,T. J. Weist,true,2013 NCAA Division I FBS football season
+193,Miami (OH) RedHawks,2013,in_season,true,2013-10-06,Don Treadwell,false,fired,Fired,Mike Bath,true,2013 NCAA Division I FBS football season
+2226,Florida Atlantic Owls,2013,in_season,true,2013-10-30,Carl Pelini,false,fired,Fired,Brian Wright,true,2013 NCAA Division I FBS football season
+2199,Eastern Michigan Eagles,2013,in_season,true,2013-11-08,Ron English,false,fired,Fired,Stan Parrish,true,2013 NCAA Division I FBS football season
+2751,Wyoming Cowboys,2014,in_season,false,2013-12-01,Dave Christensen,false,fired,Fired,Craig Bohl,false,2013 NCAA Division I FBS football season
+30,USC Trojans,2014,in_season,false,2013-12-02,Ed Orgeron,false,resigned,Resigned,Clay Helton,true,2013 NCAA Division I FBS football season
+30,USC Trojans,2014,in_season,false,2013-12-02,Clay Helton,true,interim_replaced,Permanent replacement,Steve Sarkisian,false,2013 NCAA Division I FBS football season
+154,Wake Forest Demon Deacons,2014,in_season,false,2013-12-02,Jim Grobe,false,resigned,Resigned,Dave Clawson,false,2013 NCAA Division I FBS football season
+264,Washington Huskies,2014,in_season,false,2013-12-02,Steve Sarkisian,false,left_for_job,Hired by USC,Marques Tuiasosopo,true,2013 NCAA Division I FBS football season
+193,Miami (OH) RedHawks,2014,in_season,false,2013-12-03,Mike Bath,true,interim_replaced,Permanent replacement,Chuck Martin,false,2013 NCAA Division I FBS football season
+68,Boise State Broncos,2014,in_season,false,2013-12-06,Chris Petersen,false,left_for_job,Hired by Washington,Bob Gregory,true,2013 NCAA Division I FBS football season
+264,Washington Huskies,2014,in_season,false,2013-12-06,Marques Tuiasosopo,true,interim_replaced,Permanent replacement,Chris Petersen,false,2013 NCAA Division I FBS football season
+189,Bowling Green Falcons,2014,in_season,false,2013-12-10,Dave Clawson,false,left_for_job,Hired by Wake Forest,Adam Scheier,true,2013 NCAA Division I FBS football season
+2032,Arkansas State Red Wolves,2014,in_season,false,2013-12-11,Bryan Harsin,false,left_for_job,Hired by Boise State,John Thompson,true,2013 NCAA Division I FBS football season
+68,Boise State Broncos,2014,in_season,false,2013-12-11,Bob Gregory,true,interim_replaced,Permanent replacement,Bryan Harsin,false,2013 NCAA Division I FBS football season
+2199,Eastern Michigan Eagles,2014,in_season,false,2013-12-11,Stan Parrish,true,interim_replaced,Permanent replacement,Chris Creighton,false,2013 NCAA Division I FBS football season
+41,UConn Huskies,2014,in_season,false,2013-12-12,T. J. Weist,true,interim_replaced,Permanent replacement,Bob Diaco,false,2013 NCAA Division I FBS football season
+251,Texas Longhorns,2014,in_season,false,2013-12-14,Mack Brown,false,resigned,Resigned,Charlie Strong,false,2013 NCAA Division I FBS football season
+349,Army Black Knights,2014,in_season,false,2013-12-15,Rich Ellerson,false,fired,Fired,Jeff Monken,false,2013 NCAA Division I FBS football season
+2226,Florida Atlantic Owls,2014,in_season,false,2013-12-17,Brian Wright,true,interim_replaced,Permanent replacement,Charlie Partridge,false,2013 NCAA Division I FBS football season
+189,Bowling Green Falcons,2014,in_season,false,2013-12-18,Adam Scheier,true,interim_replaced,Permanent replacement,Dino Babers,false,2013 NCAA Division I FBS football season
+2032,Arkansas State Red Wolves,2014,in_season,false,2013-12-19,John Thompson,true,interim_replaced,Permanent replacement,Blake Anderson,false,2013 NCAA Division I FBS football season
+113,Massachusetts Minutemen,2014,in_season,false,2013-12-26,Charley Molnar,false,fired,Fired,Mark Whipple,false,2013 NCAA Division I FBS football season
+213,Penn State Nittany Lions,2014,in_season,false,2014-01-02,Bill O'Brien,false,left_for_job,Hired by the Houston Texans,James Franklin,false,2013 NCAA Division I FBS football season
+97,Louisville Cardinals,2014,in_season,false,2014-01-05,Charlie Strong,false,left_for_job,Hired by Texas,Bobby Petrino,false,2013 NCAA Division I FBS football season
+5,UAB Blazers,2014,in_season,false,2014-01-09,Garrick McGee,false,fired,Hired as offensive coordinator at Louisville,Bill Clark,false,2013 NCAA Division I FBS football season
+238,Vanderbilt Commodores,2014,in_season,false,2014-01-09,James Franklin,false,left_for_job,Hired by Penn State,Derek Mason,false,2013 NCAA Division I FBS football season
+98,Western Kentucky Hilltoppers,2014,in_season,false,2014-01-09,Bobby Petrino,false,left_for_job,Hired by Louisville,Jeff Brohm,false,2013 NCAA Division I FBS football season
+2567,SMU Mustangs,2014,in_season,true,2014-09-08,June Jones,false,resigned,Resigned,Tom Mason,true,2014 NCAA Division I FBS football season
+2305,Kansas Jayhawks,2014,in_season,true,2014-09-28,Charlie Weis,false,fired,Fired,Clint Bowen,true,2014 NCAA Division I FBS football season
+2653,Troy Trojans,2014,in_season,true,2014-10-05,Larry Blakeney,false,retired,Retired,Neal Brown,false,2014 NCAA Division I FBS football season
+2084,Buffalo Bulls,2014,in_season,true,2014-10-12,Jeff Quinn,false,fired,Fired,Alex Wood,true,2014 NCAA Division I FBS football season
+57,Florida Gators,2014,in_season,true,2014-11-16,Will Muschamp,false,resigned,Resigned,D. J. Durkin,true,2014 NCAA Division I FBS football season
+2439,UNLV Rebels,2015,in_season,false,2014-11-28,Bobby Hauck,false,resigned,Resigned,Tony Sanchez,false,2014 NCAA Division I FBS football season
+2084,Buffalo Bulls,2015,in_season,false,2014-11-30,Alex Wood,true,interim_replaced,Replaced,Lance Leipold (permanent),false,2014 NCAA Division I FBS football season
+158,Nebraska Cornhuskers,2015,in_season,false,2014-11-30,Bo Pelini,false,fired,Fired,Barney Cotton,true,2014 NCAA Division I FBS football season
+2567,SMU Mustangs,2015,in_season,false,2014-11-30,Tom Mason,true,interim_replaced,Replaced,Chad Morris (permanent),false,2014 NCAA Division I FBS football season
+202,Tulsa Golden Hurricane,2015,in_season,false,2014-12-01,Bill Blankenship,false,fired,Fired,Philip Montgomery,false,2014 NCAA Division I FBS football season
+130,Michigan Wolverines,2015,in_season,false,2014-12-02,Brady Hoke,false,fired,Fired,Jim Harbaugh,false,2014 NCAA Division I FBS football season
+5,UAB Blazers,2015,in_season,false,2014-12-02,Bill Clark,false,other,School dropped football,None,false,2014 NCAA Division I FBS football season
+36,Colorado State Rams,2015,in_season,false,2014-12-04,Jim McElwain,false,left_for_job,Hired by Florida,Dave Baldwin,true,2014 NCAA Division I FBS football season
+57,Florida Gators,2015,in_season,false,2014-12-04,D. J. Durkin,true,interim_replaced,Replaced,Jim McElwain (permanent),false,2014 NCAA Division I FBS football season
+158,Nebraska Cornhuskers,2015,in_season,false,2014-12-04,Barney Cotton,true,interim_replaced,Replaced,Mike Riley (permanent),false,2014 NCAA Division I FBS football season
+204,Oregon State Beavers,2015,in_season,false,2014-12-04,Mike Riley,false,left_for_job,Hired by Nebraska,Gary Andersen,false,2014 NCAA Division I FBS football season
+2305,Kansas Jayhawks,2015,in_season,false,2014-12-05,Clint Bowen,true,interim_replaced,Replaced,David Beaty (permanent),false,2014 NCAA Division I FBS football season
+248,Houston Cougars,2015,in_season,false,2014-12-08,Tony Levine,false,fired,Fired,David Gibbs,true,2014 NCAA Division I FBS football season
+275,Wisconsin Badgers,2015,in_season,false,2014-12-10,Gary Andersen,false,left_for_job,Hired by Oregon State,Barry Alvarez,true,2014 NCAA Division I FBS football season
+248,Houston Cougars,2015,in_season,false,2014-12-16,David Gibbs,true,interim_replaced,Replaced,Tom Herman (permanent),false,2014 NCAA Division I FBS football season
+221,Pittsburgh Panthers,2015,in_season,false,2014-12-17,Paul Chryst,false,left_for_job,Hired by Wisconsin,Joe Rudolph,true,2014 NCAA Division I FBS football season
+275,Wisconsin Badgers,2015,in_season,false,2014-12-17,Barry Alvarez,true,interim_replaced,for bowl game,Paul Chryst (permanent),false,2014 NCAA Division I FBS football season
+36,Colorado State Rams,2015,in_season,false,2014-12-22,Dave Baldwin,true,interim_replaced,Replaced,Mike Bobo (permanent),false,2014 NCAA Division I FBS football season
+221,Pittsburgh Panthers,2015,in_season,false,2014-12-23,Joe Rudolph,true,interim_replaced,Replaced,Pat Narduzzi (permanent),false,2014 NCAA Division I FBS football season
+2117,Central Michigan Chippewas,2015,in_season,false,2015-01-22,Dan Enos,false,fired,Hired as offensive coordinator by Arkansas,John Bonamego,false,2014 NCAA Division I FBS football season
+356,Illinois Fighting Illini,2015,in_season,false,2015-08-28,Tim Beckman,false,fired,Fired,Bill Cubit,false,2015 NCAA Division I FBS football season
+249,North Texas Mean Green,2015,in_season,true,2015-10-10,Dan McCarney,false,fired,Fired,Mike Canales,true,2015 NCAA Division I FBS football season
+120,Maryland Terrapins,2015,in_season,true,2015-10-11,Randy Edsall,false,fired,Fired,Mike Locksley,true,2015 NCAA Division I FBS football season
+2579,South Carolina Gamecocks,2015,in_season,true,2015-10-12,Steve Spurrier,false,retired,Retired,Shawn Elliott,true,2015 NCAA Division I FBS football season
+30,USC Trojans,2015,in_season,true,2015-10-12,Steve Sarkisian,false,fired,Fired,Clay Helton,false,2015 NCAA Division I FBS football season
+2390,Miami Hurricanes,2015,in_season,true,2015-10-25,Al Golden,false,fired,Fired,Larry Scott,true,2015 NCAA Division I FBS football season
+2116,UCF Knights,2015,in_season,true,2015-10-25,George O'Leary,false,retired,Resigned/retired,Danny Barrett,true,2015 NCAA Division I FBS football season
+135,Minnesota Golden Gophers,2015,in_season,true,2015-10-28,Jerry Kill,false,retired,Retired (health),Tracy Claeys,false,2015 NCAA Division I FBS football season
+62,Hawai'i Rainbow Warriors,2015,in_season,true,2015-11-01,Norm Chow,false,fired,Fired,Chris Naeole,false,2015 NCAA Division I FBS football season
+259,Virginia Tech Hokies,2015,in_season,true,2015-11-01,Frank Beamer,false,retired,Retired after the season,Justin Fuente,false,2015 NCAA Division I FBS football season
+142,Missouri Tigers,2015,in_season,true,2015-11-13,Gary Pinkel,false,health,Resigned after the season (health),Barry Odom,false,2015 NCAA Division I FBS football season
+2433,UL Monroe Warhawks,2015,in_season,true,2015-11-14,Todd Berry,false,fired,Fired,John Mumford,true,2015 NCAA Division I FBS football season
+66,Iowa State Cyclones,2016,in_season,false,2015-11-22,Paul Rhoads,false,fired,Fired after the season,Matt Campbell,false,2015 NCAA Division I FBS football season
+183,Syracuse Orange,2016,in_season,false,2015-11-23,Scott Shafer,false,fired,Fired after the season,Dino Babers,false,2015 NCAA Division I FBS football season
+62,Hawai'i Rainbow Warriors,2016,in_season,false,2015-11-27,Chris Naeole,true,interim_replaced,Permanent replacement,Nick Rolovich,false,2015 NCAA Division I FBS football season
+235,Memphis Tigers,2016,in_season,false,2015-11-28,Justin Fuente,false,left_for_job,Left for Virginia Tech,Mike Norvell,false,2015 NCAA Division I FBS football season
+2655,Tulane Green Wave,2016,in_season,false,2015-11-28,Curtis Johnson,false,fired,Fired,Willie Fritz,false,2015 NCAA Division I FBS football season
+61,Georgia Bulldogs,2016,in_season,false,2015-11-29,Mark Richt,false,fired,Fired,Kirby Smart,false,2015 NCAA Division I FBS football season
+164,Rutgers Scarlet Knights,2016,in_season,false,2015-11-29,Kyle Flood,false,fired,Fired,Chris Ash,false,2015 NCAA Division I FBS football season
+2649,Toledo Rockets,2016,in_season,false,2015-11-29,Matt Campbell,false,left_for_job,Left for Iowa State,Jason Candle,false,2015 NCAA Division I FBS football season
+258,Virginia Cavaliers,2016,in_season,false,2015-11-29,Mike London,false,resigned,Resigned,Bronco Mendenhall,false,2015 NCAA Division I FBS football season
+2116,UCF Knights,2016,in_season,false,2015-12-01,Danny Barrett,true,interim_replaced,Permanent replacement,Scott Frost,false,2015 NCAA Division I FBS football season
+120,Maryland Terrapins,2016,in_season,false,2015-12-02,Mike Locksley,true,interim_replaced,Permanent replacement,D. J. Durkin,false,2015 NCAA Division I FBS football season
+2390,Miami Hurricanes,2016,in_season,false,2015-12-02,Larry Scott,true,interim_replaced,Permanent replacement,Mark Richt,false,2015 NCAA Division I FBS football season
+252,BYU Cougars,2016,in_season,false,2015-12-04,Bronco Mendenhall,false,left_for_job,Left for Virginia,Kalani Sitake,false,2015 NCAA Division I FBS football season
+151,East Carolina Pirates,2016,in_season,false,2015-12-04,Ruffin McNeill,false,fired,Fired,Scottie Montgomery,false,2015 NCAA Division I FBS football season
+189,Bowling Green Falcons,2016,in_season,false,2015-12-05,Dino Babers,false,left_for_job,Left for Syracuse,Mike Jinks,false,2015 NCAA Division I FBS football season
+249,North Texas Mean Green,2016,in_season,false,2015-12-05,Mike Canales,true,interim_replaced,Permanent replacement,Seth Littrell,false,2015 NCAA Division I FBS football season
+2579,South Carolina Gamecocks,2016,in_season,false,2015-12-06,Shawn Elliott,true,interim_replaced,Permanent replacement,Will Muschamp,false,2015 NCAA Division I FBS football season
+290,Georgia Southern Eagles,2016,in_season,false,2015-12-11,Willie Fritz,false,left_for_job,Left for Tulane,Dell McGee,true,2015 NCAA Division I FBS football season
+2433,UL Monroe Warhawks,2016,in_season,false,2015-12-14,John Mumford,true,interim_replaced,Permanent replacement,Matt Viator,false,2015 NCAA Division I FBS football season
+290,Georgia Southern Eagles,2016,in_season,false,2015-12-20,Dell McGee,true,interim_replaced,Permanent replacement,Tyson Summers,false,2015 NCAA Division I FBS football season
+2050,Ball State Cardinals,2016,in_season,false,2015-12-22,Pete Lembo,false,fired,Took job as special teams coordinator at Maryland,Mike Neu,false,2015 NCAA Division I FBS football season
+326,Texas State Bobcats,2016,in_season,false,2015-12-22,Dennis Franchione,false,retired,Retired,Everett Withers,false,2015 NCAA Division I FBS football season
+2636,UTSA Roadrunners,2016,in_season,false,2016-01-05,Larry Coker,false,resigned,Resigned,Frank Wilson,false,2015 NCAA Division I FBS football season
+2572,Southern Miss Golden Eagles,2016,in_season,false,2016-01-24,Todd Monken,false,fired,Left for the Tampa Bay Buccaneers as offensive coordinator,Jay Hopson,false,2015 NCAA Division I FBS football season
+356,Illinois Fighting Illini,2016,in_season,false,2016-03-05,Bill Cubit,false,fired,Fired,Lovie Smith,false,2015 NCAA Division I FBS football season
+239,Baylor Bears,2016,in_season,false,2016-05-26,Art Briles,false,fired,Fired,Jim Grobe,true,2016 NCAA Division I FBS football season
+2229,Florida International Panthers,2016,in_season,true,2016-09-25,Ron Turner,false,fired,Fired,Ron Cooper,true,2016 NCAA Division I FBS football season
+99,LSU Tigers,2016,in_season,true,2016-09-25,Les Miles,false,fired,Fired,Ed Orgeron,false,2016 NCAA Division I FBS football season
+2509,Purdue Boilermakers,2016,in_season,true,2016-10-16,Darrell Hazell,false,fired,Fired,Gerad Parker,true,2016 NCAA Division I FBS football season
+278,Fresno State Bulldogs,2016,in_season,true,2016-10-23,Tim DeRuyter,false,fired,Fired,Eric Kiesau,true,2016 NCAA Division I FBS football season
+2229,Florida International Panthers,2016,in_season,true,2016-11-09,Ron Cooper,true,interim_replaced,Permanent replacement,Butch Davis,false,2016 NCAA Division I FBS football season
+278,Fresno State Bulldogs,2016,in_season,true,2016-11-09,Eric Kiesau,true,interim_replaced,Permanent replacement,Jeff Tedford,false,2016 NCAA Division I FBS football season
+2247,Georgia State Panthers,2016,in_season,true,2016-11-13,Trent Miles,false,fired,Fired,Tim Lappano,true,2016 NCAA Division I FBS football season
+248,Houston Cougars,2017,in_season,false,2016-11-26,Tom Herman,false,left_for_job,Hired by Texas,Todd Orlando Bowl,true,2016 NCAA Division I FBS football season
+251,Texas Longhorns,2017,end_of_season,false,2016-11-26,Charlie Strong,false,fired,Fired,Tom Herman,false,2016 NCAA Division I FBS football season
+2226,Florida Atlantic Owls,2017,end_of_season,false,2016-11-27,Charlie Partridge,false,fired,Fired,Lane Kiffin,false,2016 NCAA Division I FBS football season
+2440,Nevada Wolf Pack,2017,end_of_season,false,2016-11-27,Brian Polian,false,fired,Agreed to part ways,Jay Norvell,false,2016 NCAA Division I FBS football season
+23,San José State Spartans,2017,end_of_season,false,2016-11-27,Ron Caragher,false,fired,Fired,Brent Brennan,false,2016 NCAA Division I FBS football season
+2483,Oregon Ducks,2017,end_of_season,false,2016-11-29,Mark Helfrich,false,fired,Agreed to part ways,Willie Taggart,false,2016 NCAA Division I FBS football season
+84,Indiana Hoosiers,2017,end_of_season,false,2016-12-01,Kevin Wilson,false,resigned,Resigned,Tom Allen,false,2016 NCAA Division I FBS football season
+2132,Cincinnati Bearcats,2017,end_of_season,false,2016-12-04,Tommy Tuberville,false,resigned,Resigned,Luke Fickell,false,2016 NCAA Division I FBS football season
+2509,Purdue Boilermakers,2017,end_of_season,false,2016-12-05,Gerad Parker,true,interim_replaced,Permanent replacement,Jeff Brohm,false,2016 NCAA Division I FBS football season
+98,Western Kentucky Hilltoppers,2017,in_season,false,2016-12-05,Jeff Brohm,false,left_for_job,Hired by Purdue,Nick Holt,true,2016 NCAA Division I FBS football season
+239,Baylor Bears,2017,end_of_season,false,2016-12-06,Jim Grobe,true,interim_replaced,Permanent replacement,Matt Rhule,false,2016 NCAA Division I FBS football season
+218,Temple Owls,2017,in_season,false,2016-12-06,Matt Rhule,false,left_for_job,Hired by Baylor,Ed Foley,true,2016 NCAA Division I FBS football season
+2247,Georgia State Panthers,2017,end_of_season,false,2016-12-08,Tim Lappano,true,interim_replaced,Permanent replacement,Shawn Elliott,false,2016 NCAA Division I FBS football season
+248,Houston Cougars,2017,end_of_season,false,2016-12-09,Todd Orlando,true,interim_replaced,Permanent replacement,Major Applewhite,false,2016 NCAA Division I FBS football season
+58,South Florida Bulls,2017,in_season,false,2016-12-11,Willie Taggart,false,left_for_job,Hired by Oregon,T. J. Weist,true,2016 NCAA Division I FBS football season
+58,South Florida Bulls,2017,end_of_season,false,2016-12-11,T. J. Weist,true,interim_replaced,Permanent replacement,Charlie Strong,false,2016 NCAA Division I FBS football season
+98,Western Kentucky Hilltoppers,2017,end_of_season,false,2016-12-12,Nick Holt,true,interim_replaced,Permanent replacement,Mike Sanford Jr.,false,2016 NCAA Division I FBS football season
+218,Temple Owls,2017,end_of_season,false,2016-12-13,Ed Foley,true,interim_replaced,Permanent replacement,Geoff Collins,false,2016 NCAA Division I FBS football season
+41,UConn Huskies,2017,end_of_season,false,2016-12-26,Bob Diaco,false,fired,Fired,Randy Edsall,false,2016 NCAA Division I FBS football season
+135,Minnesota Golden Gophers,2017,end_of_season,false,2017-01-03,Tracy Claeys,false,fired,Fired,P. J. Fleck,false,2016 NCAA Division I FBS football season
+2711,Western Michigan Broncos,2017,end_of_season,false,2017-01-06,P. J. Fleck,false,left_for_job,Hired by Minnesota,Tim Lester,false,2016 NCAA Division I FBS football season
+25,California Golden Bears,2017,end_of_season,false,2017-01-08,Sonny Dykes,false,fired,Fired,Justin Wilcox,false,2016 NCAA Division I FBS football season
+201,Oklahoma Sooners,2017,in_season,false,2017-06-07,Bob Stoops,false,retired,Retired,Lincoln Riley,false,2017 NCAA Division I FBS football season
+145,Ole Miss Rebels,2017,in_season,false,2017-07-20,Hugh Freeze,false,resigned,Resigned,Matt Luke,false,2017 NCAA Division I FBS football season
+324,Coastal Carolina Chanticleers,2017,in_season,false,2017-07-28,Joe Moglia,false,health,Medical leave,Jamey Chadwell,true,2017 NCAA Division I FBS football season
+2638,UTEP Miners,2017,in_season,true,2017-10-01,Sean Kugler,false,resigned,Resigned,Mike Price,true,2017 NCAA Division I FBS football season
+204,Oregon State Beavers,2017,in_season,true,2017-10-09,Gary Andersen,false,resigned,Resigned,Cory Hall,true,2017 NCAA Division I FBS football season
+290,Georgia Southern Eagles,2017,in_season,true,2017-10-22,Tyson Summers,false,fired,Fired,Chad Lunsford,false,2017 NCAA Division I FBS football season
+57,Florida Gators,2017,in_season,true,2017-10-29,Jim McElwain,false,fired,Fired,Randy Shannon,true,2017 NCAA Division I FBS football season
+2633,Tennessee Volunteers,2017,in_season,true,2017-11-12,Butch Jones,false,fired,Fired,Brady Hoke,true,2017 NCAA Division I FBS football season
+26,UCLA Bruins,2017,in_season,true,2017-11-19,Jim Mora,false,fired,Fired,Jedd Fisch,true,2017 NCAA Division I FBS football season
+6,South Alabama Jaguars,2018,end_of_season,false,2017-11-20,Joey Jones,false,resigned,Resigned,Steve Campbell,false,2017 NCAA Division I FBS football season
+2309,Kent State Golden Flashes,2018,end_of_season,false,2017-11-22,Paul Haynes,false,fired,Fired,Colin Ferrell,true,2017 NCAA Division I FBS football season
+8,Arkansas Razorbacks,2018,end_of_season,false,2017-11-24,Bret Bielema,false,fired,Fired,Chad Morris,false,2017 NCAA Division I FBS football season
+158,Nebraska Cornhuskers,2018,end_of_season,false,2017-11-25,Mike Riley,false,fired,Fired,Scott Frost,false,2017 NCAA Division I FBS football season
+26,UCLA Bruins,2018,end_of_season,false,2017-11-25,Jedd Fisch,true,interim_replaced,Permanent replacement,Chip Kelly,false,2017 NCAA Division I FBS football season
+9,Arizona State Sun Devils,2018,end_of_season,false,2017-11-26,Todd Graham,false,fired,Agreed to part ways,Herm Edwards,false,2017 NCAA Division I FBS football season
+57,Florida Gators,2018,end_of_season,false,2017-11-26,Randy Shannon,true,interim_replaced,Permanent replacement,Dan Mullen,false,2017 NCAA Division I FBS football season
+344,Mississippi State Bulldogs,2018,end_of_season,false,2017-11-26,Dan Mullen,false,left_for_job,Hired by Florida,Joe Moorhead,false,2017 NCAA Division I FBS football season
+242,Rice Owls,2018,end_of_season,false,2017-11-27,David Bailiff,false,fired,Fired,Mike Bloomgren,false,2017 NCAA Division I FBS football season
+245,Texas A&M Aggies,2018,end_of_season,false,2017-11-27,Kevin Sumlin,false,fired,Fired,Jimbo Fisher,false,2017 NCAA Division I FBS football season
+204,Oregon State Beavers,2018,end_of_season,false,2017-11-30,Cory Hall,true,interim_replaced,Permanent replacement,Jonathan Smith,false,2017 NCAA Division I FBS football season
+309,Louisiana Ragin' Cajuns,2018,end_of_season,false,2017-12-02,Mark Hudspeth,false,fired,Fired,Billy Napier,false,2017 NCAA Division I FBS football season
+2116,UCF Knights,2018,end_of_season,false,2017-12-02,Scott Frost,false,left_for_job,Hired by Nebraska,Josh Heupel,false,2017 NCAA Division I FBS football season
+52,Florida State Seminoles,2018,end_of_season,false,2017-12-05,Odell Haggins,true,interim_replaced,Permanent replacement,Willie Taggart,false,2017 NCAA Division I FBS football season
+2483,Oregon Ducks,2018,end_of_season,false,2017-12-05,Willie Taggart,false,left_for_job,Hired by Florida State,Mario Cristobal,false,2017 NCAA Division I FBS football season
+8,Arkansas Razorbacks,2018,end_of_season,false,2017-12-06,Paul Rhoads,true,interim_replaced,Permanent replacement,Chad Morris,false,2017 NCAA Division I FBS football season
+2638,UTEP Miners,2018,end_of_season,false,2017-12-06,Mike Price,true,interim_replaced,Permanent replacement,Dana Dimel,false,2017 NCAA Division I FBS football season
+2633,Tennessee Volunteers,2018,end_of_season,false,2017-12-07,Brady Hoke,true,interim_replaced,Permanent replacement,Jeremy Pruitt,false,2017 NCAA Division I FBS football season
+2567,SMU Mustangs,2018,end_of_season,false,2017-12-12,Jeff Traylor,true,interim_replaced,Permanent replacement,Sonny Dykes,false,2017 NCAA Division I FBS football season
+2309,Kent State Golden Flashes,2018,end_of_season,false,2017-12-21,Colin Ferrell,true,interim_replaced,Permanent replacement,Sean Lewis,false,2017 NCAA Division I FBS football season
+12,Arizona Wildcats,2018,end_of_season,false,2018-01-02,Rich Rodriguez,false,fired,Fired,Kevin Sumlin,false,2017 NCAA Division I FBS football season
+324,Coastal Carolina Chanticleers,2018,end_of_season,false,2018-01-05,Jamey Chadwell,true,interim_replaced,Medical clearance of head coach,Joe Moglia,false,2017 NCAA Division I FBS football season
+189,Bowling Green Falcons,2018,in_season,true,2018-10-14,Mike Jinks,false,fired,Fired,Carl Pelini,true,2018 NCAA Division I FBS football season
+120,Maryland Terrapins,2018,in_season,true,2018-10-31,D. J. Durkin,false,fired,Fired,Matt Canada,true,2018 NCAA Division I FBS football season
+97,Louisville Cardinals,2018,in_season,true,2018-11-11,Bobby Petrino,false,fired,Fired,Lorenzo Ward,true,2018 NCAA Division I FBS football season
+38,Colorado Buffaloes,2018,in_season,true,2018-11-18,Mike MacIntyre,false,fired,Fired,Kurt Roper,true,2018 NCAA Division I FBS football season
+326,Texas State Bobcats,2018,in_season,true,2018-11-18,Everett Withers,false,fired,Fired,Chris Woods,true,2018 NCAA Division I FBS football season
+2305,Kansas Jayhawks,2019,end_of_season,false,2018-11-04,David Beaty,false,fired,Fired (effective at end of season),Les Miles,false,2018 NCAA Division I FBS football season
+2429,Charlotte 49ers,2019,end_of_season,false,2018-11-18,Brad Lambert,false,fired,Fired (effective at end of season),Will Healy,false,2018 NCAA Division I FBS football season
+113,Massachusetts Minutemen,2019,end_of_season,false,2018-11-20,Mark Whipple,false,fired,Agreed to part ways,Walt Bell,false,2018 NCAA Division I FBS football season
+2117,Central Michigan Chippewas,2019,end_of_season,false,2018-11-23,John Bonamego,false,fired,Fired,Jim McElwain,false,2018 NCAA Division I FBS football season
+153,North Carolina Tar Heels,2019,end_of_season,false,2018-11-25,Larry Fedora,false,fired,Fired,Mack Brown,false,2018 NCAA Division I FBS football season
+2641,Texas Tech Red Raiders,2019,end_of_season,false,2018-11-25,Kliff Kingsbury,false,fired,Fired,Matt Wells,false,2018 NCAA Division I FBS football season
+98,Western Kentucky Hilltoppers,2019,end_of_season,false,2018-11-25,Mike Sanford,false,fired,Fired,Tyson Helton,false,2018 NCAA Division I FBS football season
+189,Bowling Green Falcons,2019,end_of_season,false,2018-11-28,Carl Pelini,true,interim_replaced,Permanent replacement,Scot Loeffler,false,2018 NCAA Division I FBS football season
+59,Georgia Tech Yellow Jackets,2019,end_of_season,false,2018-11-28,Paul Johnson,false,retired,Retired (effective after Georgia Tech's bowl game),Geoff Collins,false,2018 NCAA Division I FBS football season
+326,Texas State Bobcats,2019,end_of_season,false,2018-11-28,Chris Woods,true,interim_replaced,Permanent replacement,Jake Spavital,false,2018 NCAA Division I FBS football season
+151,East Carolina Pirates,2019,in_season,false,2018-11-29,Scottie Montgomery,false,fired,Fired,David Blackwell,true,2018 NCAA Division I FBS football season
+328,Utah State Aggies,2019,in_season,false,2018-11-29,Matt Wells,false,left_for_job,Hired as head coach by Texas Tech,Frank Maile,true,2018 NCAA Division I FBS football season
+2006,Akron Zips,2019,end_of_season,false,2018-12-02,Terry Bowden,false,fired,Fired,Tom Arth,false,2018 NCAA Division I FBS football season
+2306,Kansas State Wildcats,2019,end_of_season,false,2018-12-02,Bill Snyder,false,retired,Retired,Chris Klieman,false,2018 NCAA Division I FBS football season
+151,East Carolina Pirates,2019,end_of_season,false,2018-12-03,David Blackwell,true,interim_replaced,Permanent replacement,Mike Houston,false,2018 NCAA Division I FBS football season
+2335,Liberty Flames,2019,end_of_season,false,2018-12-03,Turner Gill,false,retired,Retired,Hugh Freeze,false,2018 NCAA Division I FBS football season
+2026,App State Mountaineers,2019,in_season,false,2018-12-04,Scott Satterfield,false,left_for_job,Hired as head coach by Louisville,Mark Ivey,true,2018 NCAA Division I FBS football season
+97,Louisville Cardinals,2019,end_of_season,false,2018-12-04,Lorenzo Ward,true,interim_replaced,Permanent replacement,Scott Satterfield,false,2018 NCAA Division I FBS football season
+120,Maryland Terrapins,2019,end_of_season,false,2018-12-04,Matt Canada,true,interim_replaced,Permanent replacement,Mike Locksley,false,2018 NCAA Division I FBS football season
+194,Ohio State Buckeyes,2019,end_of_season,false,2018-12-04,Urban Meyer,false,retired,Retired (effective at end of season),Ryan Day,false,2018 NCAA Division I FBS football season
+38,Colorado Buffaloes,2019,end_of_season,false,2018-12-05,Kurt Roper,true,interim_replaced,Permanent replacement,Mel Tucker,false,2018 NCAA Division I FBS football season
+218,Temple Owls,2019,in_season,false,2018-12-07,Geoff Collins,false,left_for_job,Hired as head coach by Georgia Tech,Ed Foley,true,2018 NCAA Division I FBS football season
+328,Utah State Aggies,2019,end_of_season,false,2018-12-09,Frank Maile,true,interim_replaced,Permanent replacement,Gary Andersen,false,2018 NCAA Division I FBS football season
+2026,App State Mountaineers,2019,end_of_season,false,2018-12-13,Mark Ivey,true,interim_replaced,Permanent replacement,Eliah Drinkwitz,false,2018 NCAA Division I FBS football season
+218,Temple Owls,2019,end_of_season,false,2018-12-13,Ed Foley,true,interim_replaced,Permanent replacement,Rod Carey,false,2018 NCAA Division I FBS football season
+248,Houston Cougars,2019,end_of_season,false,2018-12-30,Major Applewhite,false,fired,Fired,Dana Holgorsen,false,2018 NCAA Division I FBS football season
+2390,Miami Hurricanes,2019,end_of_season,false,2018-12-30,Mark Richt,false,retired,Retired,Manny Diaz,false,2018 NCAA Division I FBS football season
+277,West Virginia Mountaineers,2019,end_of_season,false,2019-01-01,Dana Holgorsen,false,left_for_job,Hired as head coach by Houston,Neal Brown,false,2018 NCAA Division I FBS football season
+2653,Troy Trojans,2019,end_of_season,false,2019-01-04,Neal Brown,false,left_for_job,Hired as head coach by West Virginia,Chip Lindsey,false,2018 NCAA Division I FBS football season
+2459,Northern Illinois Huskies,2019,end_of_season,false,2019-01-10,Rod Carey,false,left_for_job,Hired as head coach by Temple,Thomas Hammock,false,2018 NCAA Division I FBS football season
+324,Coastal Carolina Chanticleers,2019,end_of_season,false,2019-01-18,Joe Moglia,false,resigned,Resigned,Jamey Chadwell,false,2018 NCAA Division I FBS football season
+164,Rutgers Scarlet Knights,2019,in_season,true,2019-09-29,Chris Ash,false,fired,Fired,Nunzio Campanile,true,2019 NCAA Division I FBS football season
+52,Florida State Seminoles,2019,in_season,true,2019-11-03,Willie Taggart,false,fired,Fired,Odell Haggins,true,2019 NCAA Division I FBS football season
+8,Arkansas Razorbacks,2019,in_season,true,2019-11-10,Chad Morris,false,fired,Fired,Barry Lunney Jr.,true,2019 NCAA Division I FBS football season
+167,New Mexico Lobos,2020,end_of_season,false,2019-11-25,Bob Davie,false,resigned,Resigned,Danny Gonzales,false,2019 NCAA Division I FBS football season
+2439,UNLV Rebels,2020,end_of_season,false,2019-11-25,Tony Sanchez,false,resigned,Resigned,Marcus Arroyo,false,2019 NCAA Division I FBS football season
+142,Missouri Tigers,2020,end_of_season,false,2019-11-30,Barry Odom,false,fired,Fired,Eliah Drinkwitz,false,2019 NCAA Division I FBS football season
+103,Boston College Eagles,2020,in_season,false,2019-12-01,Steve Addazio,false,fired,Fired,Rich Gunnell,true,2019 NCAA Division I FBS football season
+145,Ole Miss Rebels,2020,end_of_season,false,2019-12-01,Matt Luke,false,fired,Fired,Lane Kiffin,false,2019 NCAA Division I FBS football season
+164,Rutgers Scarlet Knights,2020,end_of_season,false,2019-12-01,Nunzio Campanile,true,interim_replaced,Permanent replacement,Greg Schiano,false,2019 NCAA Division I FBS football season
+58,South Florida Bulls,2020,end_of_season,false,2019-12-01,Charlie Strong,false,fired,Fired,Jeff Scott,false,2019 NCAA Division I FBS football season
+2636,UTSA Roadrunners,2020,end_of_season,false,2019-12-01,Frank Wilson,false,fired,Fired,Jeff Traylor,false,2019 NCAA Division I FBS football season
+295,Old Dominion Monarchs,2020,end_of_season,false,2019-12-02,Bobby Wilder,false,resigned,Resigned,Ricky Rahne,false,2019 NCAA Division I FBS football season
+264,Washington Huskies,2020,in_season,false,2019-12-02,Chris Petersen,false,resigned,Resigned (effective after Washington's bowl game),Jimmy Lake,false,2019 NCAA Division I FBS football season
+36,Colorado State Rams,2020,end_of_season,false,2019-12-04,Mike Bobo,false,resigned,Resigned,Steve Addazio,false,2019 NCAA Division I FBS football season
+278,Fresno State Bulldogs,2020,end_of_season,false,2019-12-05,Jeff Tedford,false,resigned,Resigned,Kalen DeBoer,false,2019 NCAA Division I FBS football season
+8,Arkansas Razorbacks,2020,end_of_season,false,2019-12-07,Barry Lunney Jr.,true,interim_replaced,Permanent replacement,Sam Pittman,false,2019 NCAA Division I FBS football season
+2226,Florida Atlantic Owls,2020,in_season,false,2019-12-07,Lane Kiffin,false,left_for_job,Hired by Ole Miss,Glenn Spencer,false,2019 NCAA Division I FBS football season
+235,Memphis Tigers,2020,in_season,false,2019-12-07,Mike Norvell,false,left_for_job,Hired by Florida State,Ryan Silverfield,false,2019 NCAA Division I FBS football season
+2026,App State Mountaineers,2020,end_of_season,false,2019-12-08,Eliah Drinkwitz,false,left_for_job,Hired by Missouri,Shawn Clark,false,2019 NCAA Division I FBS football season
+52,Florida State Seminoles,2020,end_of_season,false,2019-12-08,Odell Haggins,true,interim_replaced,Permanent replacement,Mike Norvell,false,2019 NCAA Division I FBS football season
+2226,Florida Atlantic Owls,2020,end_of_season,false,2019-12-11,Glenn Spencer,true,interim_replaced,Permanent replacement,Willie Taggart,false,2019 NCAA Division I FBS football season
+103,Boston College Eagles,2020,end_of_season,false,2019-12-13,Rich Gunnell,true,interim_replaced,Permanent replacement,Jeff Hafley,false,2019 NCAA Division I FBS football season
+344,Mississippi State Bulldogs,2020,end_of_season,false,2020-01-03,Joe Moorhead,false,fired,Fired,Mike Leach,false,2019 NCAA Division I FBS football season
+239,Baylor Bears,2020,end_of_season,false,2020-01-07,Matt Rhule,false,left_for_job,Hired by Carolina Panthers,Dave Aranda,false,2019 NCAA Division I FBS football season
+21,San Diego State Aztecs,2020,end_of_season,false,2020-01-08,Rocky Long,false,resigned,Resigned,Brady Hoke,false,2019 NCAA Division I FBS football season
+265,Washington State Cougars,2020,end_of_season,false,2020-01-09,Mike Leach,false,left_for_job,Hired by Mississippi State,Nick Rolovich,false,2019 NCAA Division I FBS football season
+62,Hawai'i Rainbow Warriors,2020,end_of_season,false,2020-01-14,Nick Rolovich,false,left_for_job,Hired by Washington State,Todd Graham,false,2019 NCAA Division I FBS football season
+127,Michigan State Spartans,2020,end_of_season,false,2020-02-04,Mark Dantonio,false,resigned,Resigned,Mel Tucker,false,2019 NCAA Division I FBS football season
+38,Colorado Buffaloes,2020,end_of_season,false,2020-02-12,Mel Tucker,false,left_for_job,Hired by Michigan State,Karl Dorrell,false,2019 NCAA Division I FBS football season
+2572,Southern Miss Golden Eagles,2020,in_season,true,2020-09-07,Jay Hopson,false,resigned,Resigned,Scotty Walden,true,2020 NCAA Division I FBS football season
+2572,Southern Miss Golden Eagles,2020,in_season,true,2020-10-27,Scotty Walden,true,interim_replaced,Hired by Austin Peay,Tim Billings,true,2020 NCAA Division I FBS football season
+328,Utah State Aggies,2020,in_season,true,2020-11-07,Gary Andersen,false,resigned,Resigned,Frank Maile,true,2020 NCAA Division I FBS football season
+2579,South Carolina Gamecocks,2020,in_season,true,2020-11-15,Will Muschamp,false,fired,Fired,Mike Bobo,true,2020 NCAA Division I FBS football season
+238,Vanderbilt Commodores,2021,in_season,false,2020-11-29,Derek Mason,false,fired,Fired,Todd Fitch,true,2020 NCAA Division I FBS football season
+2572,Southern Miss Golden Eagles,2021,end_of_season,false,2020-12-02,Tim Billings,true,interim_replaced,Permanent replacement,Will Hall,false,2020 NCAA Division I FBS football season
+6,South Alabama Jaguars,2021,end_of_season,false,2020-12-06,Steve Campbell,false,fired,Fired,Kane Wommack,false,2020 NCAA Division I FBS football season
+2579,South Carolina Gamecocks,2021,end_of_season,false,2020-12-06,Mike Bobo,true,interim_replaced,Permanent replacement,Shane Beamer,false,2020 NCAA Division I FBS football season
+2433,UL Monroe Warhawks,2021,end_of_season,false,2020-12-07,Matt Viator,false,fired,Fired,Terry Bowden,false,2020 NCAA Division I FBS football season
+2032,Arkansas State Red Wolves,2021,end_of_season,false,2020-12-10,Blake Anderson,false,left_for_job,Hired by Utah State,Butch Jones,false,2020 NCAA Division I FBS football season
+328,Utah State Aggies,2021,end_of_season,false,2020-12-10,Frank Maile,true,interim_replaced,Permanent replacement,Blake Anderson,false,2020 NCAA Division I FBS football season
+12,Arizona Wildcats,2021,end_of_season,false,2020-12-12,Kevin Sumlin,false,fired,Fired,Jedd Fisch,false,2020 NCAA Division I FBS football season
+2,Auburn Tigers,2021,in_season,false,2020-12-13,Gus Malzahn,false,fired,Fired,Kevin Steele,true,2020 NCAA Division I FBS football season
+356,Illinois Fighting Illini,2021,in_season,false,2020-12-13,Lovie Smith,false,fired,Fired,Rod Smith,true,2020 NCAA Division I FBS football season
+238,Vanderbilt Commodores,2021,end_of_season,false,2020-12-14,Todd Fitch,true,interim_replaced,Permanent replacement,Clark Lea,false,2020 NCAA Division I FBS football season
+356,Illinois Fighting Illini,2021,end_of_season,false,2020-12-19,Rod Smith,true,interim_replaced,Permanent replacement,Bret Bielema,false,2020 NCAA Division I FBS football season
+2,Auburn Tigers,2021,end_of_season,false,2020-12-22,Kevin Steele,true,interim_replaced,Permanent replacement,Bryan Harsin,false,2020 NCAA Division I FBS football season
+68,Boise State Broncos,2021,end_of_season,false,2020-12-22,Bryan Harsin,false,left_for_job,Hired by Auburn,Andy Avalos,false,2020 NCAA Division I FBS football season
+251,Texas Longhorns,2021,end_of_season,false,2021-01-02,Tom Herman,false,fired,Fired,Steve Sarkisian,false,2020 NCAA Division I FBS football season
+276,Marshall Thundering Herd,2021,end_of_season,false,2021-01-04,Doc Holliday,false,fired,Contract not renewed,Charles Huff,false,2020 NCAA Division I FBS football season
+2633,Tennessee Volunteers,2021,end_of_season,false,2021-01-18,Jeremy Pruitt,false,fired,Fired,Josh Heupel,false,2020 NCAA Division I FBS football season
+2116,UCF Knights,2021,end_of_season,false,2021-01-27,Josh Heupel,false,left_for_job,Hired by Tennessee,Gus Malzahn,false,2020 NCAA Division I FBS football season
+2305,Kansas Jayhawks,2021,end_of_season,false,2021-03-08,Les Miles,false,fired,Mutually agreed to part ways,Lance Leipold,false,2020 NCAA Division I FBS football season
+2084,Buffalo Bulls,2021,end_of_season,false,2021-04-30,Lance Leipold,false,left_for_job,Hired by Kansas,Maurice Linguist,false,2020 NCAA Division I FBS football season
+195,Ohio Bobcats,2021,in_season,false,2021-07-14,Frank Solich,false,retired,Retired,Tim Albin (promoted on July 14),false,2021 NCAA Division I FBS football season
+41,UConn Huskies,2021,in_season,true,2021-09-06,Randy Edsall,false,resigned,Resigned,Lou Spanos,true,2021 NCAA Division I FBS football season
+30,USC Trojans,2021,in_season,true,2021-09-13,Clay Helton,false,fired,Fired,Donte Williams,true,2021 NCAA Division I FBS football season
+290,Georgia Southern Eagles,2021,in_season,true,2021-09-26,Chad Lunsford,false,fired,Fired,Kevin Whitley,true,2021 NCAA Division I FBS football season
+265,Washington State Cougars,2021,in_season,true,2021-10-18,Nick Rolovich,false,fired,Fired,Jake Dickert (named full time on November 27),false,2021 NCAA Division I FBS football season
+2641,Texas Tech Red Raiders,2021,in_season,true,2021-10-25,Matt Wells,false,fired,Fired,Sonny Cumbie,true,2021 NCAA Division I FBS football season
+2628,TCU Horned Frogs,2021,in_season,true,2021-10-31,Gary Patterson,false,fired,Parted ways,Jerry Kill,true,2021 NCAA Division I FBS football season
+2006,Akron Zips,2021,in_season,true,2021-11-04,Tom Arth,false,fired,Fired,Oscar Rodriguez,true,2021 NCAA Division I FBS football season
+113,Massachusetts Minutemen,2021,in_season,true,2021-11-07,Walt Bell,false,fired,Fired,Alex Miller,true,2021 NCAA Division I FBS football season
+264,Washington Huskies,2021,in_season,true,2021-11-14,Jimmy Lake,false,fired,Fired,Bob Gregory,true,2021 NCAA Division I FBS football season
+259,Virginia Tech Hokies,2021,in_season,true,2021-11-16,Justin Fuente,false,fired,Parted ways,J. C. Price,true,2021 NCAA Division I FBS football season
+290,Georgia Southern Eagles,2022,end_of_season,false,2021-11-02,Kevin Whitley,true,interim_replaced,Permanent replacement,Clay Helton,false,2021 NCAA Division I FBS football season
+2641,Texas Tech Red Raiders,2022,end_of_season,false,2021-11-08,Sonny Cumbie,true,interim_replaced,Permanent replacement,Joey McGuire,false,2021 NCAA Division I FBS football season
+2229,Florida International Panthers,2022,end_of_season,false,2021-11-10,Butch Davis,false,fired,Will not return after the 2021 season,Mike MacIntyre,false,2021 NCAA Division I FBS football season
+41,UConn Huskies,2022,end_of_season,false,2021-11-11,Lou Spanos,true,interim_replaced,Permanent replacement,Jim Mora,false,2021 NCAA Division I FBS football season
+57,Florida Gators,2022,in_season,false,2021-11-21,Dan Mullen,false,fired,Fired,Greg Knox,true,2021 NCAA Division I FBS football season
+113,Massachusetts Minutemen,2022,end_of_season,false,2021-11-21,Alex Miller,true,interim_replaced,Permanent replacement,Don Brown,false,2021 NCAA Division I FBS football season
+2653,Troy Trojans,2022,in_season,false,2021-11-21,Chip Lindsey,false,fired,Fired,Brandon Hall,true,2021 NCAA Division I FBS football season
+2348,Louisiana Tech Bulldogs,2022,end_of_season,false,2021-11-26,Skip Holtz,false,fired,Fired,Sonny Cumbie,false,2021 NCAA Division I FBS football season
+2567,SMU Mustangs,2022,in_season,false,2021-11-26,Sonny Dykes,false,left_for_job,Hired by TCU,Jim Leavitt,true,2021 NCAA Division I FBS football season
+2628,TCU Horned Frogs,2022,end_of_season,false,2021-11-26,Jerry Kill,true,interim_replaced,Permanent replacement,Sonny Dykes,false,2021 NCAA Division I FBS football season
+166,New Mexico State Aggies,2022,end_of_season,false,2021-11-27,Doug Martin,false,fired,Fired,Jerry Kill,false,2021 NCAA Division I FBS football season
+150,Duke Blue Devils,2022,end_of_season,false,2021-11-28,David Cutcliffe,false,fired,Parted ways,Mike Elko,false,2021 NCAA Division I FBS football season
+57,Florida Gators,2022,end_of_season,false,2021-11-28,Greg Knox,true,interim_replaced,Permanent replacement,Billy Napier,false,2021 NCAA Division I FBS football season
+99,LSU Tigers,2022,in_season,false,2021-11-28,Ed Orgeron,false,fired,Parted ways,Brad Davis,true,2021 NCAA Division I FBS football season
+201,Oklahoma Sooners,2022,in_season,false,2021-11-28,Lincoln Riley,false,left_for_job,Hired by USC,Bob Stoops,true,2021 NCAA Division I FBS football season
+30,USC Trojans,2022,end_of_season,false,2021-11-28,Donte Williams,true,interim_replaced,Permanent replacement,Lincoln Riley,false,2021 NCAA Division I FBS football season
+278,Fresno State Bulldogs,2022,in_season,false,2021-11-29,Kalen DeBoer,false,left_for_job,Hired by Washington,Lee Marks,true,2021 NCAA Division I FBS football season
+99,LSU Tigers,2022,end_of_season,false,2021-11-29,Brad Davis,true,interim_replaced,Permanent replacement,Brian Kelly,false,2021 NCAA Division I FBS football season
+87,Notre Dame Fighting Irish,2022,in_season,false,2021-11-29,Brian Kelly,false,left_for_job,Hired by LSU,Marcus Freeman (promoted on December 3),false,2021 NCAA Division I FBS football season
+2567,SMU Mustangs,2022,end_of_season,false,2021-11-29,Jim Leavitt,true,interim_replaced,Permanent replacement,Rhett Lashlee,false,2021 NCAA Division I FBS football season
+218,Temple Owls,2022,end_of_season,false,2021-11-29,Rod Carey,false,fired,Fired,Stan Drayton,false,2021 NCAA Division I FBS football season
+264,Washington Huskies,2022,end_of_season,false,2021-11-29,Bob Gregory,true,interim_replaced,Permanent replacement,Kalen DeBoer,false,2021 NCAA Division I FBS football season
+259,Virginia Tech Hokies,2022,end_of_season,false,2021-11-30,J. C. Price,true,interim_replaced,Permanent replacement,Brent Pry,false,2021 NCAA Division I FBS football season
+36,Colorado State Rams,2022,end_of_season,false,2021-12-02,Steve Addazio,false,fired,Fired,Jay Norvell,false,2021 NCAA Division I FBS football season
+2653,Troy Trojans,2022,end_of_season,false,2021-12-02,Brandon Hall,true,interim_replaced,Permanent replacement,Jon Sumrall,false,2021 NCAA Division I FBS football season
+258,Virginia Cavaliers,2022,end_of_season,false,2021-12-02,Bronco Mendenhall,false,resigned,Resigned,Tony Elliott,false,2021 NCAA Division I FBS football season
+2006,Akron Zips,2022,end_of_season,false,2021-12-04,Oscar Rodriguez,true,interim_replaced,Permanent replacement,Joe Moorhead,false,2021 NCAA Division I FBS football season
+309,Louisiana Ragin' Cajuns,2022,in_season,false,2021-12-05,Billy Napier,false,left_for_job,Hired by Florida,Michael Desormeaux (promoted on December 5),false,2021 NCAA Division I FBS football season
+201,Oklahoma Sooners,2022,end_of_season,false,2021-12-05,Bob Stoops,true,interim_replaced,Permanent replacement,Brent Venables,false,2021 NCAA Division I FBS football season
+2390,Miami Hurricanes,2022,in_season,false,2021-12-06,Manny Diaz,false,fired,Fired,Jess Simpson,true,2021 NCAA Division I FBS football season
+2390,Miami Hurricanes,2022,end_of_season,false,2021-12-06,Jess Simpson,true,interim_replaced,Permanent replacement,Mario Cristobal,false,2021 NCAA Division I FBS football season
+2440,Nevada Wolf Pack,2022,in_season,false,2021-12-06,Jay Norvell,false,left_for_job,Hired by Colorado State,Vai Taua,true,2021 NCAA Division I FBS football season
+2483,Oregon Ducks,2022,in_season,false,2021-12-06,Mario Cristobal,false,left_for_job,Hired by Miami (FL),Bryan McClendon,true,2021 NCAA Division I FBS football season
+278,Fresno State Bulldogs,2022,end_of_season,false,2021-12-08,Lee Marks,true,interim_replaced,Permanent replacement,Jeff Tedford,false,2021 NCAA Division I FBS football season
+2440,Nevada Wolf Pack,2022,end_of_season,false,2021-12-10,Vai Taua,true,interim_replaced,Permanent replacement,Ken Wilson,false,2021 NCAA Division I FBS football season
+2483,Oregon Ducks,2022,end_of_season,false,2021-12-11,Bryan McClendon,true,interim_replaced,Permanent replacement,Dan Lanning,false,2021 NCAA Division I FBS football season
+62,Hawai'i Rainbow Warriors,2022,end_of_season,false,2022-01-14,Todd Graham,false,resigned,Resigned,Timmy Chang,false,2021 NCAA Division I FBS football season
+5,UAB Blazers,2022,in_season,false,2022-06-24,Bill Clark,false,retired,Retired (effective August 1),Bryant Vincent,true,2022 NCAA Division I FBS football season
+158,Nebraska Cornhuskers,2022,in_season,true,2022-09-11,Scott Frost,false,fired,Fired,Mickey Joseph,true,2022 NCAA Division I FBS football season
+9,Arizona State Sun Devils,2022,in_season,true,2022-09-18,Herm Edwards,false,fired,Fired,Shaun Aguano,true,2022 NCAA Division I FBS football season
+59,Georgia Tech Yellow Jackets,2022,in_season,true,2022-09-25,Geoff Collins,false,fired,Fired,Brent Key (named on November 30),false,2022 NCAA Division I FBS football season
+38,Colorado Buffaloes,2022,in_season,true,2022-10-02,Karl Dorrell,false,fired,Fired,Mike Sanford Jr.,true,2022 NCAA Division I FBS football season
+275,Wisconsin Badgers,2022,in_season,true,2022-10-02,Paul Chryst,false,fired,Fired,Jim Leonhard,true,2022 NCAA Division I FBS football season
+2429,Charlotte 49ers,2022,in_season,true,2022-10-23,Will Healy,false,fired,Fired,Peter Rossomando,true,2022 NCAA Division I FBS football season
+2,Auburn Tigers,2022,in_season,true,2022-10-31,Bryan Harsin,false,fired,Fired,Cadillac Williams,true,2022 NCAA Division I FBS football season
+58,South Florida Bulls,2022,in_season,true,2022-11-06,Jeff Scott,false,fired,Fired,Daniel Da Prato,true,2022 NCAA Division I FBS football season
+2429,Charlotte 49ers,2023,end_of_season,false,2022-11-15,Peter Rossomando,true,interim_replaced,Permanent replacement,Biff Poggi,false,2022 NCAA Division I FBS football season
+158,Nebraska Cornhuskers,2023,end_of_season,false,2022-11-25,Mickey Joseph,true,interim_replaced,Permanent replacement,Matt Rhule,false,2022 NCAA Division I FBS football season
+9,Arizona State Sun Devils,2023,end_of_season,false,2022-11-26,Shaun Aguano,true,interim_replaced,Permanent replacement,Kenny Dillingham,false,2022 NCAA Division I FBS football season
+2226,Florida Atlantic Owls,2023,end_of_season,false,2022-11-26,Willie Taggart,false,fired,Fired,Tom Herman,false,2022 NCAA Division I FBS football season
+2132,Cincinnati Bearcats,2023,in_season,false,2022-11-27,Luke Fickell,false,left_for_job,Hired as head coach by Wisconsin,Kerry Coombs,true,2022 NCAA Division I FBS football season
+24,Stanford Cardinal,2023,end_of_season,false,2022-11-27,David Shaw,false,resigned,Resigned,Troy Taylor,false,2022 NCAA Division I FBS football season
+326,Texas State Bobcats,2023,end_of_season,false,2022-11-27,Jake Spavital,false,fired,Fired,G. J. Kinne,false,2022 NCAA Division I FBS football season
+202,Tulsa Golden Hurricane,2023,end_of_season,false,2022-11-27,Philip Montgomery,false,fired,Fired,Kevin Wilson,false,2022 NCAA Division I FBS football season
+275,Wisconsin Badgers,2023,end_of_season,false,2022-11-27,Jim Leonhard,true,interim_replaced,Permanent replacement,Luke Fickell,false,2022 NCAA Division I FBS football season
+2,Auburn Tigers,2023,end_of_season,false,2022-11-28,Cadillac Williams,true,interim_replaced,Permanent replacement,Hugh Freeze,false,2022 NCAA Division I FBS football season
+2335,Liberty Flames,2023,in_season,false,2022-11-28,Hugh Freeze,false,left_for_job,Hired as head coach by Auburn,Josh Aldridge,true,2022 NCAA Division I FBS football season
+2439,UNLV Rebels,2023,end_of_season,false,2022-11-28,Marcus Arroyo,false,fired,Fired,Barry Odom,false,2022 NCAA Division I FBS football season
+2711,Western Michigan Broncos,2023,end_of_season,false,2022-11-28,Tim Lester,false,fired,Fired,Lance Taylor,false,2022 NCAA Division I FBS football season
+5,UAB Blazers,2023,end_of_season,false,2022-11-30,Bryant Vincent,true,interim_replaced,Permanent replacement,Trent Dilfer,false,2022 NCAA Division I FBS football season
+38,Colorado Buffaloes,2023,end_of_season,false,2022-12-03,Mike Sanford Jr.,true,interim_replaced,Permanent replacement,Deion Sanders,false,2022 NCAA Division I FBS football season
+58,South Florida Bulls,2023,end_of_season,false,2022-12-03,Daniel Da Prato,true,interim_replaced,Permanent replacement,Alex Golesh,false,2022 NCAA Division I FBS football season
+324,Coastal Carolina Chanticleers,2023,in_season,false,2022-12-04,Jamey Chadwell,false,left_for_job,Hired as head coach by Liberty,Chad Staggs,true,2022 NCAA Division I FBS football season
+324,Coastal Carolina Chanticleers,2023,end_of_season,false,2022-12-04,Chad Staggs,true,interim_replaced,Permanent replacement,Tim Beck,false,2022 NCAA Division I FBS football season
+2335,Liberty Flames,2023,end_of_season,false,2022-12-04,Josh Aldridge,true,interim_replaced,Permanent replacement,Jamey Chadwell,false,2022 NCAA Division I FBS football season
+249,North Texas Mean Green,2023,in_season,false,2022-12-04,Seth Littrell,false,fired,Fired,Phil Bennett,true,2022 NCAA Division I FBS football season
+2132,Cincinnati Bearcats,2023,end_of_season,false,2022-12-05,Kerry Coombs,true,interim_replaced,Permanent replacement,Scott Satterfield,false,2022 NCAA Division I FBS football season
+2309,Kent State Golden Flashes,2023,end_of_season,false,2022-12-05,Sean Lewis,false,fired,Hired as offensive coordinator by Colorado,Kenni Burns,false,2022 NCAA Division I FBS football season
+97,Louisville Cardinals,2023,in_season,false,2022-12-05,Scott Satterfield,false,left_for_job,Hired as head coach by Cincinnati,Deion Branch,true,2022 NCAA Division I FBS football season
+97,Louisville Cardinals,2023,end_of_season,false,2022-12-07,Deion Branch,true,interim_replaced,Permanent replacement,Jeff Brohm,false,2022 NCAA Division I FBS football season
+2509,Purdue Boilermakers,2023,in_season,false,2022-12-07,Jeff Brohm,false,left_for_job,Hired as head coach by Louisville,Brian Brohm,true,2022 NCAA Division I FBS football season
+2426,Navy Midshipmen,2023,end_of_season,false,2022-12-11,Ken Niumatalolo,false,fired,Fired,Brian Newberry,false,2022 NCAA Division I FBS football season
+344,Mississippi State Bulldogs,2023,in_season,false,2022-12-12,Mike Leach,false,health,Died,Zach Arnett (named on December 14),false,2022 NCAA Division I FBS football season
+249,North Texas Mean Green,2023,end_of_season,false,2022-12-13,Phil Bennett,true,interim_replaced,Permanent replacement,Eric Morris,false,2022 NCAA Division I FBS football season
+2509,Purdue Boilermakers,2023,end_of_season,false,2022-12-13,Brian Brohm,true,interim_replaced,Permanent replacement,Ryan Walters,false,2022 NCAA Division I FBS football season
+77,Northwestern Wildcats,2023,in_season,false,2023-07-10,Pat Fitzgerald,false,fired,Fired,David Braun (named full-time on November 15),false,2023 NCAA Division I FBS football season
+127,Michigan State Spartans,2023,in_season,true,2023-09-27,Mel Tucker,false,fired,Fired,Harlon Barnett,true,2023 NCAA Division I FBS football season
+68,Boise State Broncos,2023,in_season,true,2023-11-12,Andy Avalos,false,fired,"Fired{{cite web|first=Tom|last=Fornelli|url=https://www.cbssports.com/college-football/news/boise-state-to-fire-andy-avalos-broncos-set-to-move-on-from-coach-amid-5-5-record-in-2023-season-per-report/|title=Boise State to fire Andy Avalos: Broncos set to move on from coach amid 5-5 record in 2023 season, per report","work=CBS Sports|date=November 12, 2023|access-date=November 12, 2023}}",false,2023 NCAA Division I FBS football season
+245,Texas A&M Aggies,2023,in_season,true,2023-11-12,Jimbo Fisher,false,fired,Fired,Elijah Robinson,true,2023 NCAA Division I FBS football season
+344,Mississippi State Bulldogs,2023,in_season,true,2023-11-13,Zach Arnett,false,fired,Fired{{cite web|first=Chris|last=Low|url=https://www.espn.com/college-football/story/_/id/38888927/mississippi-state-fires-head-football-coach-zach-arnett|title=Mississippi State fires head football coach Zach Arnett,"publisher=ESPN|date=November 13, 2023|access-date=November 13, 2023}}",false,2023 NCAA Division I FBS football season
+183,Syracuse Orange,2023,in_season,true,2023-11-19,Dino Babers,false,fired,Fired,Nunzio Campanile,true,2023 NCAA Division I FBS football season
+21,San Diego State Aztecs,2024,end_of_season,false,2023-11-13,Brady Hoke,false,retired,Retired (effective at end of season),Sean Lewis,false,2023 NCAA Division I FBS football season
+127,Michigan State Spartans,2024,end_of_season,false,2023-11-25,Harlon Barnett,true,interim_replaced,Hired as Defensive Backs Coach by Northwestern,Jonathan Smith,false,2023 NCAA Division I FBS football season
+167,New Mexico Lobos,2024,end_of_season,false,2023-11-25,Danny Gonzales,false,fired,Fired{{cite web|url=https://www.espn.com/college-football/story/_/id/38980423/new-mexico-fires-danny-gonzales-four-years|title=New Mexico fires Danny Gonzales after 4 years as head coach,"last=Thamel|date=November 25, 2023|access-date=November 25, 2023|website=Espn.com|publisher=ESPN}}",false,2023 NCAA Division I FBS football season
+204,Oregon State Beavers,2024,in_season,false,2023-11-25,Jonathan Smith,false,left_for_job,Hired by Michigan State,Kefense Hynson,true,2023 NCAA Division I FBS football season
+248,Houston Cougars,2024,end_of_season,false,2023-11-26,Dana Holgorsen,false,fired,Fired,Willie Fritz,false,2023 NCAA Division I FBS football season
+84,Indiana Hoosiers,2024,end_of_season,false,2023-11-26,Tom Allen,false,fired,Hired As Defensive Coordinator/Linebackers Coach by Penn State,Curt Cignetti,false,2023 NCAA Division I FBS football season
+344,Mississippi State Bulldogs,2024,end_of_season,false,2023-11-26,Greg Knox,true,interim_replaced,Permanent replacement,Jeff Lebby,false,2023 NCAA Division I FBS football season
+2433,UL Monroe Warhawks,2024,end_of_season,false,2023-11-26,Terry Bowden,false,fired,Fired,Bryant Vincent,false,2023 NCAA Division I FBS football season
+2638,UTEP Miners,2024,end_of_season,false,2023-11-26,Dana Dimel,false,fired,Fired,Scotty Walden,false,2023 NCAA Division I FBS football season
+150,Duke Blue Devils,2024,in_season,false,2023-11-27,| Mike Elko,false,left_for_job,|Hired by Texas A&M,Trooper Taylor,true,2023 NCAA Division I FBS football season
+2393,Middle Tennessee Blue Raiders,2024,end_of_season,false,2023-11-27,Rick Stockstill,false,fired,Fired,Derek Mason,false,2023 NCAA Division I FBS football season
+245,Texas A&M Aggies,2024,end_of_season,false,2023-11-27,Elijah Robinson,true,interim_replaced,Hired as Defensive Coordinator By Syracuse,Mike Elko,false,2023 NCAA Division I FBS football season
+204,Oregon State Beavers,2024,end_of_season,false,2023-11-28,Kefense Hynson,true,interim_replaced,Permanent replacement,Trent Bray,false,2023 NCAA Division I FBS football season
+183,Syracuse Orange,2024,end_of_season,false,2023-11-28,Nunzio Campanile,true,interim_replaced,Permanent replacement,Fran Brown,false,2023 NCAA Division I FBS football season
+256,James Madison Dukes,2024,in_season,false,2023-11-30,Curt Cignetti,false,left_for_job,Hired by Indiana,Damian Wroblewski,true,2023 NCAA Division I FBS football season
+2440,Nevada Wolf Pack,2024,end_of_season,false,2023-12-01,Ken Wilson,false,fired,Fired,Jeff Choate,false,2023 NCAA Division I FBS football season
+2655,Tulane Green Wave,2024,in_season,false,2023-12-03,Willie Fritz,false,left_for_job,Hired by Houston,Slade Nagle,true,2023 NCAA Division I FBS football season
+2751,Wyoming Cowboys,2024,end_of_season,false,2023-12-06,Craig Bohl,false,retired,Retired (effective at end of season),Jay Sawvel,false,2023 NCAA Division I FBS football season
+150,Duke Blue Devils,2024,end_of_season,false,2023-12-07,Trooper Taylor,true,interim_replaced,Hired as Associate Head Coach/Running Backs Coach by Texas A&M,Manny Diaz,false,2023 NCAA Division I FBS football season
+256,James Madison Dukes,2024,end_of_season,false,2023-12-07,Damian Wroblewski,true,interim_replaced,Hired as Assistant Offensive Line Coach by Maryland,Bob Chesney,false,2023 NCAA Division I FBS football season
+2653,Troy Trojans,2024,in_season,false,2023-12-08,Jon Sumrall,false,left_for_job,Hired by Tulane,Greg Gasparato,true,2023 NCAA Division I FBS football season
+2655,Tulane Green Wave,2024,end_of_season,false,2023-12-08,Slade Nagle,true,interim_replaced,Hired as Special teams/Tight Ends Coach by LSU,Jon Sumrall,false,2023 NCAA Division I FBS football season
+2653,Troy Trojans,2024,end_of_season,false,2023-12-18,Greg Gasparato,true,interim_replaced,Hired as Defensive Coordinator by Tulane,Gerad Parker,false,2023 NCAA Division I FBS football season
+166,New Mexico State Aggies,2024,end_of_season,false,2023-12-23,Jerry Kill,false,fired,Hired as Consultant by Vanderbilt,Tony Sanchez,false,2023 NCAA Division I FBS football season
+333,Alabama Crimson Tide,2024,end_of_season,false,2024-01-10,Nick Saban,false,retired,Retired,Kalen DeBoer,false,2023 NCAA Division I FBS football season
+264,Washington Huskies,2024,end_of_season,false,2024-01-12,Kalen DeBoer,false,left_for_job,Hired by Alabama,Jedd Fisch,false,2023 NCAA Division I FBS football season
+12,Arizona Wildcats,2024,end_of_season,false,2024-01-14,Jedd Fisch,false,left_for_job,Hired by Washington,Brent Brennan,false,2023 NCAA Division I FBS football season
+6,South Alabama Jaguars,2024,end_of_season,false,2024-01-15,Kane Wommack,false,fired,Hired as co-defensive coordinator by Alabama,Major Applewhite,false,2023 NCAA Division I FBS football season
+2084,Buffalo Bulls,2024,end_of_season,false,2024-01-16,Maurice Linguist,false,fired,Hired as co-defensive coordinator by Alabama,Pete Lembo,false,2023 NCAA Division I FBS football season
+23,San José State Spartans,2024,end_of_season,false,2024-01-16,Brent Brennan,false,left_for_job,Hired by Arizona,Ken Niumatalolo,false,2023 NCAA Division I FBS football season
+130,Michigan Wolverines,2024,end_of_season,false,2024-01-24,Jim Harbaugh,false,left_for_job,Hired by Los Angeles Chargers,Sherrone Moore,false,2023 NCAA Division I FBS football season
+103,Boston College Eagles,2024,end_of_season,false,2024-01-31,Jeff Hafley,false,fired,Hired as defensive coordinator by Green Bay Packers,Bill O'Brien,false,2023 NCAA Division I FBS football season
+26,UCLA Bruins,2024,end_of_season,false,2024-02-09,Chip Kelly,false,fired,Hired as offensive coordinator by Ohio State,DeShaun Foster,false,2023 NCAA Division I FBS football season
+2247,Georgia State Panthers,2024,end_of_season,false,2024-02-15,Shawn Elliott,false,other,Hired as tight ends coach by South Carolina,Dell McGee,false,2023 NCAA Division I FBS football season
+278,Fresno State Bulldogs,2024,in_season,false,2024-07-15,Jeff Tedford,false,resigned,Resigned,Tim Skipper,true,2024 NCAA Division I FBS football season
+328,Utah State Aggies,2024,in_season,false,2024-07-18,Blake Anderson,false,fired,Fired,Nate Dreiling,true,2024 NCAA Division I FBS football season
+151,East Carolina Pirates,2024,in_season,true,2024-10-20,Mike Houston,false,fired,Fired,Blake Harrell (initially interim; named permanent on November 25),true,2024 NCAA Division I FBS football season
+2572,Southern Miss Golden Eagles,2024,in_season,true,2024-10-20,Will Hall,false,fired,Fired,Reed Stringer,true,2024 NCAA Division I FBS football season
+242,Rice Owls,2024,in_season,true,2024-10-27,Mike Bloomgren,false,fired,Fired,Pete Alamar,true,2024 NCAA Division I FBS football season
+338,Kennesaw State Owls,2024,in_season,true,2024-11-10,Brian Bohannon,false,fired,Fired,Chandler Burks,true,2024 NCAA Division I FBS football season
+2050,Ball State Cardinals,2024,in_season,true,2024-11-16,Mike Neu,false,fired,Fired,Colin Johnson,true,2024 NCAA Division I FBS football season
+218,Temple Owls,2024,in_season,true,2024-11-17,Stan Drayton,false,fired,Fired,Everett Withers,true,2024 NCAA Division I FBS football season
+2429,Charlotte 49ers,2024,in_season,true,2024-11-18,Biff Poggi,false,fired,Fired,Tim Brewster,true,2024 NCAA Division I FBS football season
+2226,Florida Atlantic Owls,2024,in_season,true,2024-11-18,Tom Herman,false,fired,Fired,Chad Lunsford,true,2024 NCAA Division I FBS football season
+113,Massachusetts Minutemen,2024,in_season,true,2024-11-18,Don Brown,false,fired,Fired,Shane Montgomery,true,2024 NCAA Division I FBS football season
+2117,Central Michigan Chippewas,2025,end_of_season,false,2024-11-20,Jim McElwain,false,retired,Retired,Matt Drinkall,false,2024 NCAA Division I FBS football season
+202,Tulsa Golden Hurricane,2025,in_season,false,2024-11-24,Kevin Wilson,false,fired,Fired,Ryan Switzer,true,2024 NCAA Division I FBS football season
+153,North Carolina Tar Heels,2025,in_season,false,2024-11-26,Mack Brown,false,fired,Fired,Freddie Kitchens,true,2024 NCAA Division I FBS football season
+242,Rice Owls,2025,end_of_season,false,2024-11-26,Pete Alamar,true,interim_replaced,Permanent replacement,Scott Abell,false,2024 NCAA Division I FBS football season
+2116,UCF Knights,2025,end_of_season,false,2024-11-30,Gus Malzahn,false,fired,Hired as offensive coordinator by Florida State,Scott Frost,false,2024 NCAA Division I FBS football season
+2229,Florida International Panthers,2025,end_of_season,false,2024-12-01,Mike MacIntyre,false,fired,Fired,Willie Simmons,false,2024 NCAA Division I FBS football season
+338,Kennesaw State Owls,2025,end_of_season,false,2024-12-01,Chandler Burks,true,interim_replaced,Permanent replacement,Jerry Mack,false,2024 NCAA Division I FBS football season
+2509,Purdue Boilermakers,2025,end_of_season,false,2024-12-01,Ryan Walters,false,fired,Fired,Barry Odom,false,2024 NCAA Division I FBS football season
+2534,Sam Houston Bearkats,2025,in_season,false,2024-12-01,K. C. Keeler,false,left_for_job,Hired by Temple,Brad Cornelsen,true,2024 NCAA Division I FBS football season
+218,Temple Owls,2025,end_of_season,false,2024-12-01,Everett Withers,true,interim_replaced,Permanent replacement,K. C. Keeler,false,2024 NCAA Division I FBS football season
+277,West Virginia Mountaineers,2025,in_season,false,2024-12-01,Neal Brown,false,fired,Fired,Chad Scott,true,2024 NCAA Division I FBS football season
+2026,App State Mountaineers,2025,end_of_season,false,2024-12-02,Shawn Clark,false,fired,Fired,Dowell Loggains,false,2024 NCAA Division I FBS football season
+2226,Florida Atlantic Owls,2025,end_of_season,false,2024-12-02,Chad Lunsford,true,interim_replaced,Permanent replacement,Zach Kittley,false,2024 NCAA Division I FBS football season
+2050,Ball State Cardinals,2025,end_of_season,false,2024-12-04,Colin Johnson,true,interim_replaced,Permanent replacement,Mike Uremovich,false,2024 NCAA Division I FBS football season
+278,Fresno State Bulldogs,2025,end_of_season,false,2024-12-04,Tim Skipper,true,interim_replaced,Permanent replacement,Matt Entz,false,2024 NCAA Division I FBS football season
+113,Massachusetts Minutemen,2025,end_of_season,false,2024-12-04,Shane Montgomery,true,interim_replaced,Permanent replacement,Joe Harasymiak,false,2024 NCAA Division I FBS football season
+167,New Mexico Lobos,2025,end_of_season,false,2024-12-06,Bronco Mendenhall,false,left_for_job,Hired by Utah State,Jason Eck,false,2024 NCAA Division I FBS football season
+328,Utah State Aggies,2025,end_of_season,false,2024-12-06,Nate Dreiling,true,interim_replaced,Permanent replacement,Bronco Mendenhall,false,2024 NCAA Division I FBS football season
+2429,Charlotte 49ers,2025,end_of_season,false,2024-12-07,Tim Brewster,true,interim_replaced,Permanent replacement,Tim Albin,false,2024 NCAA Division I FBS football season
+195,Ohio Bobcats,2025,in_season,false,2024-12-07,Tim Albin,false,left_for_job,Hired by Charlotte,Brian Smith (initially interim; named permanent on December 18),true,2024 NCAA Division I FBS football season
+276,Marshall Thundering Herd,2025,in_season,false,2024-12-08,Charles Huff,false,left_for_job,Hired by Southern Miss,Telly Lockette,true,2024 NCAA Division I FBS football season
+276,Marshall Thundering Herd,2025,end_of_season,false,2024-12-08,Telly Lockette,true,interim_replaced,Permanent replacement,Tony Gibson,false,2024 NCAA Division I FBS football season
+2572,Southern Miss Golden Eagles,2025,end_of_season,false,2024-12-08,Reed Stringer,true,interim_replaced,Permanent replacement,Charles Huff,false,2024 NCAA Division I FBS football season
+202,Tulsa Golden Hurricane,2025,end_of_season,false,2024-12-08,Ryan Switzer,true,interim_replaced,Permanent replacement,Tre Lamb,false,2024 NCAA Division I FBS football season
+2439,UNLV Rebels,2025,in_season,false,2024-12-08,Barry Odom,false,left_for_job,Hired by Purdue,Del Alexander,true,2024 NCAA Division I FBS football season
+153,North Carolina Tar Heels,2025,end_of_season,false,2024-12-11,Freddie Kitchens,true,interim_replaced,Permanent replacement,Bill Belichick,false,2024 NCAA Division I FBS football season
+55,Jacksonville State Gamecocks,2025,in_season,false,2024-12-12,Rich Rodriguez,false,left_for_job,Hired by West Virginia,Rod Smith,true,2024 NCAA Division I FBS football season
+2439,UNLV Rebels,2025,end_of_season,false,2024-12-12,Del Alexander,true,interim_replaced,Permanent replacement,Dan Mullen,false,2024 NCAA Division I FBS football season
+277,West Virginia Mountaineers,2025,end_of_season,false,2024-12-12,Chad Scott,true,interim_replaced,Permanent replacement,Rich Rodriguez,false,2024 NCAA Division I FBS football season
+154,Wake Forest Demon Deacons,2025,end_of_season,false,2024-12-16,Dave Clawson,false,resigned,Resigned,Jake Dickert,false,2024 NCAA Division I FBS football season
+2534,Sam Houston Bearkats,2025,end_of_season,false,2024-12-18,Brad Cornelsen,true,interim_replaced,Permanent replacement,Phil Longo,false,2024 NCAA Division I FBS football season
+265,Washington State Cougars,2025,in_season,false,2024-12-18,Jake Dickert,false,left_for_job,Hired by Wake Forest,Pete Kaligis,true,2024 NCAA Division I FBS football season
+55,Jacksonville State Gamecocks,2025,end_of_season,false,2024-12-20,Rod Smith,true,interim_replaced,Permanent replacement,Charles Kelly,false,2024 NCAA Division I FBS football season
+265,Washington State Cougars,2025,end_of_season,false,2024-12-28,Pete Kaligis,true,interim_replaced,Permanent replacement,Jimmy Rogers,false,2024 NCAA Division I FBS football season
+189,Bowling Green Falcons,2025,end_of_season,false,2025-02-28,Scot Loeffler,false,other,Hired as QB coach by Philadelphia Eagles,Eddie George,false,2024 NCAA Division I FBS football season
+24,Stanford Cardinal,2025,end_of_season,false,2025-03-25,Troy Taylor,false,fired,Fired,Frank Reich,true,2024 NCAA Division I FBS football season
+2309,Kent State Golden Flashes,2025,end_of_season,false,2025-04-11,Kenni Burns,false,fired,Fired,Mark Carney (initially interim; named permanent on October 30),true,2024 NCAA Division I FBS football season
+26,UCLA Bruins,2025,in_season,true,2025-09-14,DeShaun Foster,false,fired,Fired,Tim Skipper,true,2025 NCAA Division I FBS football season
+259,Virginia Tech Hokies,2025,in_season,true,2025-09-14,Brent Pry,false,fired,Fired,Philip Montgomery,true,2025 NCAA Division I FBS football season
+197,Oklahoma State Cowboys,2025,in_season,true,2025-09-23,Mike Gundy,false,fired,Fired,Doug Meacham,true,2025 NCAA Division I FBS football season
+8,Arkansas Razorbacks,2025,in_season,true,2025-09-28,Sam Pittman,false,fired,Fired,Bobby Petrino,true,2025 NCAA Division I FBS football season
+204,Oregon State Beavers,2025,in_season,true,2025-10-12,Trent Bray,false,fired,Fired,Robb Akey,true,2025 NCAA Division I FBS football season
+213,Penn State Nittany Lions,2025,in_season,true,2025-10-12,James Franklin,false,fired,Fired,Terry Smith,true,2025 NCAA Division I FBS football season
+5,UAB Blazers,2025,in_season,true,2025-10-12,Trent Dilfer,false,fired,Fired,Alex Mortensen,false,2025 NCAA Division I FBS football season
+36,Colorado State Rams,2025,in_season,true,2025-10-19,Jay Norvell,false,fired,Fired,Tyson Summers,true,2025 NCAA Division I FBS football season
+57,Florida Gators,2025,in_season,true,2025-10-19,Billy Napier,false,fired,Fired,Billy Gonzales,true,2025 NCAA Division I FBS football season
+99,LSU Tigers,2025,in_season,true,2025-10-26,Brian Kelly,false,fired,Fired,Frank Wilson,true,2025 NCAA Division I FBS football season
+2,Auburn Tigers,2025,in_season,true,2025-11-02,Hugh Freeze,false,fired,Fired,D. J. Durkin,true,2025 NCAA Division I FBS football season
+259,Virginia Tech Hokies,2026,end_of_season,false,2025-11-17,Philip Montgomery,true,interim_replaced,Permanent replacement,James Franklin,false,2025 NCAA Division I FBS football season
+25,California Golden Bears,2026,in_season,false,2025-11-23,Justin Wilcox,false,fired,Fired,Nick Rolovich,true,2025 NCAA Division I FBS football season
+249,North Texas Mean Green,2026,in_season,false,2025-11-25,Eric Morris,false,left_for_job,Hired by Oklahoma State,Drew Svoboda,true,2025 NCAA Division I FBS football season
+249,North Texas Mean Green,2026,end_of_season,false,2025-11-25,Drew Svoboda,true,interim_replaced,Permanent replacement,Neal Brown,false,2025 NCAA Division I FBS football season
+197,Oklahoma State Cowboys,2026,end_of_season,false,2025-11-25,Doug Meacham,true,interim_replaced,Permanent replacement,Eric Morris,false,2025 NCAA Division I FBS football season
+36,Colorado State Rams,2026,end_of_season,false,2025-11-26,Tyson Summers,true,interim_replaced,Permanent replacement,Jim L. Mora,false,2025 NCAA Division I FBS football season
+41,UConn Huskies,2026,in_season,false,2025-11-26,Jim L. Mora,false,left_for_job,Hired by Colorado State,Gordon Sammis,true,2025 NCAA Division I FBS football season
+204,Oregon State Beavers,2026,end_of_season,false,2025-11-28,Robb Akey,true,interim_replaced,Permanent replacement,JaMarcus Shephard,false,2025 NCAA Division I FBS football season
+24,Stanford Cardinal,2026,end_of_season,false,2025-11-28,Frank Reich,true,interim_replaced,Permanent replacement,Tavita Pritchard,false,2025 NCAA Division I FBS football season
+8,Arkansas Razorbacks,2026,end_of_season,false,2025-11-30,Bobby Petrino,true,interim_replaced,Permanent replacement,Ryan Silverfield,false,2025 NCAA Division I FBS football season
+2,Auburn Tigers,2026,end_of_season,false,2025-11-30,D. J. Durkin,true,interim_replaced,Permanent replacement,Alex Golesh,false,2025 NCAA Division I FBS football season
+324,Coastal Carolina Chanticleers,2026,in_season,false,2025-11-30,Tim Beck,false,fired,Fired,Jeremiah Johnson,true,2025 NCAA Division I FBS football season
+57,Florida Gators,2026,end_of_season,false,2025-11-30,Billy Gonzales,true,interim_replaced,Permanent replacement,Jon Sumrall,false,2025 NCAA Division I FBS football season
+96,Kentucky Wildcats,2026,end_of_season,false,2025-11-30,Mark Stoops,false,fired,Fired,Will Stein,false,2025 NCAA Division I FBS football season
+99,LSU Tigers,2026,end_of_season,false,2025-11-30,Frank Wilson,true,interim_replaced,Permanent replacement,Lane Kiffin,false,2025 NCAA Division I FBS football season
+235,Memphis Tigers,2026,in_season,false,2025-11-30,Ryan Silverfield,false,left_for_job,Hired by Arkansas,Reggie Howard,true,2025 NCAA Division I FBS football season
+127,Michigan State Spartans,2026,end_of_season,false,2025-11-30,Jonathan Smith,false,fired,Fired,Pat Fitzgerald,false,2025 NCAA Division I FBS football season
+145,Ole Miss Rebels,2026,in_season,false,2025-11-30,Lane Kiffin,false,left_for_job,Hired by LSU,Pete Golding,false,2025 NCAA Division I FBS football season
+58,South Florida Bulls,2026,in_season,false,2025-11-30,Alex Golesh,false,left_for_job,Hired by Auburn,Kevin Patrick,true,2025 NCAA Division I FBS football season
+2655,Tulane Green Wave,2026,end_of_season,false,2025-11-30,Jon Sumrall,false,left_for_job,Hired by Florida,Will Hall,false,2025 NCAA Division I FBS football season
+2306,Kansas State Wildcats,2026,end_of_season,false,2025-12-03,Chris Klieman,false,retired,Retired,Collin Klein,false,2025 NCAA Division I FBS football season
+58,South Florida Bulls,2026,end_of_season,false,2025-12-03,Kevin Patrick,true,interim_replaced,Permanent replacement,Brian Hartline,false,2025 NCAA Division I FBS football season
+25,California Golden Bears,2026,end_of_season,false,2025-12-05,Nick Rolovich,true,interim_replaced,Permanent replacement,Tosh Lupoi,false,2025 NCAA Division I FBS football season
+66,Iowa State Cyclones,2026,end_of_season,false,2025-12-05,Matt Campbell,false,left_for_job,Hired by Penn State,Jimmy Rogers,false,2025 NCAA Division I FBS football season
+213,Penn State Nittany Lions,2026,end_of_season,false,2025-12-05,Terry Smith,true,interim_replaced,Permanent replacement,Matt Campbell,false,2025 NCAA Division I FBS football season
+265,Washington State Cougars,2026,in_season,false,2025-12-05,Jimmy Rogers,false,left_for_job,Hired by Iowa State,Jesse Bobbit,true,2025 NCAA Division I FBS football season
+256,James Madison Dukes,2026,end_of_season,false,2025-12-06,Bob Chesney,false,left_for_job,Hired by UCLA,Billy Napier,false,2025 NCAA Division I FBS football season
+235,Memphis Tigers,2026,end_of_season,false,2025-12-06,Reggie Howard,true,interim_replaced,Permanent replacement,Charles Huff,false,2025 NCAA Division I FBS football season
+2572,Southern Miss Golden Eagles,2026,in_season,false,2025-12-06,Charles Huff,false,left_for_job,Hired by Memphis,Blake Anderson,false,2025 NCAA Division I FBS football season
+2649,Toledo Rockets,2026,in_season,false,2025-12-06,Jason Candle,false,left_for_job,Hired by UConn,Robert Weiner,true,2025 NCAA Division I FBS football season
+26,UCLA Bruins,2026,end_of_season,false,2025-12-06,Tim Skipper,true,interim_replaced,Permanent replacement,Bob Chesney,false,2025 NCAA Division I FBS football season
+41,UConn Huskies,2026,end_of_season,false,2025-12-06,Gordon Sammis,true,interim_replaced,Permanent replacement,Jason Candle,false,2025 NCAA Division I FBS football season
+130,Michigan Wolverines,2026,in_season,false,2025-12-10,Sherrone Moore,false,fired,Fired,Biff Poggi,true,2025 NCAA Division I FBS football season
+2649,Toledo Rockets,2026,end_of_season,false,2025-12-10,Robert Weiner,true,interim_replaced,Permanent replacement,Mike Jacobs,false,2025 NCAA Division I FBS football season
+324,Coastal Carolina Chanticleers,2026,end_of_season,false,2025-12-11,Jeremiah Johnson,true,interim_replaced,Permanent replacement,Ryan Beard,false,2025 NCAA Division I FBS football season
+2623,Missouri State Bears,2026,in_season,false,2025-12-11,Ryan Beard,false,left_for_job,Hired by Coastal Carolina,Nick Petrino,true,2025 NCAA Division I FBS football season
+254,Utah Utes,2026,in_season,false,2025-12-12,Kyle Whittingham,false,resigned,Stepped down,Morgan Scalley,false,2025 NCAA Division I FBS football season
+265,Washington State Cougars,2026,end_of_season,false,2025-12-12,Jesse Bobbit,true,interim_replaced,Permanent replacement,Kirby Moore,false,2025 NCAA Division I FBS football season
+195,Ohio Bobcats,2026,in_season,false,2025-12-17,Brian Smith,false,fired,Fired,John Hauser,false,2025 NCAA Division I FBS football season
+2623,Missouri State Bears,2026,end_of_season,false,2025-12-19,Nick Petrino,true,interim_replaced,Permanent replacement,Casey Woods,false,2025 NCAA Division I FBS football season
+130,Michigan Wolverines,2026,end_of_season,false,2025-12-26,Biff Poggi,true,interim_replaced,Permanent replacement,Kyle Whittingham,false,2025 NCAA Division I FBS football season
+2459,Northern Illinois Huskies,2026,end_of_season,false,2026-02-18,Thomas Hammock,false,other,Hired as RB coach by Seattle Seahawks,Rob Harley,true,2025 NCAA Division I FBS football season
