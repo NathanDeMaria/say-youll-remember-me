@@ -18,10 +18,11 @@ from functools import cache
 from importlib.resources import files
 from typing import Any, NamedTuple
 
-from call_it_what_you_want import NCAA, UnknownTeamError, default_teams
+from call_it_what_you_want import NCAA, Teams, UnknownTeamError, default_teams
 
 from .types import (
     NCAAFB,
+    NFL,
     REASONS,
     TABLES,
     CoachChange,
@@ -164,13 +165,30 @@ def quarterback_seasons(league: str = NCAAFB) -> tuple[QuarterbackSeason, ...]:
     return rows_from_csv(QUARTERBACKS, bundled_text(QUARTERBACKS, league).splitlines())
 
 
-def team_id(team: str) -> str:
+# The call-it-what-you-want namespace each league's ids are in. College
+# sports share one; a pro league numbers its teams from scratch, and id 2 is
+# the Bills there and Auburn here.
+_NAMESPACES = {NCAAFB: NCAA, NFL: NFL}
+
+
+def registry(league: str = NCAAFB) -> Teams:
+    """call-it-what-you-want's teams for `league`'s namespace."""
+    try:
+        return default_teams(_NAMESPACES[league])
+    except KeyError:
+        raise ValueError(
+            f"No team namespace for league {league!r}. "
+            f"Available: {', '.join(sorted(_NAMESPACES))}."
+        ) from None
+
+
+def team_id(team: str, league: str = NCAAFB) -> str:
     """The canonical ESPN id for `team`: any name it has gone by, or any of its ids.
 
     Raises call-it-what-you-want's `UnknownTeamError` or `AmbiguousTeamError`
     for a name it can't place on exactly one team.
     """
-    teams = default_teams(NCAA)
+    teams = registry(league)
     try:
         return teams.by_espn_id(team).espn_id
     except UnknownTeamError:
@@ -187,7 +205,7 @@ def departure(team: str, season: int, league: str = NCAAFB) -> CoachChange | Non
     skipped, since the question is about the coach who opened the season.
     If more than one qualifies, the earliest.
     """
-    espn_id = team_id(team)
+    espn_id = team_id(team, league)
     candidates = [
         change
         for change in head_coach_changes(league)
@@ -205,7 +223,7 @@ def departure(team: str, season: int, league: str = NCAAFB) -> CoachChange | Non
 
 def staff(team: str, season: int, league: str = NCAAFB) -> CoachingStaff | None:
     """Who ran `team` in `season`, or None if the file has no row for it."""
-    espn_id = team_id(team)
+    espn_id = team_id(team, league)
     for row in coaching_staffs(league):
         if row.espn_id == espn_id and row.season == season:
             return row
@@ -216,7 +234,7 @@ def quarterbacks(
     team: str, season: int, league: str = NCAAFB
 ) -> tuple[QuarterbackSeason, ...]:
     """`team`'s quarterbacks in `season`, most starts first."""
-    espn_id = team_id(team)
+    espn_id = team_id(team, league)
     found = [
         row
         for row in quarterback_seasons(league)

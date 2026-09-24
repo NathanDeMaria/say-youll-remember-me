@@ -2,14 +2,16 @@
 knows, and that the answers to a few questions anybody could check are right."""
 
 import pytest
-from call_it_what_you_want import NCAA, default_teams
 
 from . import (
     COACHING_STAFFS,
     FIRED,
     HEAD_COACH_CHANGES,
+    LEAGUES,
     LEFT_FOR_JOB,
+    NFL,
     QUARTERBACKS,
+    RESIGNED,
     RETIRED,
     coaching_staffs,
     departure,
@@ -17,6 +19,7 @@ from . import (
     passer_seasons,
     quarterback_seasons,
     quarterbacks,
+    registry,
     rows_from_csv,
     staff,
     team_id,
@@ -25,39 +28,46 @@ from . import (
 )
 from .data import bundled_text
 
-ALL = [
+KINDS = [
     (HEAD_COACH_CHANGES, head_coach_changes),
     (COACHING_STAFFS, coaching_staffs),
     (QUARTERBACKS, quarterback_seasons),
 ]
+ALL = [(kind, read, league) for kind, read in KINDS for league in LEAGUES]
+IDS = [f"{league}-{kind}" for kind, _, league in ALL]
 
 
-@pytest.mark.parametrize("kind, read", ALL, ids=[k for k, _ in ALL])
-def test_every_row_is_a_team_the_registry_knows(kind, read) -> None:
-    teams = default_teams(NCAA)
-    rows = read()
+@pytest.mark.parametrize("kind, read, league", ALL, ids=IDS)
+def test_every_row_is_a_team_the_registry_knows(kind, read, league) -> None:
+    teams = registry(league)
+    rows = read(league)
     assert rows
     unknown = {row.espn_id for row in rows} - {t.espn_id for t in teams}
     assert not unknown, f"{kind} has ESPN ids call-it-what-you-want doesn't: {unknown}"
 
 
-@pytest.mark.parametrize("kind, read", ALL, ids=[k for k, _ in ALL])
-def test_the_files_round_trip(kind, read) -> None:
-    assert to_csv(kind, read()) == bundled_text(kind)
+@pytest.mark.parametrize("kind, read, league", ALL, ids=IDS)
+def test_the_files_round_trip(kind, read, league) -> None:
+    assert to_csv(kind, read(league)) == bundled_text(kind, league)
 
 
-def test_one_staff_per_team_season() -> None:
-    keys = [(r.espn_id, r.season) for r in coaching_staffs()]
+@pytest.mark.parametrize("league", LEAGUES)
+def test_one_staff_per_team_season(league) -> None:
+    keys = [(r.espn_id, r.season) for r in coaching_staffs(league)]
     assert len(keys) == len(set(keys))
 
 
-def test_one_row_per_quarterback_team_season() -> None:
-    keys = [(r.espn_id, r.season, r.player_key) for r in quarterback_seasons()]
+@pytest.mark.parametrize("league", LEAGUES)
+def test_one_row_per_quarterback_team_season(league) -> None:
+    keys = [(r.espn_id, r.season, r.player_key) for r in quarterback_seasons(league)]
     assert len(keys) == len(set(keys))
 
 
-def test_at_most_one_week_one_starter_per_team_season() -> None:
-    seen = [(r.espn_id, r.season) for r in quarterback_seasons() if r.started_week_one]
+@pytest.mark.parametrize("league", LEAGUES)
+def test_at_most_one_week_one_starter_per_team_season(league) -> None:
+    seen = [
+        (r.espn_id, r.season) for r in quarterback_seasons(league) if r.started_week_one
+    ]
     assert len(seen) == len(set(seen))
 
 
@@ -153,3 +163,52 @@ def test_a_reason_outside_the_categories_is_refused() -> None:
     row = "1,A,2020,in_season,false,,X,false,sacked,Sacked,,false,src"
     with pytest.raises(ValueError, match="row 2"):
         rows_from_csv(HEAD_COACH_CHANGES, [header, row])
+
+
+# --- the NFL ---------------------------------------------------------------
+
+
+def test_nfl_ids_are_the_nfls() -> None:
+    # 2 is the Bills there and Auburn here.
+    assert team_id("Oakland Raiders", NFL) == team_id("Las Vegas Raiders", NFL) == "13"
+    assert registry(NFL).by_espn_id("2").current_name() == "Buffalo Bills"
+    assert team_id("2") == team_id("Auburn Tigers")
+
+
+def _nfl_reason(team: str, season: int) -> str | None:
+    change = departure(team, season, NFL)
+    return change.reason if change is not None else None
+
+
+def test_nfl_departures() -> None:
+    # Saban to Alabama, Petrino to Arkansas mid-season, Dungy retired.
+    assert _nfl_reason("Miami Dolphins", 2007) == LEFT_FOR_JOB
+    assert _nfl_reason("Atlanta Falcons", 2008) == LEFT_FOR_JOB
+    assert _nfl_reason("Indianapolis Colts", 2009) == RETIRED
+    # Gruden resigned in October 2021; the coach who opened 2021 is gone.
+    assert _nfl_reason("Las Vegas Raiders", 2022) == RESIGNED
+    assert _nfl_reason("Kansas City Chiefs", 2020) is None
+
+
+def test_a_medical_leave_is_not_a_departure() -> None:
+    # Pagano missed most of 2012 and opened 2013.
+    assert _nfl_reason("Indianapolis Colts", 2013) is None
+
+
+def test_an_nfl_staff_names_the_coach_replaced_in_season_second() -> None:
+    row = staff("Washington Commanders", 2019, NFL)
+    assert row is not None
+    assert row.head_coach == "Jay Gruden / Bill Callahan"
+    assert row.hc_year is None
+
+
+def _opener(team: str, season: int) -> str | None:
+    row = week_one_starter(team, season, NFL)
+    return row.player_key if row is not None else None
+
+
+def test_nfl_quarterbacks() -> None:
+    assert _opener("Tampa Bay Buccaneers", 2020) == "brady t"
+    # Mariota opened 2019; Tannehill started the rest, playoffs included.
+    assert _opener("Tennessee Titans", 2019) == "mariota m"
+    assert quarterbacks("Tennessee Titans", 2019, NFL)[0].player_key == "tannehill r"

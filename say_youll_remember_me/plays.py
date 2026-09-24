@@ -24,6 +24,10 @@ was home can't be told. Pricing a snap needs the home side, so a game whose
 home side can't be inferred from its plays is left unpriced rather than
 guessed at.
 
+The NFL is built the same way from its own plays and expected points
+model, with team ids from call-it-what-you-want's NFL namespace -- only
+the text differs, and `qb` reads both.
+
 `season_quarterbacks` is the part that turns games into rows, and takes
 everything it needs as arguments so it can be checked without a bucket.
 `build` is the part that reads one.
@@ -37,7 +41,7 @@ from collections.abc import Callable, Sequence
 from dataclasses import dataclass, field
 from typing import NamedTuple
 
-from call_it_what_you_want import NCAA, UnknownTeamError, default_teams
+from call_it_what_you_want import UnknownTeamError
 from endgame_aws import get_processed_plays_store
 from lucky_ones import MODELS
 from lucky_ones.arrow import StorePlaySource
@@ -46,6 +50,7 @@ from lucky_ones.game import GamePlays, infer_home_team_id
 from lucky_ones.plays import Play
 from lucky_ones.points import FIRST_LEGIBLE_SEASON
 
+from .data import registry
 from .qb import name_key, passer, team_games
 from .sync import current_name
 from .types import NCAAFB, QuarterbackSeason
@@ -72,10 +77,10 @@ class Game(NamedTuple):
     plays: Sequence[Play]
     priced: bool
 
-    def as_game_plays(self, season: int) -> GamePlays:
+    def as_game_plays(self, season: int, league: str = NCAAFB) -> GamePlays:
         return GamePlays(
             game_id=self.game_id,
-            league=NCAAFB,
+            league=league,
             season=season,
             week=0,
             home_team_id=self.home_team_id,
@@ -99,6 +104,7 @@ def season_quarterbacks(
     canonical: Callable[[str], str | None],
     price: Pricer | None,
     source: str,
+    league: str = NCAAFB,
 ) -> tuple[list[QuarterbackSeason], set[str]]:
     """One season's quarterback rows, and the play team ids nobody could place.
 
@@ -138,7 +144,7 @@ def season_quarterbacks(
         if price is None or not game.priced:
             continue
         texts = {p.play_id: p.text for p in plays}
-        for priced in price(game.as_game_plays(season)):
+        for priced in price(game.as_game_plays(season, league)):
             thrower = passer(texts.get(priced.play_id))
             if thrower is None:
                 continue
@@ -154,7 +160,7 @@ def season_quarterbacks(
     rows = [
         QuarterbackSeason(
             espn_id=team,
-            team=current_name(team),
+            team=current_name(team, league),
             season=season,
             player=tally.names.most_common(1)[0][0],
             player_key=key,
@@ -171,20 +177,22 @@ def season_quarterbacks(
     return rows, unplaced
 
 
-def canonical_id(team_id: str) -> str | None:
+def canonical_id(team_id: str, league: str = NCAAFB) -> str | None:
     try:
-        return default_teams(NCAA).by_espn_id(team_id).espn_id
+        return registry(league).by_espn_id(team_id).espn_id
     except UnknownTeamError:
         return None
 
 
-async def _season_games(source: StorePlaySource, season: int) -> list[Game]:
+async def _season_games(
+    source: StorePlaySource, season: int, league: str = NCAAFB
+) -> list[Game]:
     """Every game of `season` with plays, in the order they were played."""
     limit = asyncio.Semaphore(CONCURRENT_WEEKS)
 
     async def week(number: int) -> Sequence[Play]:
         async with limit:
-            return await source.load_week(NCAAFB, season, number)
+            return await source.load_week(league, season, number)
 
     weeks = await asyncio.gather(*(week(n) for n in range(1, MAX_WEEK + 1)))
     by_game: dict[str, list[Play]] = {}
@@ -222,10 +230,12 @@ async def _season_games(source: StorePlaySource, season: int) -> list[Game]:
     return games
 
 
-async def build(first: int, last: int) -> tuple[list[QuarterbackSeason], list[str]]:
+async def build(
+    first: int, last: int, league: str = NCAAFB
+) -> tuple[list[QuarterbackSeason], list[str]]:
     """Quarterback rows for `first` through `last`, and what couldn't be placed."""
     source = StorePlaySource(get_processed_plays_store())
-    model = MODELS[NCAAFB]
+    model = MODELS[league]
     run = model.expected_points_release.run_id
 
     def price(game: GamePlays) -> Sequence[PlayEPA]:
@@ -235,7 +245,7 @@ async def build(first: int, last: int) -> tuple[list[QuarterbackSeason], list[st
     problems: list[str] = []
     for season in range(first, last + 1):
         priced = season >= FIRST_LEGIBLE_SEASON
-        games = await _season_games(source, season)
+        games = await _season_games(source, season, league)
         unpriced = sum(not g.priced for g in games)
         if priced and unpriced:
             problems.append(
@@ -244,9 +254,10 @@ async def build(first: int, last: int) -> tuple[list[QuarterbackSeason], list[st
         found, unplaced = season_quarterbacks(
             season,
             games,
-            canonical_id,
+            lambda team_id: canonical_id(team_id, league),
             price if priced else None,
             f"espn-pbp/ep-{run}" if priced else "espn-pbp",
+            league,
         )
         rows += found
         problems += [f"{season}: play team id {raw}" for raw in sorted(unplaced)]

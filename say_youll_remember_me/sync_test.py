@@ -2,7 +2,8 @@
 
 from call_it_what_you_want import NCAA, default_teams
 
-from .sync import current_name, resolve
+from .sync import current_name, nfl_teams, resolve
+from .types import NFL
 
 
 def _id(name: str) -> str:
@@ -46,3 +47,16 @@ def test_a_rebuild_replaces_only_the_seasons_it_read() -> None:
     )
     assert _replaced(HEAD_COACH_CHANGES, december, 2019, 2019)
     assert not _replaced(HEAD_COACH_CHANGES, december, 2020, 2020)
+
+
+def test_nfl_names_as_wikipedia_writes_them() -> None:
+    assert resolve("Oakland Raiders", NFL) == "13"
+    # ESPN called it plain "Washington" in 2020 and 2021.
+    assert resolve("Washington Football Team", NFL) == "28"
+    assert resolve("Hogwarts Hippogriffs", NFL) is None
+    assert current_name("13", NFL) == "Las Vegas Raiders"
+
+
+def test_the_nfl_before_and_after_the_texans() -> None:
+    assert len(nfl_teams(2001)) == 31
+    assert len(nfl_teams(2002)) == 32

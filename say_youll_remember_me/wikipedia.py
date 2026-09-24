@@ -1,13 +1,21 @@
-"""Reading coaching facts out of Wikipedia's college football articles.
+"""Reading coaching facts out of Wikipedia's football articles.
 
 Two sources, both in wikitext:
 
-- **A season article's "Coaching changes" section** ("2019 NCAA Division I
-  FBS football season"): one table of preseason and in-season changes, one
-  of changes announced during the season that take effect after it. Each
-  row names the team, the coach leaving, a date, why, and who replaced him.
-- **A team-season article's infobox** ("2019 LSU Tigers football team"):
-  `head_coach`, `off_coach` and `def_coach`, each with a `*_year` field
+- **A season article's coaching changes.** College ("2019 NCAA Division I
+  FBS football season", "Coaching changes"): one table of preseason and
+  in-season changes, one of changes announced during the season that take
+  effect after it, each row naming the team, the coach leaving, a date,
+  why, and who replaced him. NFL ("2019 NFL season", a "Head coach..."
+  section): an off-season table of every change since the last season and
+  an in-season table of this season's firings, with the date only in the
+  notes. The NFL tables change shape over the years -- 2007-2009 name
+  their columns by season ("2008 Coach", "2007 Coach(es)"), and later
+  ones open each row with a header cell and span the interim column when
+  there was none -- so the columns are found by what their headers say.
+- **A team-season article's infobox** ("2019 LSU Tigers football team",
+  "2019 Kansas City Chiefs season"): `head_coach` (the NFL's is `coach`),
+  `off_coach` and `def_coach`; in college, each with a `*_year` field
   saying which season at the school it is.
 
 Not imported by the package: nothing here is needed to read the bundled
@@ -34,6 +42,9 @@ from .types import (
     IN_SEASON,
     INTERIM_REPLACED,
     LEFT_FOR_JOB,
+    NCAAFB,
+    NFL,
+    OFFSEASON,
     OTHER,
     RESIGNED,
     RETIRED,
@@ -65,11 +76,15 @@ MONTHS: tuple[str, ...] = (
 )
 
 
-def season_article(season: int) -> str:
+def season_article(season: int, league: str = NCAAFB) -> str:
+    if league == NFL:
+        return f"{season} NFL season"
     return f"{season} NCAA Division I FBS football season"
 
 
-def team_season_article(team: str, season: int) -> str:
+def team_season_article(team: str, season: int, league: str = NCAAFB) -> str:
+    if league == NFL:
+        return f"{season} {team} season"
     return f"{season} {team} football team"
 
 
@@ -197,12 +212,17 @@ def link_target(text: str) -> str | None:
 
 
 def team_of(cell: str) -> str | None:
-    """The team a table's first cell names: "Rutgers Scarlet Knights" from its link."""
+    """The team a table's first cell names: "Rutgers Scarlet Knights" from its link.
+
+    The link is often to the team's season -- "2019 Rutgers Scarlet Knights
+    football team", "2019 Buffalo Bills season" -- and the team is what's
+    left without the year and the kind of article.
+    """
     target = link_target(cell)
     if target is None:
         return None
     target = re.sub(r"^\d{4} ", "", target)
-    return re.sub(r" football( team)?$", "", target).strip()
+    return re.sub(r" (?:football( team)?|season)$", "", target).strip()
 
 
 _DTS = re.compile(r"\{\{\s*dts\s*\|([^}]*)\}\}", re.I)
@@ -247,8 +267,11 @@ def reason_of(reason_text: str, outgoing_interim: bool) -> str:
     defensive coordinator by Penn State" -- was fired, and the article is
     describing where he landed; that is checked before "hired by", which
     otherwise reads it as a coach leaving for a better job. "Agreed to part
-    ways" is a firing. "Head coach" alone is not a job change: "medical
-    clearance of head coach" is not one.
+    ways" is a firing, and so is an NFL "contract expired": a team that
+    wanted him would have extended it. "Head coach" alone is not a job
+    change: "medical clearance of head coach" is not one. An NFL coach
+    "traded" went to the team that traded for him, which is leaving for a
+    job.
     """
     text = reason_text.lower()
     if outgoing_interim or re.search(r"permanent replacement|^replaced", text):
@@ -257,12 +280,14 @@ def reason_of(reason_text: str, outgoing_interim: bool) -> str:
         return FIRED
     if re.search(
         r"fired|dismiss|terminat|mutual|contract not renewed|not retained|reassign|"
-        r"bought out|let go|part(ed)? ways|relieved|not renew|will not return",
+        r"bought out|let go|part(ed)? ways|relieved|not renew|w(ill|ould) not return|"
+        r"contract expired|expired contract",
         text,
     ):
         return FIRED
     if re.search(
-        r"hired by|hired as head|accepted|to become|left for|took (the )?job|became",
+        r"hired by|hired as head|accepted|to become|left for|took (the )?job|became|"
+        r"to take|(resigned|left) to coach|traded",
         text,
     ):
         return LEFT_FOR_JOB
@@ -315,10 +340,19 @@ def _attributes(cell: str) -> tuple[str, str]:
 
 
 def parse_table(table: str) -> list[dict[str, str]]:
-    """A wikitable's rows as {header: cell wikitext}, spanned cells filled in."""
+    """A wikitable's rows as {header: cell wikitext}, spanned cells filled in.
+
+    `!` opens a header cell, which is a column's name until the header row
+    is over and the first cell of a row after that -- the NFL articles
+    open each row with the team as a header cell (`! scope="row" | ...`).
+    A `rowspan` fills the cells below it; a `colspan` fills the ones beside
+    it, so a departing coach spanned across an empty "interim" column reads
+    in both, and every column after it stays where its header is.
+    """
     headers: list[str] = []
     raw_rows: list[list[str]] = []
     current: list[str] | None = None
+    header_done = False
     for line in table.splitlines():
         stripped = line.strip()
         if stripped.startswith("{|") or stripped.startswith("|+"):
@@ -327,13 +361,14 @@ def parse_table(table: str) -> list[dict[str, str]]:
             if current:
                 raw_rows.append(current)
             current = [] if stripped.startswith("|-") else None
+            header_done = header_done or bool(headers)
             continue
-        if stripped.startswith("!"):
+        if stripped.startswith("!") and not header_done:
             headers += [
                 plain(_attributes(h)[1]).lower() for h in _split_top(stripped[1:], "!!")
             ]
             continue
-        if stripped.startswith("|"):
+        if stripped.startswith("|") or stripped.startswith("!"):
             if current is None:
                 current = []
             current += _split_top(stripped[1:], "||")
@@ -357,9 +392,13 @@ def parse_table(table: str) -> list[dict[str, str]]:
             else:
                 attributes, content = _attributes(queue.pop(0))
                 span = re.search(r"rowspan\s*=\s*\"?(\d+)", attributes)
-                if span and int(span.group(1)) > 1:
-                    pending[column] = [int(span.group(1)) - 1, content]
-                filled.append(content)
+                wide = re.search(r"colspan\s*=\s*\"?(\d+)", attributes)
+                for _ in range(int(wide.group(1)) if wide else 1):
+                    if span and int(span.group(1)) > 1:
+                        pending[column] = [int(span.group(1)) - 1, content]
+                    filled.append(content)
+                    column += 1
+                continue
             column += 1
         if headers and len(filled) >= 2:
             rows.append(dict(zip(headers, (c.strip() for c in filled))))
@@ -389,8 +428,12 @@ def _column(row: dict[str, str], *names: str) -> str:
     return ""
 
 
-def coaching_changes(article: str, page_season: int) -> list[ChangeRow]:
-    """Every row of a season article's "Coaching changes" tables."""
+def coaching_changes(
+    article: str, page_season: int, league: str = NCAAFB
+) -> list[ChangeRow]:
+    """Every row of a season article's head-coach change tables."""
+    if league == NFL:
+        return _nfl_changes(article, page_season)
     start = article.find("==Coaching changes==")
     if start < 0:
         return []
@@ -443,6 +486,154 @@ def coaching_changes(article: str, page_season: int) -> list[ChangeRow]:
                     )
                 )
     return found
+
+
+# An NFL article's head-coach section: "Head coach/front office changes",
+# "Head coaching and general manager changes", and the like.
+_NFL_SECTION = re.compile(r"^==[^=\n]*[Cc]oach[^=\n]*==[ \t]*$", re.M)
+# Its subheadings, `===`/`====` or a `;` definition line. The one that
+# names a front office or general managers ends the coaches' part.
+_NFL_SUBHEADING = re.compile(r"\n(?:={3,}[^\n]*|;[^\n]*)")
+
+
+def _nfl_changes(article: str, page_season: int) -> list[ChangeRow]:
+    """The NFL article's off-season and in-season head-coach tables.
+
+    Off-season rows are this season's changes; in-season rows are its
+    coaches who didn't finish it. Both are `season` = the article's. The
+    section also holds the front office's changes, under a `===` heading
+    of their own with the same off-season and in-season split beneath it,
+    so a front office heading skips everything until the next `===`.
+    """
+    found: list[ChangeRow] = []
+    for match in _NFL_SECTION.finditer(article):
+        following = re.search(r"\n==[^=]", article[match.end() :])
+        end = match.end() + following.start() if following else len(article)
+        section = article[match.end() : end]
+        pieces = _NFL_SUBHEADING.split(section)
+        headings = _NFL_SUBHEADING.findall(section)
+        kind, front_office = OFFSEASON, False
+        for index, piece in enumerate(pieces):
+            if index:
+                heading = headings[index - 1].strip().lower()
+                if re.match(r"===[^=]", heading):
+                    front_office = False
+                if re.search(r"front office|general manager|executive", heading):
+                    front_office = True
+                kind = IN_SEASON if re.search(r"in[- ]season", heading) else OFFSEASON
+            if front_office:
+                continue
+            for table in re.findall(r"\{\|.*?\n\|\}", piece, re.S):
+                found += _nfl_rows(parse_table(table), kind, page_season)
+    return found
+
+
+def _nfl_rows(
+    rows: list[dict[str, str]], kind: str, page_season: int
+) -> list[ChangeRow]:
+    found: list[ChangeRow] = []
+    for row in rows:
+        if any(re.search(r"position|office holder|\bgm\b", h) for h in row):
+            continue  # a front office table
+        team = team_of(_column(row, "team"))
+        outgoing = _nfl_name(_nfl_coach(row, kind, page_season, incoming=False))
+        if team is None or not outgoing:
+            continue
+        incoming = _nfl_name(_nfl_coach(row, kind, page_season, incoming=True))
+        notes = plain(_column(row, "notes", "story"))
+        reason_text = plain(_column(row, "reason")) or _first_sentence(notes)
+        reason = reason_of(reason_text, False)
+        if reason == HEALTH and "leave" in reason_text.lower():
+            continue  # a leave of absence, and he came back
+        if reason in (RESIGNED, OTHER):
+            # "Resigned", with where he went only in the notes: Petrino
+            # "resigned after going 3-10 to take job at University of
+            # Arkansas".
+            told = f"{reason_text}: {_first_sentence(notes)}"
+            if reason_of(told, False) == LEFT_FOR_JOB:
+                reason_text, reason = told, LEFT_FOR_JOB
+        found.append(
+            ChangeRow(
+                team=team,
+                table=kind,
+                season=page_season,
+                midseason=kind == IN_SEASON,
+                date=_nfl_date(" ".join((reason_text, notes)), kind, page_season),
+                outgoing=outgoing,
+                outgoing_interim=False,
+                reason=reason,
+                reason_text=reason_text,
+                incoming=incoming or None,
+                incoming_interim=kind == IN_SEASON,
+            )
+        )
+    return found
+
+
+def _nfl_coach(row: dict[str, str], kind: str, page_season: int, incoming: bool) -> str:
+    """The departing or incoming coach's cell, found by what its header says.
+
+    Off-season, the departing coach is "departing", "former" or last
+    season's ("2009 head coach", "2008 coach(es)"), and the incoming one
+    "incoming", a "replacement" or this season's ("2010 head coach", "2007
+    coach"); an "interim" column there is who finished last season, and
+    neither. In-season, the departing coach is this season's ("2010
+    coach"), the "ex-coach" or the "coach at start of the season", and the
+    incoming one is whichever column says "interim".
+    """
+    season = page_season - 1 if kind == OFFSEASON else page_season
+    for header, value in row.items():
+        interim = "interim" in header
+        if kind == IN_SEASON and incoming:
+            wanted = interim
+        elif incoming:
+            wanted = not interim and (
+                "incoming" in header
+                or "replacement" in header
+                or header.startswith(f"{page_season} ")
+            )
+        else:
+            wanted = not interim and (
+                any(word in header for word in ("departing", "former", "ex-", "start"))
+                or header.startswith(f"{season} ")
+            )
+        if wanted:
+            return value
+    return ""
+
+
+def _nfl_name(cell: str) -> str:
+    """The first coach a cell names.
+
+    2007-2009 follow the name with his last job ("Bobby Petrino, former
+    head coach, ..."), and a cell can name the interim after him ("Bobby
+    Petrino; / Emmitt Thomas").
+    """
+    return re.split(r"[,;/]", plain(cell))[0].strip()
+
+
+def _first_sentence(text: str) -> str:
+    return re.split(r"(?<=[a-z0-9)])\. ", text, maxsplit=1)[0]
+
+
+def _nfl_date(text: str, kind: str, page_season: int) -> str | None:
+    """The first date the notes give, placed in its year.
+
+    A date without a year is in the months around the season it describes:
+    an off-season change from August on happened the year before the
+    article's season, an in-season one from January on the year after.
+    """
+    match = re.search(r"(" + "|".join(MONTHS) + r")\s+(\d{1,2})(?:,?\s+(\d{4}))?", text)
+    if not match:
+        return None
+    month = MONTHS.index(match.group(1)) + 1
+    if match.group(3):
+        year = int(match.group(3))
+    elif kind == OFFSEASON:
+        year = page_season - (month >= 8)
+    else:
+        year = page_season + (month < 8)
+    return f"{year:04d}-{month:02d}-{int(match.group(2)):02d}"
 
 
 def _timing(table_kind: str, date: str | None, page_season: int) -> tuple[bool, int]:
@@ -503,8 +694,12 @@ def _field(infobox: str, key: str) -> str | None:
     return value
 
 
-def staff(lead: str) -> StaffRow:
-    """Head coach and coordinators, and their seasons at the school, from an infobox."""
+def staff(lead: str, league: str = NCAAFB) -> StaffRow:
+    """Head coach and coordinators, and their seasons at the school, from an infobox.
+
+    The NFL's infobox calls the head coach `coach` and numbers nobody's
+    seasons, so its `*_year` fields are None.
+    """
 
     def name(key: str) -> str | None:
         value = _field(lead, key)
@@ -517,7 +712,7 @@ def staff(lead: str) -> StaffRow:
         return re.sub(r"(?:\s*/\s*)+", " / ", names).strip(" /") or None
 
     return StaffRow(
-        head_coach=name("head_coach"),
+        head_coach=name("coach" if league == NFL else "head_coach"),
         hc_year=ordinal(_field(lead, "hc_year")),
         offensive_coordinator=name("off_coach"),
         oc_year=ordinal(_field(lead, "oc_year")),

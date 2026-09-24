@@ -30,7 +30,7 @@ syrm = "say_youll_remember_me.sync:main"
 # Pinned rather than floating: a team's ESPN id is how every row here is
 # keyed, and which ids count as the same team is that package's answer.
 [tool.uv.sources]
-call-it-what-you-want = { git = "https://github.com/NathanDeMaria/call-it-what-you-want.git", rev = "f185eb03ac5bc3d9e0ff27f9a4172520e62af132" }
+call-it-what-you-want = { git = "https://github.com/NathanDeMaria/call-it-what-you-want.git", rev = "b815fc3008fe958d8731c8523919d13a2a936b0d" }
 # The same revs cassandra pins, so the quarterback file is read from the same
 # play store and priced by the same expected points fit as cassandra's EPA
 # index. Moving either is a change to what `epa` means; the file's `source`

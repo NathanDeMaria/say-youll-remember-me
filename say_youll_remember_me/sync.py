@@ -3,6 +3,10 @@
     syrm coaches --first 2013 --last 2025      # season articles
     syrm staffs --first 2014 --last 2026       # team-season infoboxes
     syrm quarterbacks --first 2013 --last 2026 # play-by-play; the `plays` extra
+    syrm coaches --league nfl --first 2006 --last 2026
+
+`--league` is `ncaafb` unless given. College files cover FBS team-seasons;
+NFL files cover every franchise ESPN listed that season.
 
 Run from a checkout: the files are written into the package's `data/`
 directory, to be reviewed and committed like any other change. Only the
@@ -38,10 +42,11 @@ from .data import (
     COACHING_STAFFS,
     HEAD_COACH_CHANGES,
     QUARTERBACKS,
+    registry,
     rows_from_csv,
     to_csv,
 )
-from .types import NCAAFB, CoachChange, CoachingStaff
+from .types import LEAGUES, NCAAFB, NFL, CoachChange, CoachingStaff
 
 DATA = Path(__file__).parent / "data"
 
@@ -60,17 +65,30 @@ WIKIPEDIA_NAMES = {
 }
 _FROM_WIKIPEDIA = {wiki: ours for ours, wiki in WIKIPEDIA_NAMES.items()}
 
+# The NFL's differ in one place: ESPN called Washington just "Washington"
+# from 2019 through 2021, and Wikipedia titles those seasons by the name
+# the team played under. Keyed by ESPN's name and the season.
+NFL_WIKIPEDIA_NAMES = {
+    ("Washington", 2019): "Washington Redskins",
+    ("Washington", 2020): "Washington Football Team",
+    ("Washington", 2021): "Washington Football Team",
+}
+_FROM_NFL_WIKIPEDIA = {wiki: ours for (ours, _), wiki in NFL_WIKIPEDIA_NAMES.items()}
 
-def resolve(name: str) -> str | None:
-    """The canonical ESPN id for a school as Wikipedia names it, or None."""
-    teams = default_teams(NCAA)
-    for candidate in (name, _FROM_WIKIPEDIA.get(name)):
+
+def resolve(name: str, league: str = NCAAFB) -> str | None:
+    """The canonical ESPN id for a team as Wikipedia names it, or None."""
+    teams = registry(league)
+    aliases = _FROM_NFL_WIKIPEDIA if league == NFL else _FROM_WIKIPEDIA
+    for candidate in (name, aliases.get(name)):
         if candidate is None:
             continue
         try:
             return teams.by_name(candidate).espn_id
         except (UnknownTeamError, AmbiguousTeamError):
             continue
+    if league == NFL:
+        return None
     # A cell that links the school rather than its team -- "Colorado State"
     # -- is placed when exactly one football program's name starts with it.
     prefixed = [
@@ -88,31 +106,33 @@ def _football_name(espn_id: str, teams: Teams) -> str:
         return ""
 
 
-def current_name(espn_id: str) -> str:
+def current_name(espn_id: str, league: str = NCAAFB) -> str:
     """The team's name now, in football where it has one, for a reader of the file."""
+    if league == NFL:
+        return registry(NFL).by_espn_id(espn_id).current_name()
     team = default_teams(NCAA).by_espn_id(espn_id)
-    for league in (NCAAFB, None):
+    for context in (NCAAFB, None):
         try:
-            return team.current_name(league=league)
+            return team.current_name(league=context)
         except (NoNamesError, AmbiguousNameError):
             continue
     return espn_id
 
 
 def coaches(
-    first: int, last: int, cache: Path | None
+    first: int, last: int, cache: Path | None, league: str = NCAAFB
 ) -> tuple[list[CoachChange], list[str]]:
     """Head-coach changes from the season articles for `first` through `last`."""
     rows: list[CoachChange] = []
     unplaced: list[str] = []
     for season in range(first, last + 1):
-        title = wikipedia.season_article(season)
+        title = wikipedia.season_article(season, league)
         article = wikipedia.fetch_article(title, cache)
         if article is None:
             unplaced.append(f"no article: {title}")
             continue
-        for change in wikipedia.coaching_changes(article, season):
-            espn_id = resolve(change.team)
+        for change in wikipedia.coaching_changes(article, season, league):
+            espn_id = resolve(change.team, league)
             if espn_id is None:
                 unplaced.append(f"{season}: {change.team}")
                 continue
@@ -120,7 +140,10 @@ def coaches(
             del fields["team"]
             rows.append(
                 CoachChange(
-                    espn_id=espn_id, team=current_name(espn_id), source=title, **fields
+                    espn_id=espn_id,
+                    team=current_name(espn_id, league),
+                    source=title,
+                    **fields,
                 )
             )
     rows.sort(key=lambda r: (r.season, r.date or "9999", r.team))
@@ -139,12 +162,34 @@ def fbs_teams(season: int) -> list[str]:
     return found
 
 
+def nfl_teams(season: int) -> list[str]:
+    """ESPN ids of the NFL franchises call-it-what-you-want lists in `season`."""
+    return [
+        team.espn_id
+        for team in registry(NFL)
+        if any(name.year == season for name in team.names)
+    ]
+
+
 def staffs(
-    first: int, last: int, cache: Path | None
+    first: int, last: int, cache: Path | None, league: str = NCAAFB
 ) -> tuple[list[CoachingStaff], list[str]]:
-    """Every FBS team-season's head coach and coordinators, `first` through `last`."""
+    """Every team-season's head coach and coordinators, `first` through `last`.
+
+    College is FBS only. An NFL team-season article is titled by the name
+    the team played under that season, so it's looked up by season.
+    """
     wanted: dict[str, tuple[str, int]] = {}
     for season in range(first, last + 1):
+        if league == NFL:
+            for espn_id in nfl_teams(season):
+                name = registry(NFL).by_espn_id(espn_id).name_in(season)
+                name = NFL_WIKIPEDIA_NAMES.get((name, season), name)
+                wanted[wikipedia.team_season_article(name, season, NFL)] = (
+                    espn_id,
+                    season,
+                )
+            continue
         for espn_id in fbs_teams(season):
             name = current_name(espn_id)
             title = wikipedia.team_season_article(
@@ -159,11 +204,11 @@ def staffs(
         if not lead:
             missing.append(title)
             continue
-        found = wikipedia.staff(lead)
+        found = wikipedia.staff(lead, league)
         rows.append(
             CoachingStaff(
                 espn_id=espn_id,
-                team=current_name(espn_id),
+                team=current_name(espn_id, league),
                 season=season,
                 source=title,
                 **found._asdict(),
@@ -173,10 +218,10 @@ def staffs(
     return rows, missing
 
 
-def _replaced(kind: str, row: Any, first: int, last: int) -> bool:
+def _replaced(kind: str, row: Any, first: int, last: int, league: str = NCAAFB) -> bool:
     """Whether a rebuild of `first` through `last` replaces this existing row."""
     if kind == HEAD_COACH_CHANGES:
-        read = {wikipedia.season_article(s) for s in range(first, last + 1)}
+        read = {wikipedia.season_article(s, league) for s in range(first, last + 1)}
         return row.source in read
     return first <= row.season <= last
 
@@ -191,6 +236,7 @@ _ORDER: dict[str, Callable[[Any], tuple]] = {
 def main(argv: Sequence[str] | None = None) -> None:
     parser = argparse.ArgumentParser(prog="syrm", description=__doc__.split("\n\n")[0])
     parser.add_argument("what", choices=["coaches", "staffs", "quarterbacks"])
+    parser.add_argument("--league", choices=LEAGUES, default=NCAAFB)
     parser.add_argument("--first", type=int, required=True)
     parser.add_argument("--last", type=int, required=True)
     parser.add_argument("--cache", type=Path, help="keep fetched wikitext here")
@@ -199,23 +245,27 @@ def main(argv: Sequence[str] | None = None) -> None:
 
     rows: Sequence[Any]
     if args.what == "coaches":
-        rows, problems = coaches(args.first, args.last, args.cache)
+        rows, problems = coaches(args.first, args.last, args.cache, args.league)
         kind = HEAD_COACH_CHANGES
     elif args.what == "staffs":
-        rows, problems = staffs(args.first, args.last, args.cache)
+        rows, problems = staffs(args.first, args.last, args.cache, args.league)
         kind = COACHING_STAFFS
     else:
         # Only here: it needs the `plays` extra, which the other two don't.
         from .plays import build
 
-        rows, problems = asyncio.run(build(args.first, args.last))
+        rows, problems = asyncio.run(build(args.first, args.last, args.league))
         kind = QUARTERBACKS
 
-    output = args.output or DATA / NCAAFB / f"{kind}.csv"
+    output = args.output or DATA / args.league / f"{kind}.csv"
     kept: list[Any] = []
     if output.exists():
         existing = rows_from_csv(kind, output.read_text(encoding="utf-8").splitlines())
-        kept = [r for r in existing if not _replaced(kind, r, args.first, args.last)]
+        kept = [
+            r
+            for r in existing
+            if not _replaced(kind, r, args.first, args.last, args.league)
+        ]
     merged = sorted([*kept, *rows], key=_ORDER[kind])
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(to_csv(kind, merged), encoding="utf-8")

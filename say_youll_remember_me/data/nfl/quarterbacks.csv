@@ -1,0 +1,1213 @@
+espn_id,team,season,player,player_key,starts,started_week_one,attempts,epa,source
+22,Arizona Cardinals,2006,Matt Leinart,leinart m,8,false,,,espn-pbp
+22,Arizona Cardinals,2006,Kurt Warner,warner k,4,true,,,espn-pbp
+1,Atlanta Falcons,2006,Michael Vick,vick m,10,true,,,espn-pbp
+33,Baltimore Ravens,2006,Steve Mcnair,mcnair s,9,true,,,espn-pbp
+33,Baltimore Ravens,2006,Kyle Boller,boller k,2,false,,,espn-pbp
+2,Buffalo Bills,2006,J.P. Losman,p. losman j,12,true,,,espn-pbp
+29,Carolina Panthers,2006,Jake Delhomme,delhomme j,10,true,,,espn-pbp
+29,Carolina Panthers,2006,Chris Weinke,weinke c,2,false,,,espn-pbp
+3,Chicago Bears,2006,Rex Grossman,grossman r,15,true,,,espn-pbp
+4,Cincinnati Bengals,2006,Carson Palmer,palmer c,13,true,,,espn-pbp
+5,Cleveland Browns,2006,Charlie Frye,frye c,7,true,,,espn-pbp
+5,Cleveland Browns,2006,Derek Anderson,anderson d,4,false,,,espn-pbp
+6,Dallas Cowboys,2006,Tony Romo,romo t,10,false,,,espn-pbp
+6,Dallas Cowboys,2006,Drew Bledsoe,bledsoe d,4,true,,,espn-pbp
+7,Denver Broncos,2006,Jake Plummer,plummer j,7,true,,,espn-pbp
+7,Denver Broncos,2006,Jay Cutler,cutler j,5,false,,,espn-pbp
+8,Detroit Lions,2006,Jon Kitna,kitna j,12,true,,,espn-pbp
+9,Green Bay Packers,2006,Brett Favre,favre b,12,true,,,espn-pbp
+34,Houston Texans,2006,David Carr,carr d,6,true,,,espn-pbp
+34,Houston Texans,2006,Sage Rosenfels,rosenfels s,1,false,,,espn-pbp
+11,Indianapolis Colts,2006,Peyton Manning,manning p,17,true,,,espn-pbp
+30,Jacksonville Jaguars,2006,David Garrard,garrard d,6,false,,,espn-pbp
+30,Jacksonville Jaguars,2006,Byron Leftwich,leftwich b,3,true,,,espn-pbp
+12,Kansas City Chiefs,2006,Trent Green,green t,5,false,,,espn-pbp
+12,Kansas City Chiefs,2006,Damon Huard,huard d,5,true,,,espn-pbp
+12,Kansas City Chiefs,2006,Brodie Croyle,croyle b,1,false,,,espn-pbp
+13,Las Vegas Raiders,2006,Aaron Brooks,brooks a,3,false,,,espn-pbp
+13,Las Vegas Raiders,2006,Andrew Walter,walter a,3,true,,,espn-pbp
+24,Los Angeles Chargers,2006,Philip Rivers,rivers p,13,true,,,espn-pbp
+24,Los Angeles Chargers,2006,Ladainian Tomlinson,tomlinson l,1,false,,,espn-pbp
+14,Los Angeles Rams,2006,Marc Bulger,bulger m,12,true,,,espn-pbp
+15,Miami Dolphins,2006,Joey Harrington,harrington j,7,false,,,espn-pbp
+15,Miami Dolphins,2006,Daunte Culpepper,culpepper d,2,true,,,espn-pbp
+15,Miami Dolphins,2006,Cleo Lemon,lemon c,2,false,,,espn-pbp
+16,Minnesota Vikings,2006,Brad Johnson,johnson b,11,true,,,espn-pbp
+16,Minnesota Vikings,2006,Tarvaris Jackson,jackson t,1,false,,,espn-pbp
+16,Minnesota Vikings,2006,Ryan Longwell,longwell r,1,false,,,espn-pbp
+17,New England Patriots,2006,Tom Brady,brady t,15,true,,,espn-pbp
+18,New Orleans Saints,2006,Drew Brees,brees d,14,true,,,espn-pbp
+18,New Orleans Saints,2006,Jamie Martin,martin j,1,false,,,espn-pbp
+19,New York Giants,2006,Eli Manning,manning e,15,true,,,espn-pbp
+20,New York Jets,2006,Chad Pennington,pennington c,13,true,,,espn-pbp
+21,Philadelphia Eagles,2006,Jeff Garcia,garcia j,8,false,,,espn-pbp
+21,Philadelphia Eagles,2006,Donovan Mcnabb,mcnabb d,7,true,,,espn-pbp
+21,Philadelphia Eagles,2006,A.J. Feeley,j. feeley a,1,false,,,espn-pbp
+23,Pittsburgh Steelers,2006,Ben Roethlisberger,roethlisberger b,11,true,,,espn-pbp
+25,San Francisco 49ers,2006,Alex D. Smith,smith a,11,true,,,espn-pbp
+26,Seattle Seahawks,2006,Matt Hasselbeck,hasselbeck m,11,true,,,espn-pbp
+26,Seattle Seahawks,2006,Seneca Wallace,wallace s,4,false,,,espn-pbp
+27,Tampa Bay Buccaneers,2006,Bruce Gradkowski,gradkowski b,5,false,,,espn-pbp
+27,Tampa Bay Buccaneers,2006,Tim Rattay,rattay t,2,false,,,espn-pbp
+27,Tampa Bay Buccaneers,2006,Chris Simms,simms c,1,true,,,espn-pbp
+10,Tennessee Titans,2006,Vince Young,young v,9,true,,,espn-pbp
+10,Tennessee Titans,2006,Kerry Collins,collins k,1,false,,,espn-pbp
+28,Washington Commanders,2006,Jason Campbell,campbell j,7,false,,,espn-pbp
+28,Washington Commanders,2006,Mark Brunell,brunell m,6,true,,,espn-pbp
+22,Arizona Cardinals,2007,Kurt Warner,warner k,12,false,,,espn-pbp
+22,Arizona Cardinals,2007,Matt Leinart,leinart m,2,true,,,espn-pbp
+1,Atlanta Falcons,2007,Joey Harrington,harrington j,7,true,,,espn-pbp
+1,Atlanta Falcons,2007,Chris Redman,redman c,5,false,,,espn-pbp
+1,Atlanta Falcons,2007,Byron Leftwich,leftwich b,1,false,,,espn-pbp
+33,Baltimore Ravens,2007,Kyle Boller,boller k,7,true,,,espn-pbp
+33,Baltimore Ravens,2007,Steve Mcnair,mcnair s,2,false,,,espn-pbp
+33,Baltimore Ravens,2007,Troy Smith,smith t,2,false,,,espn-pbp
+2,Buffalo Bills,2007,J.P. Losman,p. losman j,4,false,,,espn-pbp
+2,Buffalo Bills,2007,Trent Edwards,edwards t,3,true,,,espn-pbp
+29,Carolina Panthers,2007,Vinny Testaverde,testaverde v,4,false,,,espn-pbp
+29,Carolina Panthers,2007,David Carr,carr d,3,false,,,espn-pbp
+29,Carolina Panthers,2007,Jake Delhomme,delhomme j,3,true,,,espn-pbp
+29,Carolina Panthers,2007,Matt Moore,moore m,2,false,,,espn-pbp
+3,Chicago Bears,2007,Brian Griese,griese b,6,false,,,espn-pbp
+3,Chicago Bears,2007,Rex Grossman,grossman r,5,true,,,espn-pbp
+3,Chicago Bears,2007,Kyle Orton,orton k,2,false,,,espn-pbp
+4,Cincinnati Bengals,2007,Carson Palmer,palmer c,14,true,,,espn-pbp
+5,Cleveland Browns,2007,Derek Anderson,anderson d,14,true,,,espn-pbp
+6,Dallas Cowboys,2007,Tony Romo,romo t,15,true,,,espn-pbp
+7,Denver Broncos,2007,Jay Cutler,cutler j,12,true,,,espn-pbp
+7,Denver Broncos,2007,Patrick Ramsey,ramsey p,1,false,,,espn-pbp
+8,Detroit Lions,2007,Jon Kitna,kitna j,12,true,,,espn-pbp
+9,Green Bay Packers,2007,Brett Favre,favre b,15,true,,,espn-pbp
+9,Green Bay Packers,2007,Aaron Rodgers,rodgers a,1,false,,,espn-pbp
+34,Houston Texans,2007,Sage Rosenfels,rosenfels s,8,false,,,espn-pbp
+34,Houston Texans,2007,Matt Schaub,schaub m,7,true,,,espn-pbp
+11,Indianapolis Colts,2007,Peyton Manning,manning p,15,true,,,espn-pbp
+11,Indianapolis Colts,2007,Jim Sorgi,sorgi j,1,false,,,espn-pbp
+30,Jacksonville Jaguars,2007,David Garrard,garrard d,13,true,,,espn-pbp
+30,Jacksonville Jaguars,2007,Quinn Gray,gray q,4,false,,,espn-pbp
+12,Kansas City Chiefs,2007,Damon Huard,huard d,7,true,,,espn-pbp
+12,Kansas City Chiefs,2007,Brodie Croyle,croyle b,5,false,,,espn-pbp
+13,Las Vegas Raiders,2007,Josh Mccown,mccown j,7,true,,,espn-pbp
+13,Las Vegas Raiders,2007,Daunte Culpepper,culpepper d,4,false,,,espn-pbp
+13,Las Vegas Raiders,2007,Jamarcus Russell,russell j,2,false,,,espn-pbp
+24,Los Angeles Chargers,2007,Philip Rivers,rivers p,14,false,,,espn-pbp
+24,Los Angeles Chargers,2007,Ladainian Tomlinson,tomlinson l,1,true,,,espn-pbp
+14,Los Angeles Rams,2007,Marc Bulger,bulger m,8,true,,,espn-pbp
+14,Los Angeles Rams,2007,Gus Frerotte,frerotte g,3,false,,,espn-pbp
+15,Miami Dolphins,2007,Cleo Lemon,lemon c,5,false,,,espn-pbp
+15,Miami Dolphins,2007,Trent Green,green t,4,true,,,espn-pbp
+16,Minnesota Vikings,2007,Tarvaris Jackson,jackson t,7,true,,,espn-pbp
+16,Minnesota Vikings,2007,Kelly Holcomb,holcomb k,2,false,,,espn-pbp
+16,Minnesota Vikings,2007,Brooks Bollinger,bollinger b,1,false,,,espn-pbp
+17,New England Patriots,2007,Tom Brady,brady t,18,true,,,espn-pbp
+18,New Orleans Saints,2007,Drew Brees,brees d,13,true,,,espn-pbp
+19,New York Giants,2007,Eli Manning,manning e,17,true,,,espn-pbp
+20,New York Jets,2007,Kellen Clemens,clemens k,7,false,,,espn-pbp
+20,New York Jets,2007,Chad Pennington,pennington c,6,true,,,espn-pbp
+21,Philadelphia Eagles,2007,Donovan Mcnabb,mcnabb d,12,true,,,espn-pbp
+21,Philadelphia Eagles,2007,A.J. Feeley,j. feeley a,3,false,,,espn-pbp
+23,Pittsburgh Steelers,2007,Ben Roethlisberger,roethlisberger b,15,true,,,espn-pbp
+23,Pittsburgh Steelers,2007,Charlie Batch,batch c,1,false,,,espn-pbp
+25,San Francisco 49ers,2007,Trent Dilfer,dilfer t,5,false,,,espn-pbp
+25,San Francisco 49ers,2007,Shaun Hill,hill s,2,false,,,espn-pbp
+25,San Francisco 49ers,2007,Alex D. Smith,smith a,2,true,,,espn-pbp
+25,San Francisco 49ers,2007,Chris Weinke,weinke c,1,false,,,espn-pbp
+26,Seattle Seahawks,2007,Matt Hasselbeck,hasselbeck m,16,true,,,espn-pbp
+26,Seattle Seahawks,2007,Seneca Wallace,wallace s,1,false,,,espn-pbp
+27,Tampa Bay Buccaneers,2007,Jeff Garcia,garcia j,10,true,,,espn-pbp
+27,Tampa Bay Buccaneers,2007,Luke Mccown,mccown l,2,false,,,espn-pbp
+10,Tennessee Titans,2007,Vince Young,young v,6,true,,,espn-pbp
+28,Washington Commanders,2007,Jason Campbell,campbell j,8,true,,,espn-pbp
+28,Washington Commanders,2007,Todd Collins,collins t,4,false,,,espn-pbp
+22,Arizona Cardinals,2008,K.Warner,warner k,20,true,,,espn-pbp
+1,Atlanta Falcons,2008,M.Ryan,ryan m,15,true,,,espn-pbp
+33,Baltimore Ravens,2008,J.Flacco,flacco j,14,true,,,espn-pbp
+2,Buffalo Bills,2008,T.Edwards,edwards t,12,false,,,espn-pbp
+2,Buffalo Bills,2008,J.Losman,losman j,2,false,,,espn-pbp
+2,Buffalo Bills,2008,Brian Moorman,moorman b,1,true,,,espn-pbp
+2,Buffalo Bills,2008,J.P. Losman,p. losman j,1,false,,,espn-pbp
+29,Carolina Panthers,2008,J.Delhomme,delhomme j,14,true,,,espn-pbp
+3,Chicago Bears,2008,K.Orton,orton k,13,true,,,espn-pbp
+3,Chicago Bears,2008,R.Grossman,grossman r,1,false,,,espn-pbp
+4,Cincinnati Bengals,2008,R.Fitzpatrick,fitzpatrick r,11,false,,,espn-pbp
+4,Cincinnati Bengals,2008,Carson Palmer,palmer c,2,true,,,espn-pbp
+5,Cleveland Browns,2008,Derek Anderson,anderson d,8,true,,,espn-pbp
+5,Cleveland Browns,2008,K.Dorsey,dorsey k,3,false,,,espn-pbp
+5,Cleveland Browns,2008,B.Quinn,quinn b,3,false,,,espn-pbp
+5,Cleveland Browns,2008,B.Gradkowski,gradkowski b,1,false,,,espn-pbp
+6,Dallas Cowboys,2008,T.Romo,romo t,13,true,,,espn-pbp
+6,Dallas Cowboys,2008,B.Johnson,johnson b,3,false,,,espn-pbp
+7,Denver Broncos,2008,J.Cutler,cutler j,16,true,,,espn-pbp
+8,Detroit Lions,2008,D.Orlovsky,orlovsky d,8,false,,,espn-pbp
+8,Detroit Lions,2008,D.Culpepper,culpepper d,5,false,,,espn-pbp
+8,Detroit Lions,2008,Jon Kitna,kitna j,3,true,,,espn-pbp
+9,Green Bay Packers,2008,A.Rodgers,rodgers a,15,true,,,espn-pbp
+34,Houston Texans,2008,M.Schaub,schaub m,11,true,,,espn-pbp
+34,Houston Texans,2008,S.Rosenfels,rosenfels s,5,false,,,espn-pbp
+11,Indianapolis Colts,2008,P.Manning,manning p,17,true,,,espn-pbp
+30,Jacksonville Jaguars,2008,D.Garrard,garrard d,14,true,,,espn-pbp
+12,Kansas City Chiefs,2008,T.Thigpen,thigpen t,12,false,,,espn-pbp
+12,Kansas City Chiefs,2008,Damon Huard,huard d,2,true,,,espn-pbp
+13,Las Vegas Raiders,2008,J.Russell,russell j,12,true,,,espn-pbp
+13,Las Vegas Raiders,2008,A.Walter,walter a,1,false,,,espn-pbp
+24,Los Angeles Chargers,2008,P.Rivers,rivers p,18,true,,,espn-pbp
+14,Los Angeles Rams,2008,M.Bulger,bulger m,12,true,,,espn-pbp
+14,Los Angeles Rams,2008,Trent Green,green t,2,false,,,espn-pbp
+15,Miami Dolphins,2008,C.Pennington,pennington c,15,true,,,espn-pbp
+15,Miami Dolphins,2008,Ronnie Brown,brown r,1,false,,,espn-pbp
+16,Minnesota Vikings,2008,G.Frerotte,frerotte g,9,false,,,espn-pbp
+16,Minnesota Vikings,2008,T.Jackson,jackson t,5,true,,,espn-pbp
+16,Minnesota Vikings,2008,Chester Taylor,taylor c,1,false,,,espn-pbp
+17,New England Patriots,2008,M.Cassel,cassel m,14,true,,,espn-pbp
+18,New Orleans Saints,2008,D.Brees,brees d,15,true,,,espn-pbp
+19,New York Giants,2008,E.Manning,manning e,16,true,,,espn-pbp
+20,New York Jets,2008,B.Favre,favre b,15,true,,,espn-pbp
+21,Philadelphia Eagles,2008,D.McNabb,mcnabb d,18,true,,,espn-pbp
+23,Pittsburgh Steelers,2008,B.Roethlisberger,roethlisberger b,17,true,,,espn-pbp
+25,San Francisco 49ers,2008,S.Hill,hill s,9,false,,,espn-pbp
+25,San Francisco 49ers,2008,J.T. O'Sullivan,t. o'sullivan j,6,true,,,espn-pbp
+26,Seattle Seahawks,2008,S.Wallace,wallace s,8,false,,,espn-pbp
+26,Seattle Seahawks,2008,Matt Hasselbeck,hasselbeck m,6,true,,,espn-pbp
+26,Seattle Seahawks,2008,Charlie Frye,frye c,1,false,,,espn-pbp
+27,Tampa Bay Buccaneers,2008,J.Garcia,garcia j,12,true,,,espn-pbp
+27,Tampa Bay Buccaneers,2008,Brian Griese,griese b,4,false,,,espn-pbp
+10,Tennessee Titans,2008,K.Collins,collins k,13,false,,,espn-pbp
+10,Tennessee Titans,2008,Vince Young,young v,2,true,,,espn-pbp
+28,Washington Commanders,2008,J.Campbell,campbell j,14,true,,,espn-pbp
+28,Washington Commanders,2008,Antwaan Randle El,el a,1,false,,,espn-pbp
+22,Arizona Cardinals,2009,K.Warner,warner k,17,true,,,espn-pbp
+22,Arizona Cardinals,2009,M.Leinart,leinart m,1,false,,,espn-pbp
+1,Atlanta Falcons,2009,M.Ryan,ryan m,14,true,,,espn-pbp
+1,Atlanta Falcons,2009,C.Redman,redman c,2,false,,,espn-pbp
+33,Baltimore Ravens,2009,J.Flacco,flacco j,18,true,,,espn-pbp
+2,Buffalo Bills,2009,R.Fitzpatrick,fitzpatrick r,8,false,,,espn-pbp
+2,Buffalo Bills,2009,T.Edwards,edwards t,7,true,,,espn-pbp
+2,Buffalo Bills,2009,B.Brohm,brohm b,1,false,,,espn-pbp
+29,Carolina Panthers,2009,J.Delhomme,delhomme j,11,true,,,espn-pbp
+29,Carolina Panthers,2009,M.Moore,moore m,5,false,,,espn-pbp
+3,Chicago Bears,2009,J.Cutler,cutler j,16,true,,,espn-pbp
+4,Cincinnati Bengals,2009,C.Palmer,palmer c,17,true,,,espn-pbp
+5,Cleveland Browns,2009,B.Quinn,quinn b,9,true,,,espn-pbp
+5,Cleveland Browns,2009,D.Anderson,anderson d,7,false,,,espn-pbp
+6,Dallas Cowboys,2009,T.Romo,romo t,18,true,,,espn-pbp
+7,Denver Broncos,2009,K.Orton,orton k,15,true,,,espn-pbp
+7,Denver Broncos,2009,C.Simms,simms c,1,false,,,espn-pbp
+8,Detroit Lions,2009,M.Stafford,stafford m,10,true,,,espn-pbp
+8,Detroit Lions,2009,D.Culpepper,culpepper d,5,false,,,espn-pbp
+8,Detroit Lions,2009,D.Stanton,stanton d,1,false,,,espn-pbp
+9,Green Bay Packers,2009,A.Rodgers,rodgers a,17,true,,,espn-pbp
+34,Houston Texans,2009,M.Schaub,schaub m,15,true,,,espn-pbp
+34,Houston Texans,2009,R.Grossman,grossman r,1,false,,,espn-pbp
+11,Indianapolis Colts,2009,P.Manning,manning p,19,true,,,espn-pbp
+30,Jacksonville Jaguars,2009,D.Garrard,garrard d,16,true,,,espn-pbp
+12,Kansas City Chiefs,2009,M.Cassel,cassel m,15,false,,,espn-pbp
+12,Kansas City Chiefs,2009,B.Croyle,croyle b,1,true,,,espn-pbp
+13,Las Vegas Raiders,2009,J.Russell,russell j,9,true,,,espn-pbp
+13,Las Vegas Raiders,2009,B.Gradkowski,gradkowski b,4,false,,,espn-pbp
+13,Las Vegas Raiders,2009,C.Frye,frye c,3,false,,,espn-pbp
+24,Los Angeles Chargers,2009,P.Rivers,rivers p,17,true,,,espn-pbp
+14,Los Angeles Rams,2009,M.Bulger,bulger m,8,true,,,espn-pbp
+14,Los Angeles Rams,2009,K.Boller,boller k,4,false,,,espn-pbp
+14,Los Angeles Rams,2009,K.Null,null k,4,false,,,espn-pbp
+15,Miami Dolphins,2009,C.Henne,henne c,13,false,,,espn-pbp
+15,Miami Dolphins,2009,C.Pennington,pennington c,3,true,,,espn-pbp
+16,Minnesota Vikings,2009,B.Favre,favre b,17,true,,,espn-pbp
+16,Minnesota Vikings,2009,Brett Favre deep,deep b,1,false,,,espn-pbp
+17,New England Patriots,2009,T.Brady,brady t,17,true,,,espn-pbp
+18,New Orleans Saints,2009,D.Brees,brees d,18,true,,,espn-pbp
+18,New Orleans Saints,2009,M.Brunell,brunell m,1,false,,,espn-pbp
+19,New York Giants,2009,E.Manning,manning e,16,true,,,espn-pbp
+20,New York Jets,2009,M.Sanchez,sanchez m,18,true,,,espn-pbp
+20,New York Jets,2009,K.Clemens,clemens k,1,false,,,espn-pbp
+21,Philadelphia Eagles,2009,D.McNabb,mcnabb d,15,true,,,espn-pbp
+21,Philadelphia Eagles,2009,K.Kolb,kolb k,2,false,,,espn-pbp
+23,Pittsburgh Steelers,2009,B.Roethlisberger,roethlisberger b,15,true,,,espn-pbp
+23,Pittsburgh Steelers,2009,D.Dixon,dixon d,1,false,,,espn-pbp
+25,San Francisco 49ers,2009,A.Smith,smith a,10,false,,,espn-pbp
+25,San Francisco 49ers,2009,S.Hill,hill s,6,true,,,espn-pbp
+26,Seattle Seahawks,2009,M.Hasselbeck,hasselbeck m,14,true,,,espn-pbp
+26,Seattle Seahawks,2009,S.Wallace,wallace s,2,false,,,espn-pbp
+27,Tampa Bay Buccaneers,2009,J.Freeman,freeman j,9,false,,,espn-pbp
+27,Tampa Bay Buccaneers,2009,J.Johnson,johnson j,4,false,,,espn-pbp
+27,Tampa Bay Buccaneers,2009,B.Leftwich,leftwich b,3,true,,,espn-pbp
+10,Tennessee Titans,2009,V.Young,young v,10,false,,,espn-pbp
+10,Tennessee Titans,2009,K.Collins,collins k,6,true,,,espn-pbp
+28,Washington Commanders,2009,J.Campbell,campbell j,16,true,,,espn-pbp
+22,Arizona Cardinals,2010,D.Anderson,anderson d,9,true,,,espn-pbp
+22,Arizona Cardinals,2010,J.Skelton,skelton j,4,false,,,espn-pbp
+22,Arizona Cardinals,2010,M.Hall,hall m,3,false,,,espn-pbp
+1,Atlanta Falcons,2010,M.Ryan,ryan m,16,false,,,espn-pbp
+1,Atlanta Falcons,2010,Ryan,ryan,1,true,,,espn-pbp
+33,Baltimore Ravens,2010,J.Flacco,flacco j,18,true,,,espn-pbp
+2,Buffalo Bills,2010,R.Fitzpatrick,fitzpatrick r,13,false,,,espn-pbp
+2,Buffalo Bills,2010,T.Edwards,edwards t,2,true,,,espn-pbp
+2,Buffalo Bills,2010,B.Brohm,brohm b,1,false,,,espn-pbp
+29,Carolina Panthers,2010,J.Clausen,clausen j,10,false,,,espn-pbp
+29,Carolina Panthers,2010,M.Moore,moore m,5,true,,,espn-pbp
+29,Carolina Panthers,2010,B.St. Pierre,st. pierre b,1,false,,,espn-pbp
+3,Chicago Bears,2010,J.Cutler,cutler j,17,true,,,espn-pbp
+3,Chicago Bears,2010,T.Collins,collins t,1,false,,,espn-pbp
+4,Cincinnati Bengals,2010,C.Palmer,palmer c,16,true,,,espn-pbp
+5,Cleveland Browns,2010,C.McCoy,mccoy c,8,false,,,espn-pbp
+5,Cleveland Browns,2010,J.Delhomme,delhomme j,4,true,,,espn-pbp
+5,Cleveland Browns,2010,S.Wallace,wallace s,4,false,,,espn-pbp
+6,Dallas Cowboys,2010,J.Kitna,kitna j,9,false,,,espn-pbp
+6,Dallas Cowboys,2010,T.Romo,romo t,6,true,,,espn-pbp
+6,Dallas Cowboys,2010,S.McGee,mcgee s,1,false,,,espn-pbp
+7,Denver Broncos,2010,K.Orton,orton k,13,true,,,espn-pbp
+7,Denver Broncos,2010,T.Tebow,tebow t,3,false,,,espn-pbp
+8,Detroit Lions,2010,Sh.Hill,sh.hill,10,false,,,espn-pbp
+8,Detroit Lions,2010,M.Stafford,stafford m,3,true,,,espn-pbp
+8,Detroit Lions,2010,D.Stanton,stanton d,3,false,,,espn-pbp
+9,Green Bay Packers,2010,A.Rodgers,rodgers a,19,true,,,espn-pbp
+9,Green Bay Packers,2010,M.Flynn,flynn m,1,false,,,espn-pbp
+34,Houston Texans,2010,M.Schaub,schaub m,16,true,,,espn-pbp
+11,Indianapolis Colts,2010,P.Manning,manning p,17,true,,,espn-pbp
+30,Jacksonville Jaguars,2010,D.Garrard,garrard d,14,true,,,espn-pbp
+30,Jacksonville Jaguars,2010,T.Bouman,bouman t,1,false,,,espn-pbp
+30,Jacksonville Jaguars,2010,T.Edwards,edwards t,1,false,,,espn-pbp
+12,Kansas City Chiefs,2010,M.Cassel,cassel m,16,true,,,espn-pbp
+12,Kansas City Chiefs,2010,B.Croyle,croyle b,1,false,,,espn-pbp
+13,Las Vegas Raiders,2010,J.Campbell,campbell j,12,true,,,espn-pbp
+13,Las Vegas Raiders,2010,B.Gradkowski,gradkowski b,4,false,,,espn-pbp
+24,Los Angeles Chargers,2010,P.Rivers,rivers p,16,true,,,espn-pbp
+14,Los Angeles Rams,2010,S.Bradford,bradford s,16,true,,,espn-pbp
+15,Miami Dolphins,2010,C.Henne,henne c,15,true,,,espn-pbp
+15,Miami Dolphins,2010,T.Thigpen,thigpen t,1,false,,,espn-pbp
+16,Minnesota Vikings,2010,B.Favre,favre b,12,true,,,espn-pbp
+16,Minnesota Vikings,2010,T.Jackson,jackson t,2,false,,,espn-pbp
+16,Minnesota Vikings,2010,J.Webb,webb j,2,false,,,espn-pbp
+17,New England Patriots,2010,T.Brady,brady t,17,true,,,espn-pbp
+18,New Orleans Saints,2010,D.Brees,brees d,17,true,,,espn-pbp
+19,New York Giants,2010,E.Manning,manning e,16,true,,,espn-pbp
+20,New York Jets,2010,M.Sanchez,sanchez m,18,true,,,espn-pbp
+20,New York Jets,2010,M.Brunell,brunell m,1,false,,,espn-pbp
+21,Philadelphia Eagles,2010,M.Vick,vick m,12,false,,,espn-pbp
+21,Philadelphia Eagles,2010,K.Kolb,kolb k,5,true,,,espn-pbp
+23,Pittsburgh Steelers,2010,B.Roethlisberger,roethlisberger b,15,false,,,espn-pbp
+23,Pittsburgh Steelers,2010,C.Batch,batch c,2,false,,,espn-pbp
+23,Pittsburgh Steelers,2010,D.Dixon,dixon d,2,true,,,espn-pbp
+25,San Francisco 49ers,2010,A.Smith,smith a,10,true,,,espn-pbp
+25,San Francisco 49ers,2010,T.Smith,smith t,6,false,,,espn-pbp
+26,Seattle Seahawks,2010,M.Hasselbeck,hasselbeck m,16,true,,,espn-pbp
+26,Seattle Seahawks,2010,C.Whitehurst,whitehurst c,2,false,,,espn-pbp
+27,Tampa Bay Buccaneers,2010,J.Freeman,freeman j,16,true,,,espn-pbp
+10,Tennessee Titans,2010,V.Young,young v,8,true,,,espn-pbp
+10,Tennessee Titans,2010,K.Collins,collins k,7,false,,,espn-pbp
+10,Tennessee Titans,2010,R.Smith,smith r,1,false,,,espn-pbp
+28,Washington Commanders,2010,D.McNabb,mcnabb d,13,true,,,espn-pbp
+28,Washington Commanders,2010,R.Grossman,grossman r,3,false,,,espn-pbp
+22,Arizona Cardinals,2011,K.Kolb,kolb k,8,true,,,espn-pbp
+22,Arizona Cardinals,2011,J.Skelton,skelton j,8,false,,,espn-pbp
+1,Atlanta Falcons,2011,M.Ryan,ryan m,17,true,,,espn-pbp
+33,Baltimore Ravens,2011,J.Flacco,flacco j,18,true,,,espn-pbp
+2,Buffalo Bills,2011,R.Fitzpatrick,fitzpatrick r,16,true,,,espn-pbp
+29,Carolina Panthers,2011,C.Newton,newton c,16,true,,,espn-pbp
+3,Chicago Bears,2011,J.Cutler,cutler j,10,true,,,espn-pbp
+3,Chicago Bears,2011,C.Hanie,hanie c,4,false,,,espn-pbp
+3,Chicago Bears,2011,J.McCown,mccown j,2,false,,,espn-pbp
+4,Cincinnati Bengals,2011,A.Dalton,dalton a,17,true,,,espn-pbp
+5,Cleveland Browns,2011,C.McCoy,mccoy c,13,true,,,espn-pbp
+5,Cleveland Browns,2011,S.Wallace,wallace s,3,false,,,espn-pbp
+6,Dallas Cowboys,2011,T.Romo,romo t,15,true,,,espn-pbp
+6,Dallas Cowboys,2011,S.McGee,mcgee s,1,false,,,espn-pbp
+7,Denver Broncos,2011,T.Tebow,tebow t,13,false,,,espn-pbp
+7,Denver Broncos,2011,K.Orton,orton k,5,true,,,espn-pbp
+8,Detroit Lions,2011,M.Stafford,stafford m,17,true,,,espn-pbp
+9,Green Bay Packers,2011,A.Rodgers,rodgers a,16,true,,,espn-pbp
+9,Green Bay Packers,2011,M.Flynn,flynn m,1,false,,,espn-pbp
+34,Houston Texans,2011,M.Schaub,schaub m,10,true,,,espn-pbp
+34,Houston Texans,2011,T.Yates,yates t,7,false,,,espn-pbp
+34,Houston Texans,2011,M.Leinart,leinart m,1,false,,,espn-pbp
+11,Indianapolis Colts,2011,C.Painter,painter c,8,false,,,espn-pbp
+11,Indianapolis Colts,2011,D.Orlovsky,orlovsky d,5,false,,,espn-pbp
+11,Indianapolis Colts,2011,K.Collins,collins k,3,true,,,espn-pbp
+30,Jacksonville Jaguars,2011,B.Gabbert,gabbert b,14,false,,,espn-pbp
+30,Jacksonville Jaguars,2011,L.McCown,mccown l,2,true,,,espn-pbp
+12,Kansas City Chiefs,2011,M.Cassel,cassel m,9,true,,,espn-pbp
+12,Kansas City Chiefs,2011,T.Palko,palko t,4,false,,,espn-pbp
+12,Kansas City Chiefs,2011,K.Orton,orton k,3,false,,,espn-pbp
+13,Las Vegas Raiders,2011,C.Palmer,palmer c,9,false,,,espn-pbp
+13,Las Vegas Raiders,2011,J.Campbell,campbell j,6,true,,,espn-pbp
+13,Las Vegas Raiders,2011,K.Boller,boller k,1,false,,,espn-pbp
+24,Los Angeles Chargers,2011,P.Rivers,rivers p,16,true,,,espn-pbp
+14,Los Angeles Rams,2011,S.Bradford,bradford s,10,true,,,espn-pbp
+14,Los Angeles Rams,2011,K.Clemens,clemens k,3,false,,,espn-pbp
+14,Los Angeles Rams,2011,A.Feeley,feeley a,3,false,,,espn-pbp
+15,Miami Dolphins,2011,M.Moore,moore m,12,false,,,espn-pbp
+15,Miami Dolphins,2011,C.Henne,henne c,4,true,,,espn-pbp
+16,Minnesota Vikings,2011,C.Ponder,ponder c,10,false,,,espn-pbp
+16,Minnesota Vikings,2011,D.McNabb,mcnabb d,6,true,,,espn-pbp
+17,New England Patriots,2011,T.Brady,brady t,19,true,,,espn-pbp
+18,New Orleans Saints,2011,D.Brees,brees d,18,true,,,espn-pbp
+19,New York Giants,2011,E.Manning,manning e,20,true,,,espn-pbp
+20,New York Jets,2011,M.Sanchez,sanchez m,16,true,,,espn-pbp
+21,Philadelphia Eagles,2011,M.Vick,vick m,13,true,,,espn-pbp
+21,Philadelphia Eagles,2011,V.Young,young v,3,false,,,espn-pbp
+23,Pittsburgh Steelers,2011,B.Roethlisberger,roethlisberger b,16,true,,,espn-pbp
+23,Pittsburgh Steelers,2011,C.Batch,batch c,1,false,,,espn-pbp
+25,San Francisco 49ers,2011,Alex Smith,smith a,18,true,,,espn-pbp
+26,Seattle Seahawks,2011,T.Jackson,jackson t,14,true,,,espn-pbp
+26,Seattle Seahawks,2011,C.Whitehurst,whitehurst c,2,false,,,espn-pbp
+27,Tampa Bay Buccaneers,2011,J.Freeman,freeman j,15,true,,,espn-pbp
+27,Tampa Bay Buccaneers,2011,J.Johnson,johnson j,1,false,,,espn-pbp
+10,Tennessee Titans,2011,M.Hasselbeck,hasselbeck m,16,true,,,espn-pbp
+28,Washington Commanders,2011,R.Grossman,grossman r,13,true,,,espn-pbp
+28,Washington Commanders,2011,J.Beck,beck j,3,false,,,espn-pbp
+22,Arizona Cardinals,2012,J.Skelton,skelton j,6,true,,,espn-pbp
+22,Arizona Cardinals,2012,K.Kolb,kolb k,5,false,,,espn-pbp
+22,Arizona Cardinals,2012,R.Lindley,lindley r,4,false,,,espn-pbp
+22,Arizona Cardinals,2012,B.Hoyer,hoyer b,1,false,,,espn-pbp
+1,Atlanta Falcons,2012,M.Ryan,ryan m,18,true,,,espn-pbp
+33,Baltimore Ravens,2012,J.Flacco,flacco j,20,true,,,espn-pbp
+2,Buffalo Bills,2012,R.Fitzpatrick,fitzpatrick r,16,true,,,espn-pbp
+29,Carolina Panthers,2012,C.Newton,newton c,16,true,,,espn-pbp
+3,Chicago Bears,2012,J.Cutler,cutler j,15,true,,,espn-pbp
+3,Chicago Bears,2012,J.Campbell,campbell j,1,false,,,espn-pbp
+4,Cincinnati Bengals,2012,A.Dalton,dalton a,17,true,,,espn-pbp
+5,Cleveland Browns,2012,B.Weeden,weeden b,15,true,,,espn-pbp
+5,Cleveland Browns,2012,T.Lewis,lewis t,1,false,,,espn-pbp
+6,Dallas Cowboys,2012,T.Romo,romo t,16,true,,,espn-pbp
+7,Denver Broncos,2012,P.Manning,manning p,17,true,,,espn-pbp
+8,Detroit Lions,2012,M.Stafford,stafford m,16,true,,,espn-pbp
+9,Green Bay Packers,2012,A.Rodgers,rodgers a,18,true,,,espn-pbp
+34,Houston Texans,2012,M.Schaub,schaub m,18,true,,,espn-pbp
+11,Indianapolis Colts,2012,A.Luck,luck a,17,true,,,espn-pbp
+30,Jacksonville Jaguars,2012,B.Gabbert,gabbert b,9,true,,,espn-pbp
+30,Jacksonville Jaguars,2012,C.Henne,henne c,7,false,,,espn-pbp
+12,Kansas City Chiefs,2012,M.Cassel,cassel m,8,true,,,espn-pbp
+12,Kansas City Chiefs,2012,B.Quinn,quinn b,8,false,,,espn-pbp
+13,Las Vegas Raiders,2012,C.Palmer,palmer c,15,true,,,espn-pbp
+13,Las Vegas Raiders,2012,T.Pryor,pryor t,1,false,,,espn-pbp
+24,Los Angeles Chargers,2012,P.Rivers,rivers p,16,true,,,espn-pbp
+14,Los Angeles Rams,2012,S.Bradford,bradford s,16,true,,,espn-pbp
+15,Miami Dolphins,2012,R.Tannehill,tannehill r,16,true,,,espn-pbp
+16,Minnesota Vikings,2012,C.Ponder,ponder c,16,true,,,espn-pbp
+16,Minnesota Vikings,2012,J.Webb,webb j,1,false,,,espn-pbp
+17,New England Patriots,2012,T.Brady,brady t,18,true,,,espn-pbp
+18,New Orleans Saints,2012,D.Brees,brees d,16,true,,,espn-pbp
+19,New York Giants,2012,E.Manning,manning e,16,true,,,espn-pbp
+20,New York Jets,2012,M.Sanchez,sanchez m,15,true,,,espn-pbp
+20,New York Jets,2012,G.McElroy,mcelroy g,1,false,,,espn-pbp
+21,Philadelphia Eagles,2012,M.Vick,vick m,10,true,,,espn-pbp
+21,Philadelphia Eagles,2012,N.Foles,foles n,6,false,,,espn-pbp
+23,Pittsburgh Steelers,2012,B.Roethlisberger,roethlisberger b,13,true,,,espn-pbp
+23,Pittsburgh Steelers,2012,C.Batch,batch c,2,false,,,espn-pbp
+23,Pittsburgh Steelers,2012,B.Leftwich,leftwich b,1,false,,,espn-pbp
+25,San Francisco 49ers,2012,C.Kaepernick,kaepernick c,10,false,,,espn-pbp
+25,San Francisco 49ers,2012,A.Smith,smith a,9,true,,,espn-pbp
+26,Seattle Seahawks,2012,R.Wilson,wilson r,18,true,,,espn-pbp
+27,Tampa Bay Buccaneers,2012,J.Freeman,freeman j,16,true,,,espn-pbp
+10,Tennessee Titans,2012,J.Locker,locker j,10,true,,,espn-pbp
+10,Tennessee Titans,2012,M.Hasselbeck,hasselbeck m,6,false,,,espn-pbp
+28,Washington Commanders,2012,R.Griffin,griffin r,16,true,,,espn-pbp
+28,Washington Commanders,2012,K.Cousins,cousins k,1,false,,,espn-pbp
+22,Arizona Cardinals,2013,C.Palmer,palmer c,16,true,,,espn-pbp
+1,Atlanta Falcons,2013,M.Ryan,ryan m,16,true,,,espn-pbp
+33,Baltimore Ravens,2013,J.Flacco,flacco j,16,true,,,espn-pbp
+2,Buffalo Bills,2013,E.Manuel,manuel e,10,true,,,espn-pbp
+2,Buffalo Bills,2013,T.Lewis,lewis t,5,false,,,espn-pbp
+2,Buffalo Bills,2013,J.Tuel,tuel j,1,false,,,espn-pbp
+29,Carolina Panthers,2013,C.Newton,newton c,17,true,,,espn-pbp
+3,Chicago Bears,2013,J.Cutler,cutler j,11,true,,,espn-pbp
+3,Chicago Bears,2013,J.McCown,mccown j,5,false,,,espn-pbp
+4,Cincinnati Bengals,2013,A.Dalton,dalton a,17,true,,,espn-pbp
+5,Cleveland Browns,2013,J.Campbell,campbell j,8,false,,,espn-pbp
+5,Cleveland Browns,2013,B.Weeden,weeden b,5,true,,,espn-pbp
+5,Cleveland Browns,2013,B.Hoyer,hoyer b,3,false,,,espn-pbp
+6,Dallas Cowboys,2013,T.Romo,romo t,15,true,,,espn-pbp
+6,Dallas Cowboys,2013,K.Orton,orton k,1,false,,,espn-pbp
+7,Denver Broncos,2013,P.Manning,manning p,19,true,,,espn-pbp
+8,Detroit Lions,2013,M.Stafford,stafford m,16,true,,,espn-pbp
+9,Green Bay Packers,2013,A.Rodgers,rodgers a,9,true,,,espn-pbp
+9,Green Bay Packers,2013,M.Flynn,flynn m,4,false,,,espn-pbp
+9,Green Bay Packers,2013,S.Tolzien,tolzien s,2,false,,,espn-pbp
+9,Green Bay Packers,2013,S.Wallace,wallace s,2,false,,,espn-pbp
+34,Houston Texans,2013,C.Keenum,keenum c,8,false,,,espn-pbp
+34,Houston Texans,2013,M.Schaub,schaub m,8,true,,,espn-pbp
+11,Indianapolis Colts,2013,A.Luck,luck a,18,true,,,espn-pbp
+30,Jacksonville Jaguars,2013,C.Henne,henne c,13,false,,,espn-pbp
+30,Jacksonville Jaguars,2013,B.Gabbert,gabbert b,3,true,,,espn-pbp
+12,Kansas City Chiefs,2013,A.Smith,smith a,16,true,,,espn-pbp
+12,Kansas City Chiefs,2013,C.Daniel,daniel c,1,false,,,espn-pbp
+13,Las Vegas Raiders,2013,T.Pryor,pryor t,9,true,,,espn-pbp
+13,Las Vegas Raiders,2013,M.McGloin,mcgloin m,6,false,,,espn-pbp
+13,Las Vegas Raiders,2013,M.Flynn,flynn m,1,false,,,espn-pbp
+24,Los Angeles Chargers,2013,P.Rivers,rivers p,18,true,,,espn-pbp
+14,Los Angeles Rams,2013,K.Clemens,clemens k,9,false,,,espn-pbp
+14,Los Angeles Rams,2013,S.Bradford,bradford s,7,true,,,espn-pbp
+15,Miami Dolphins,2013,R.Tannehill,tannehill r,16,true,,,espn-pbp
+16,Minnesota Vikings,2013,C.Ponder,ponder c,9,true,,,espn-pbp
+16,Minnesota Vikings,2013,M.Cassel,cassel m,6,false,,,espn-pbp
+16,Minnesota Vikings,2013,J.Freeman,freeman j,1,false,,,espn-pbp
+17,New England Patriots,2013,T.Brady,brady t,18,true,,,espn-pbp
+18,New Orleans Saints,2013,D.Brees,brees d,18,true,,,espn-pbp
+19,New York Giants,2013,E.Manning,manning e,16,true,,,espn-pbp
+20,New York Jets,2013,G.Smith,smith g,16,true,,,espn-pbp
+21,Philadelphia Eagles,2013,N.Foles,foles n,11,false,,,espn-pbp
+21,Philadelphia Eagles,2013,M.Vick,vick m,6,true,,,espn-pbp
+23,Pittsburgh Steelers,2013,B.Roethlisberger,roethlisberger b,16,true,,,espn-pbp
+25,San Francisco 49ers,2013,C.Kaepernick,kaepernick c,19,true,,,espn-pbp
+26,Seattle Seahawks,2013,R.Wilson,wilson r,19,true,,,espn-pbp
+27,Tampa Bay Buccaneers,2013,M.Glennon,glennon m,13,false,,,espn-pbp
+27,Tampa Bay Buccaneers,2013,J.Freeman,freeman j,3,true,,,espn-pbp
+10,Tennessee Titans,2013,R.Fitzpatrick,fitzpatrick r,9,false,,,espn-pbp
+10,Tennessee Titans,2013,J.Locker,locker j,7,true,,,espn-pbp
+28,Washington Commanders,2013,R.Griffin,griffin r,13,true,,,espn-pbp
+28,Washington Commanders,2013,K.Cousins,cousins k,3,false,,,espn-pbp
+22,Arizona Cardinals,2014,D.Stanton,stanton d,8,false,263,19.0594,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2014,C.Palmer,palmer c,6,true,238,48.0216,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2014,R.Lindley,lindley r,3,false,123,-18.8694,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2014,M.Ryan,ryan m,16,true,645,142.3835,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2014,J.Flacco,flacco j,18,true,665,124.4542,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2014,K.Orton,orton k,12,false,460,46.0142,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2014,E.Manuel,manuel e,4,true,134,4.2203,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2014,C.Newton,newton c,16,false,537,58.4052,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2014,D.Anderson,anderson d,2,true,97,28.9049,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2014,J.Cutler,cutler j,15,true,558,24.6401,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2014,J.Clausen,clausen j,1,false,45,1.2696,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2014,A.Dalton,dalton a,17,true,531,32.5439,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2014,B.Hoyer,hoyer b,13,true,461,25.2554,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2014,J.Manziel,manziel j,2,false,38,-12.7827,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2014,C.Shaw,shaw c,1,false,31,2.5336,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2014,T.Romo,romo t,17,true,497,165.2598,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2014,B.Weeden,weeden b,1,false,43,5.0342,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2014,P.Manning,manning p,17,true,679,144.5483,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2014,M.Stafford,stafford m,17,true,669,82.8146,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2014,A.Rodgers,rodgers a,18,true,617,202.3520,espn-pbp/ep-20260920-231258
+34,Houston Texans,2014,R.Fitzpatrick,fitzpatrick r,12,true,328,39.3202,espn-pbp/ep-20260920-231258
+34,Houston Texans,2014,C.Keenum,keenum c,2,false,81,-0.3209,espn-pbp/ep-20260920-231258
+34,Houston Texans,2014,R.Mallett,mallett r,2,false,77,-3.3378,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2014,A.Luck,luck a,19,true,766,119.6742,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2014,B.Bortles,bortles b,13,false,501,-24.0611,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2014,C.Henne,henne c,3,true,80,-16.1862,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2014,A.Smith,smith a,15,true,483,93.2652,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2014,C.Daniel,daniel c,1,false,30,-2.5763,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2014,D.Carr,carr d,16,true,645,-63.5637,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2014,P.Rivers,rivers p,16,true,599,130.9265,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2014,A.Davis,davis a,8,false,294,33.4132,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2014,S.Hill,hill s,8,true,245,23.2778,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2014,R.Tannehill,tannehill r,16,true,619,111.7332,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2014,T.Bridgewater,bridgewater t,12,false,411,33.9401,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2014,M.Cassel,cassel m,3,true,76,4.2554,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2014,C.Ponder,ponder c,1,false,45,-13.0315,espn-pbp/ep-20260920-231258
+17,New England Patriots,2014,T.Brady,brady t,19,true,742,174.0841,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2014,D.Brees,brees d,16,true,661,153.1313,espn-pbp/ep-20260920-231258
+19,New York Giants,2014,E.Manning,manning e,16,true,627,103.9863,espn-pbp/ep-20260920-231258
+20,New York Jets,2014,G.Smith,smith g,13,true,373,47.9061,espn-pbp/ep-20260920-231258
+20,New York Jets,2014,M.Vick,vick m,3,false,120,-12.2597,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2014,N.Foles,foles n,8,true,331,21.5864,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2014,M.Sanchez,sanchez m,7,false,263,45.4333,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2014,B.Roethlisberger,roethlisberger b,17,true,670,168.1840,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2014,C.Kaepernick,kaepernick c,16,true,512,75.6351,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2014,R.Wilson,wilson r,19,true,567,89.4391,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2014,J.McCown,mccown j,11,true,326,12.9274,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2014,M.Glennon,glennon m,5,false,218,-5.0981,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2014,Z.Mettenberger,mettenberger z,6,false,187,-11.1825,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2014,C.Whitehurst,whitehurst c,5,false,188,10.5164,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2014,J.Locker,locker j,5,true,153,1.4573,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2014,R.Griffin,griffin r,6,true,198,3.3536,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2014,K.Cousins,cousins k,5,false,215,26.3280,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2014,C.McCoy,mccoy c,4,false,133,30.0864,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2015,C.Palmer,palmer c,18,true,609,112.7371,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2015,M.Ryan,ryan m,16,true,629,116.3919,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2015,J.Flacco,flacco j,10,true,414,20.9923,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2015,R.Mallett,mallett r,2,false,94,5.0496,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2015,J.Clausen,clausen j,2,false,78,-14.4782,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2015,M.Schaub,schaub m,2,false,77,3.9677,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2015,T.Taylor,taylor t,14,true,385,13.4112,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2015,E.Manuel,manuel e,2,false,82,-10.3258,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2015,C.Newton,newton c,19,true,566,34.4380,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2015,J.Cutler,cutler j,15,true,471,86.3303,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2015,J.Clausen,clausen j,1,false,41,-13.8338,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2015,A.Dalton,dalton a,13,true,379,75.7160,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2015,A.McCarron,mccarron a,4,false,158,19.1712,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2015,J.McCown,mccown j,8,true,295,33.6625,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2015,J.Manziel,manziel j,6,false,221,-3.2822,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2015,A.Davis,davis a,2,false,102,-14.7660,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2015,M.Cassel,cassel m,7,false,211,-4.4387,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2015,T.Romo,romo t,4,true,119,20.7388,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2015,B.Weeden,weeden b,3,false,107,12.3884,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2015,K.Moore,moore k,2,false,104,-0.7987,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2015,P.Manning,manning p,12,true,424,-34.2277,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2015,B.Osweiler,osweiler b,7,false,265,18.7178,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2015,M.Stafford,stafford m,16,true,567,55.7850,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2015,A.Rodgers,rodgers a,18,true,685,10.5328,espn-pbp/ep-20260920-231258
+34,Houston Texans,2015,B.Hoyer,hoyer b,10,true,403,4.8265,espn-pbp/ep-20260920-231258
+34,Houston Texans,2015,R.Mallett,mallett r,4,false,151,-15.4284,espn-pbp/ep-20260920-231258
+34,Houston Texans,2015,T.Yates,yates t,2,false,57,-1.4973,espn-pbp/ep-20260920-231258
+34,Houston Texans,2015,B.Weeden,weeden b,1,false,37,11.2862,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2015,M.Hasselbeck,hasselbeck m,8,false,259,26.3478,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2015,A.Luck,luck a,7,true,285,-32.1945,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2015,Jo.Freeman,jo.freeman,1,false,11,-9.4280,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2015,B.Bortles,bortles b,16,true,587,26.1363,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2015,A.Smith,smith a,18,true,546,32.9944,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2015,D.Carr,carr d,16,true,545,-37.6637,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2015,P.Rivers,rivers p,16,true,674,77.3370,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2015,N.Foles,foles n,11,true,341,-71.0414,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2015,C.Keenum,keenum c,5,false,125,0.2651,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2015,R.Tannehill,tannehill r,16,true,588,13.2062,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2015,T.Bridgewater,bridgewater t,17,true,482,38.4928,espn-pbp/ep-20260920-231258
+17,New England Patriots,2015,T.Brady,brady t,18,true,732,117.8067,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2015,D.Brees,brees d,15,true,630,99.5576,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2015,L.McCown,mccown l,1,false,44,16.3460,espn-pbp/ep-20260920-231258
+19,New York Giants,2015,E.Manning,manning e,16,true,615,33.5363,espn-pbp/ep-20260920-231258
+20,New York Jets,2015,R.Fitzpatrick,fitzpatrick r,16,true,538,-7.1346,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2015,S.Bradford,bradford s,14,true,541,5.5420,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2015,M.Sanchez,sanchez m,2,false,88,-8.3181,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2015,B.Roethlisberger,roethlisberger b,13,true,549,79.5086,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2015,M.Vick,vick m,3,false,60,-20.7439,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2015,L.Jones,jones l,2,false,58,-7.5703,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2015,B.Gabbert,gabbert b,8,false,274,-29.1638,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2015,C.Kaepernick,kaepernick c,8,true,245,0.6072,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2015,R.Wilson,wilson r,18,true,523,87.2796,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2015,J.Winston,winston j,16,true,529,44.0814,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2015,M.Mariota,mariota m,12,true,373,36.0335,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2015,Z.Mettenberger,mettenberger z,4,false,164,-30.0808,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2015,K.Cousins,cousins k,17,true,573,63.9831,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2016,C.Palmer,palmer c,15,true,601,62.1895,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2016,D.Stanton,stanton d,1,false,48,-15.6300,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2016,M.Ryan,ryan m,19,true,612,212.0585,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2016,J.Flacco,flacco j,16,true,679,-27.2185,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2016,T.Taylor,taylor t,15,true,436,19.0449,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2016,E.Manuel,manuel e,1,false,26,-4.7195,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2016,C.Newton,newton c,15,true,513,8.7904,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2016,D.Anderson,anderson d,1,false,53,2.0087,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2016,M.Barkley,barkley m,6,false,226,25.4057,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2016,B.Hoyer,hoyer b,5,false,201,13.2696,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2016,J.Cutler,cutler j,5,true,142,-6.8952,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2016,A.Dalton,dalton a,16,true,564,46.7048,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2016,C.Kessler,kessler c,8,false,192,41.6163,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2016,R.Griffin,griffin r,5,true,143,-1.0704,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2016,J.McCown,mccown j,3,false,168,12.2345,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2016,D.Prescott,prescott d,17,true,488,99.6259,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2016,T.Siemian,siemian t,14,true,488,1.9637,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2016,P.Lynch,lynch p,2,false,86,-3.0274,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2016,M.Stafford,stafford m,17,true,623,60.5845,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2016,A.Rodgers,rodgers a,19,true,730,123.7811,espn-pbp/ep-20260920-231258
+34,Houston Texans,2016,B.Osweiler,osweiler b,16,true,578,-35.4045,espn-pbp/ep-20260920-231258
+34,Houston Texans,2016,T.Savage,savage t,2,false,85,15.2756,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2016,A.Luck,luck a,15,true,546,75.9241,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2016,S.Tolzien,tolzien s,1,false,38,12.6758,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2016,B.Bortles,bortles b,16,true,638,10.0298,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2016,A.Smith,smith a,16,true,511,57.3926,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2016,N.Foles,foles n,1,false,55,-8.8854,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2016,D.Carr,carr d,15,true,520,29.3161,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2016,C.Cook,cook c,1,false,68,-24.0316,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2016,M.McGloin,mcgloin m,1,false,15,-5.0900,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2016,P.Rivers,rivers p,16,true,571,58.7931,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2016,C.Keenum,keenum c,9,true,320,10.3586,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2016,J.Goff,goff j,7,false,209,-40.3522,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2016,R.Tannehill,tannehill r,13,true,380,-2.9030,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2016,M.Moore,moore m,4,false,116,9.8468,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2016,S.Bradford,bradford s,15,false,554,77.0005,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2016,S.Hill,hill s,1,true,36,5.9113,espn-pbp/ep-20260920-231258
+17,New England Patriots,2016,T.Brady,brady t,15,false,543,89.2882,espn-pbp/ep-20260920-231258
+17,New England Patriots,2016,J.Garoppolo,garoppolo j,2,true,65,17.6753,espn-pbp/ep-20260920-231258
+17,New England Patriots,2016,J.Brissett,brissett j,2,false,56,0.3063,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2016,D.Brees,brees d,16,true,629,114.0293,espn-pbp/ep-20260920-231258
+19,New York Giants,2016,E.Manning,manning e,17,true,646,-33.5159,espn-pbp/ep-20260920-231258
+20,New York Jets,2016,R.Fitzpatrick,fitzpatrick r,11,true,405,10.6707,espn-pbp/ep-20260920-231258
+20,New York Jets,2016,B.Petty,petty b,4,false,131,-23.0961,espn-pbp/ep-20260920-231258
+20,New York Jets,2016,G.Smith,smith g,1,false,13,-3.9011,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2016,C.Wentz,wentz c,16,true,613,27.5846,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2016,B.Roethlisberger,roethlisberger b,17,true,598,51.0641,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2016,L.Jones,jones l,2,false,79,0.4476,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2016,C.Kaepernick,kaepernick c,11,false,328,-2.7384,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2016,B.Gabbert,gabbert b,5,true,161,-34.4284,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2016,R.Wilson,wilson r,18,true,598,50.9076,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2016,J.Winston,winston j,16,true,569,75.3998,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2016,M.Mariota,mariota m,15,true,451,44.3446,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2016,M.Cassel,cassel m,1,false,48,-0.7108,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2016,K.Cousins,cousins k,16,true,587,110.9988,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2017,C.Palmer,palmer c,7,true,265,11.0968,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2017,B.Gabbert,gabbert b,5,false,174,-20.8080,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2017,D.Stanton,stanton d,4,false,168,-12.1045,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2017,M.Ryan,ryan m,18,true,591,110.1049,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2017,J.Flacco,flacco j,16,true,545,-39.2057,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2017,T.Taylor,taylor t,15,true,463,25.6692,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2017,N.Peterman,peterman n,2,false,47,-23.2346,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2017,C.Newton,newton c,17,true,495,8.6365,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2017,M.Trubisky,trubisky m,12,false,332,-17.4728,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2017,M.Glennon,glennon m,4,true,143,-5.9236,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2017,A.Dalton,dalton a,16,true,487,-38.4637,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2017,D.Kizer,kizer d,15,true,496,-55.9564,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2017,K.Hogan,hogan k,1,false,77,-3.9171,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2017,D.Prescott,prescott d,16,true,500,20.1954,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2017,T.Siemian,siemian t,10,true,357,-15.7634,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2017,B.Osweiler,osweiler b,4,false,176,-2.6937,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2017,P.Lynch,lynch p,2,false,44,-5.2790,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2017,M.Stafford,stafford m,16,true,577,66.6963,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2017,B.Hundley,hundley b,9,false,320,-40.0492,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2017,A.Rodgers,rodgers a,7,true,241,30.9540,espn-pbp/ep-20260920-231258
+34,Houston Texans,2017,T.Savage,savage t,7,true,236,11.9306,espn-pbp/ep-20260920-231258
+34,Houston Texans,2017,D.Watson,watson d,6,false,198,37.8482,espn-pbp/ep-20260920-231258
+34,Houston Texans,2017,T.Yates,yates t,3,false,90,-20.8197,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2017,J.Brissett,brissett j,15,false,461,5.6569,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2017,S.Tolzien,tolzien s,1,true,17,-2.7630,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2017,B.Bortles,bortles b,19,true,599,49.5889,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2017,A.Smith,smith a,16,true,532,53.3982,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2017,P.Mahomes,mahomes p,1,false,36,10.0045,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2017,D.Carr,carr d,15,true,529,-3.4667,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2017,E.Manuel,manuel e,1,false,43,-1.5734,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2017,P.Rivers,rivers p,16,true,578,60.9581,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2017,J.Goff,goff j,16,true,518,41.9416,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2017,S.Mannion,mannion s,1,false,39,-13.2094,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2017,J.Cutler,cutler j,13,true,428,-34.0300,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2017,M.Moore,moore m,2,false,125,-2.6724,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2017,D.Fales,fales d,1,false,44,2.0167,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2017,C.Keenum,keenum c,16,false,586,74.5871,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2017,S.Bradford,bradford s,2,true,41,16.2132,espn-pbp/ep-20260920-231258
+17,New England Patriots,2017,T.Brady,brady t,19,true,741,211.6624,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2017,D.Brees,brees d,18,true,591,91.2086,espn-pbp/ep-20260920-231258
+19,New York Giants,2017,E.Manning,manning e,15,true,579,-46.1727,espn-pbp/ep-20260920-231258
+19,New York Giants,2017,G.Smith,smith g,1,false,36,1.5968,espn-pbp/ep-20260920-231258
+20,New York Jets,2017,J.McCown,mccown j,13,true,375,28.7001,espn-pbp/ep-20260920-231258
+20,New York Jets,2017,B.Petty,petty b,3,false,112,-27.3414,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2017,C.Wentz,wentz c,13,true,425,38.5122,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2017,N.Foles,foles n,6,false,202,19.8173,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2017,B.Roethlisberger,roethlisberger b,16,true,613,88.8713,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2017,L.Jones,jones l,1,false,26,2.0379,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2017,B.Hoyer,hoyer b,6,true,193,-7.6570,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2017,C.Beathard,beathard c,5,false,224,-16.3666,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2017,J.Garoppolo,garoppolo j,5,false,174,56.1581,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2017,R.Wilson,wilson r,16,true,553,11.4223,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2017,J.Winston,winston j,13,true,436,68.8519,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2017,R.Fitzpatrick,fitzpatrick r,3,false,163,4.3641,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2017,M.Mariota,mariota m,17,true,524,8.1496,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2017,M.Cassel,cassel m,1,false,41,-14.7282,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2017,K.Cousins,cousins k,16,true,528,38.4987,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2018,J.Rosen,rosen j,13,false,398,-49.0569,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2018,S.Bradford,bradford s,3,true,79,-19.5044,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2018,M.Ryan,ryan m,16,true,596,125.2014,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2018,J.Flacco,flacco j,9,true,379,33.8920,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2018,L.Jackson,jackson l,8,false,196,8.7745,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2018,J.Allen,allen j,11,false,335,-23.9863,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2018,N.Peterman,peterman n,2,true,81,-34.2307,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2018,D.Anderson,anderson d,2,false,70,-10.1617,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2018,M.Barkley,barkley m,1,false,20,2.4720,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2018,C.Newton,newton c,14,true,461,34.3154,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2018,T.Heinicke,heinicke t,1,false,60,-15.4082,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2018,K.Allen,allen k,1,false,32,14.2197,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2018,M.Trubisky,trubisky m,15,true,478,73.1064,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2018,C.Daniel,daniel c,2,false,74,2.4466,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2018,A.Dalton,dalton a,11,true,364,40.0471,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2018,J.Driskel,driskel j,5,false,186,-1.0293,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2018,B.Mayfield,mayfield b,13,false,465,-9.7481,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2018,T.Taylor,taylor t,3,true,81,-19.0269,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2018,D.Prescott,prescott d,18,true,598,39.6831,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2018,C.Keenum,keenum c,16,true,602,3.3118,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2018,M.Stafford,stafford m,16,true,559,50.4799,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2018,A.Rodgers,rodgers a,16,true,595,47.4686,espn-pbp/ep-20260920-231258
+34,Houston Texans,2018,D.Watson,watson d,17,true,549,82.3985,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2018,A.Luck,luck a,18,true,672,71.2935,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2018,B.Bortles,bortles b,12,true,402,-34.0204,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2018,C.Kessler,kessler c,4,false,135,-1.1020,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2018,P.Mahomes,mahomes p,18,true,633,132.6106,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2018,D.Carr,carr d,16,true,542,57.7555,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2018,P.Rivers,rivers p,18,true,577,82.8428,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2018,J.Goff,goff j,19,true,663,102.8350,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2018,R.Tannehill,tannehill r,11,true,275,-41.1598,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2018,B.Osweiler,osweiler b,5,false,174,8.1082,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2018,K.Cousins,cousins k,16,true,589,56.2938,espn-pbp/ep-20260920-231258
+17,New England Patriots,2018,T.Brady,brady t,19,true,692,123.7559,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2018,D.Brees,brees d,17,true,542,139.6362,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2018,T.Bridgewater,bridgewater t,1,false,23,-3.4260,espn-pbp/ep-20260920-231258
+19,New York Giants,2018,E.Manning,manning e,16,true,574,51.6574,espn-pbp/ep-20260920-231258
+20,New York Jets,2018,S.Darnold,darnold s,13,true,397,-22.8402,espn-pbp/ep-20260920-231258
+20,New York Jets,2018,J.McCown,mccown j,3,false,112,-24.8869,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2018,C.Wentz,wentz c,11,false,389,59.0125,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2018,N.Foles,foles n,7,true,266,13.4646,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2018,B.Roethlisberger,roethlisberger b,16,true,655,80.0687,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2018,N.Mullens,mullens n,8,false,280,45.7126,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2018,C.Beathard,beathard c,5,false,166,3.5771,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2018,J.Garoppolo,garoppolo j,3,true,90,20.7828,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2018,R.Wilson,wilson r,17,true,392,51.1931,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2018,J.Winston,winston j,9,false,371,64.0338,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2018,R.Fitzpatrick,fitzpatrick r,7,true,240,33.1124,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2018,M.Mariota,mariota m,13,true,322,57.2836,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2018,B.Gabbert,gabbert b,3,false,102,-13.9694,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2018,A.Smith,smith a,10,true,331,3.9369,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2018,J.Johnson,johnson j,3,false,93,0.8122,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2018,C.McCoy,mccoy c,2,false,54,0.1018,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2018,M.Sanchez,sanchez m,1,false,35,-23.0515,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2019,K.Murray,murray k,16,true,533,44.7217,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2019,M.Ryan,ryan m,15,true,619,92.6725,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2019,M.Schaub,schaub m,1,false,65,22.3534,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2019,L.Jackson,jackson l,16,true,443,64.0037,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2019,R.Griffin III,griffin r,1,false,38,3.2444,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2019,J.Allen,allen j,14,true,404,14.2558,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2019,Jos.Allen,jos.allen,3,false,41,-23.4255,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2019,K.Allen,allen k,12,false,486,41.9822,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2019,C.Newton,newton c,2,true,91,-1.2415,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2019,W.Grier,grier w,2,false,52,-6.4159,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2019,M.Trubisky,trubisky m,15,true,522,-0.0063,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2019,C.Daniel,daniel c,1,false,66,8.0706,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2019,A.Dalton,dalton a,13,true,530,28.4989,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2019,R.Finley,finley r,3,false,90,-15.7039,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2019,B.Mayfield,mayfield b,16,true,557,21.8377,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2019,D.Prescott,prescott d,16,true,600,67.4994,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2019,J.Flacco,flacco j,8,true,274,14.4023,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2019,D.Lock,lock d,5,false,163,2.5955,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2019,B.Allen,allen b,3,false,89,-19.7036,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2019,M.Stafford,stafford m,8,true,274,45.0172,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2019,D.Blough,blough d,5,false,184,-21.6590,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2019,J.Driskel,driskel j,3,false,109,1.5563,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2019,A.Rodgers,rodgers a,18,true,650,72.5529,espn-pbp/ep-20260920-231258
+34,Houston Texans,2019,D.Watson,watson d,17,true,563,106.2534,espn-pbp/ep-20260920-231258
+34,Houston Texans,2019,A.McCarron,mccarron a,1,false,37,1.2427,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2019,J.Brissett,brissett j,15,true,453,36.3108,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2019,B.Hoyer,hoyer b,1,false,61,-8.0194,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2019,G.Minshew II,minshew g,12,false,479,1.7241,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2019,N.Foles,foles n,4,true,118,-6.4358,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2019,P.Mahomes,mahomes p,17,true,625,110.8427,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2019,M.Moore,moore m,2,false,89,4.2052,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2019,D.Carr,carr d,16,true,502,92.4031,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2019,P.Rivers,rivers p,16,true,605,80.9016,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2019,J.Goff,goff j,16,true,600,61.4281,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2019,R.Fitzpatrick,fitzpatrick r,13,true,495,50.0985,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2019,J.Rosen,rosen j,3,false,113,-14.2032,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2019,K.Cousins,cousins k,17,true,502,71.1270,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2019,S.Mannion,mannion s,1,false,22,4.3866,espn-pbp/ep-20260920-231258
+17,New England Patriots,2019,T.Brady,brady t,17,true,663,59.0873,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2019,D.Brees,brees d,12,true,390,57.2422,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2019,T.Bridgewater,bridgewater t,5,false,183,7.8547,espn-pbp/ep-20260920-231258
+19,New York Giants,2019,D.Jones,jones d,12,false,460,-23.6482,espn-pbp/ep-20260920-231258
+19,New York Giants,2019,E.Manning,manning e,4,true,147,-19.9730,espn-pbp/ep-20260920-231258
+20,New York Jets,2019,S.Darnold,darnold s,13,true,448,-3.5865,espn-pbp/ep-20260920-231258
+20,New York Jets,2019,L.Falk,falk l,2,false,78,-29.4880,espn-pbp/ep-20260920-231258
+20,New York Jets,2019,T.Siemian,siemian t,1,false,9,-1.3379,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2019,C.Wentz,wentz c,17,true,614,37.5984,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2019,M.Rudolph,rudolph m,8,false,252,-17.3265,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2019,D.Hodges,hodges d,6,false,162,-13.1728,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2019,B.Roethlisberger,roethlisberger b,2,true,69,-11.6506,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2019,J.Garoppolo,garoppolo j,19,true,533,143.7165,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2019,R.Wilson,wilson r,18,true,524,95.6599,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2019,J.Winston,winston j,16,true,593,88.7927,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2019,R.Tannehill,tannehill r,13,false,336,57.9955,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2019,M.Mariota,mariota m,6,true,162,0.0439,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2019,C.Keenum,keenum c,8,true,251,19.0104,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2019,D.Haskins,haskins d,7,false,198,-7.9200,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2019,C.McCoy,mccoy c,1,false,28,-14.6416,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2020,K.Murray,murray k,15,true,547,36.7487,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2020,C.Streveler,streveler c,1,false,16,-2.9094,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2020,M.Ryan,ryan m,16,true,629,113.5725,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2020,L.Jackson,jackson l,17,true,398,49.6892,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2020,R.Griffin,griffin r,1,false,14,-9.1440,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2020,J.Allen,allen j,19,true,694,142.7517,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2020,T.Bridgewater,bridgewater t,15,true,505,49.6172,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2020,P.Walker,walker p,1,false,55,-10.9105,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2020,M.Trubisky,trubisky m,10,true,313,57.9994,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2020,N.Foles,foles n,7,false,309,-5.3992,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2020,J.Burrow,burrow j,10,true,393,65.2843,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2020,B.Allen,allen b,5,false,148,-16.4170,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2020,R.Finley,finley r,1,false,30,-17.6563,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2020,B.Mayfield,mayfield b,18,true,553,101.6224,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2020,A.Dalton,dalton a,9,false,335,21.9231,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2020,D.Prescott,prescott d,5,true,216,31.8993,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2020,B.DiNucci,dinucci b,1,false,43,-6.2742,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2020,G.Gilbert,gilbert g,1,false,37,-0.1694,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2020,D.Lock,lock d,13,true,446,22.1116,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2020,J.Driskel,driskel j,1,false,65,-6.0819,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2020,B.Rypien,rypien b,1,false,44,5.4887,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2020,K.Hinton,hinton k,1,false,9,-11.9268,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2020,M.Stafford,stafford m,16,true,522,95.7574,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2020,A.Rodgers,rodgers a,18,true,584,127.7752,espn-pbp/ep-20260920-231258
+34,Houston Texans,2020,D.Watson,watson d,16,true,528,107.7821,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2020,P.Rivers,rivers p,17,true,589,112.1533,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2020,G.Minshew II,minshew g,8,true,321,37.8334,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2020,M.Glennon,glennon m,5,false,170,-20.6238,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2020,J.Luton,luton j,3,false,112,-24.4584,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2020,P.Mahomes,mahomes p,18,true,692,138.1059,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2020,C.Henne,henne c,1,false,46,11.7750,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2020,D.Carr,carr d,16,true,521,94.2202,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2020,J.Herbert,herbert j,15,false,577,88.0713,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2020,T.Taylor,taylor t,1,true,33,6.5620,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2020,J.Goff,goff j,16,true,596,57.7691,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2020,J.Wolford,wolford j,2,false,46,4.3191,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2020,T.Tagovailoa,tagovailoa t,9,false,287,13.6276,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2020,R.Fitzpatrick,fitzpatrick r,7,true,262,62.1951,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2020,K.Cousins,cousins k,16,true,499,105.0392,espn-pbp/ep-20260920-231258
+17,New England Patriots,2020,C.Newton,newton c,15,true,378,50.4958,espn-pbp/ep-20260920-231258
+17,New England Patriots,2020,B.Hoyer,hoyer b,1,false,24,-2.5410,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2020,D.Brees,brees d,14,true,417,43.2047,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2020,T.Hill,hill t,4,false,107,26.8636,espn-pbp/ep-20260920-231258
+19,New York Giants,2020,D.Jones,jones d,14,true,464,21.4260,espn-pbp/ep-20260920-231258
+19,New York Giants,2020,C.McCoy,mccoy c,2,false,66,-4.4050,espn-pbp/ep-20260920-231258
+20,New York Jets,2020,S.Darnold,darnold s,12,true,368,-29.1108,espn-pbp/ep-20260920-231258
+20,New York Jets,2020,J.Flacco,flacco j,4,false,138,1.8470,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2020,C.Wentz,wentz c,12,true,434,-0.8426,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2020,J.Hurts,hurts j,4,false,148,6.4974,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2020,B.Roethlisberger,roethlisberger b,16,true,674,21.3297,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2020,M.Rudolph,rudolph m,1,false,43,-3.4237,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2020,N.Mullens,mullens n,8,false,323,59.4005,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2020,J.Garoppolo,garoppolo j,6,true,141,36.2053,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2020,C.Beathard,beathard c,2,false,104,22.8572,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2020,R.Wilson,wilson r,17,true,560,70.4887,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2020,T.Brady,brady t,20,true,721,165.6290,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2020,R.Tannehill,tannehill r,17,true,493,93.0284,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2020,A.Smith,smith a,6,false,259,1.0191,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2020,D.Haskins,haskins d,6,true,242,-11.3759,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2020,K.Allen,allen k,4,false,87,10.4523,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2020,T.Heinicke,heinicke t,1,false,63,5.0659,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2021,K.Murray,murray k,15,true,509,52.0139,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2021,C.McCoy,mccoy c,3,false,100,25.4712,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2021,M.Ryan,ryan m,17,true,566,81.9302,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2021,L.Jackson,jackson l,12,true,355,34.5040,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2021,T.Huntley,huntley t,4,false,189,15.0113,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2021,J.Johnson,johnson j,1,false,40,13.6458,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2021,J.Allen,allen j,18,true,651,68.2025,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2021,Jos.Allen,jos.allen,1,false,12,-0.1497,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2021,S.Darnold,darnold s,11,true,411,-15.4241,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2021,C.Newton,newton c,5,false,126,-15.2211,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2021,P.Walker,walker p,1,false,66,-4.2089,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2021,J.Fields,fields j,10,false,276,4.1773,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2021,A.Dalton,dalton a,6,true,227,11.8523,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2021,N.Foles,foles n,1,false,35,17.9011,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2021,J.Burrow,burrow j,20,true,630,137.8479,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2021,B.Allen,allen b,1,false,34,-9.5701,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2021,B.Mayfield,mayfield b,14,true,421,57.5893,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2021,C.Keenum,keenum c,2,false,70,12.3131,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2021,N.Mullens,mullens n,1,false,29,-0.7530,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2021,D.Prescott,prescott d,17,true,636,116.9852,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2021,C.Rush,rush c,1,false,47,-0.5645,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2021,T.Bridgewater,bridgewater t,14,true,427,100.3809,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2021,D.Lock,lock d,3,false,119,-3.3033,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2021,J.Goff,goff j,14,true,481,56.1187,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2021,T.Boyle,boyle t,3,false,83,-16.8875,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2021,A.Rodgers,rodgers a,9,false,296,73.6204,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2021,Aa.Rodgers,aa.rodgers,8,true,88,-28.9100,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2021,J.Love,love j,1,false,62,-1.7230,espn-pbp/ep-20260920-231258
+34,Houston Texans,2021,D.Mills,mills d,12,false,398,14.4836,espn-pbp/ep-20260920-231258
+34,Houston Texans,2021,T.Taylor,taylor t,4,false,108,-30.0894,espn-pbp/ep-20260920-231258
+34,Houston Texans,2021,Ty.Taylor,ty.taylor,1,true,17,-12.1416,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2021,C.Wentz,wentz c,17,true,513,55.0390,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2021,T.Lawrence,lawrence t,17,true,614,1.7912,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2021,P.Mahomes,mahomes p,20,true,761,151.6659,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2021,D.Carr,carr d,18,true,671,112.8251,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2021,J.Herbert,herbert j,17,true,655,117.0412,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2021,M.Stafford,stafford m,21,true,719,156.4963,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2021,T.Tagovailoa,tagovailoa t,12,true,392,53.5518,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2021,J.Brissett,brissett j,5,false,219,15.7814,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2021,K.Cousins,cousins k,16,true,535,74.6580,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2021,S.Mannion,mannion s,1,false,36,-10.7971,espn-pbp/ep-20260920-231258
+17,New England Patriots,2021,M.Jones,jones m,18,true,552,132.1911,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2021,J.Winston,winston j,7,true,147,2.4275,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2021,T.Hill,hill t,5,false,119,18.6579,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2021,T.Siemian,siemian t,4,false,177,37.0904,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2021,I.Book,book i,1,false,16,-0.2290,espn-pbp/ep-20260920-231258
+19,New York Giants,2021,D.Jones,jones d,11,true,367,44.3713,espn-pbp/ep-20260920-231258
+19,New York Giants,2021,M.Glennon,glennon m,4,false,165,-28.5358,espn-pbp/ep-20260920-231258
+19,New York Giants,2021,J.Fromm,fromm j,2,false,58,-10.6411,espn-pbp/ep-20260920-231258
+20,New York Jets,2021,Z.Wilson,wilson z,13,true,375,-34.3856,espn-pbp/ep-20260920-231258
+20,New York Jets,2021,M.White,white m,3,false,132,-7.9699,espn-pbp/ep-20260920-231258
+20,New York Jets,2021,J.Flacco,flacco j,1,false,38,12.1885,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2021,J.Hurts,hurts j,16,true,478,18.0421,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2021,G.Minshew,minshew g,2,false,57,3.9063,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2021,B.Roethlisberger,roethlisberger b,17,true,653,13.4758,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2021,M.Rudolph,rudolph m,1,false,48,-3.5952,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2021,J.Garoppolo,garoppolo j,18,true,497,66.0340,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2021,T.Lance,lance t,2,false,70,10.7503,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2021,R.Wilson,wilson r,14,true,400,40.6461,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2021,G.Smith,smith g,3,false,94,5.9869,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2021,T.Brady,brady t,19,true,772,108.2671,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2021,R.Tannehill,tannehill r,18,true,540,89.1830,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2021,T.Heinicke,heinicke t,15,false,500,40.2947,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2021,G.Gilbert,gilbert g,1,false,32,5.3530,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2021,R.Fitzpatrick,fitzpatrick r,1,true,7,0.9364,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2022,K.Murray,murray k,10,true,380,11.3497,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2022,C.McCoy,mccoy c,4,false,137,3.3985,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2022,D.Blough,blough d,2,false,60,10.4963,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2022,T.McSorley,mcsorley t,1,false,80,-22.3476,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2022,M.Mariota,mariota m,13,true,296,44.7340,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2022,D.Ridder,ridder d,4,false,119,7.4536,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2022,L.Jackson,jackson l,12,true,326,33.9278,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2022,T.Huntley,huntley t,5,false,141,21.3379,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2022,A.Brown,brown a,1,false,49,-11.0091,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2022,J.Allen,allen j,18,true,628,136.8902,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2022,B.Mayfield,mayfield b,6,true,214,-16.5071,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2022,S.Darnold,darnold s,6,false,129,33.4580,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2022,P.Walker,walker p,5,false,102,-24.3280,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2022,J.Fields,fields j,15,true,324,29.5809,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2022,T.Siemian,siemian t,1,false,25,-4.9910,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2022,N.Peterman,peterman n,1,false,20,-3.6041,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2022,J.Burrow,burrow j,19,true,704,140.6531,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2022,J.Brissett,brissett j,11,true,364,47.5420,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2022,D.Watson,watson d,6,false,164,-11.0569,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2022,D.Prescott,prescott d,14,true,450,77.9032,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2022,C.Rush,rush c,5,false,163,22.0208,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2022,R.Wilson,wilson r,15,true,496,31.3866,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2022,B.Rypien,rypien b,2,false,86,-11.0109,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2022,J.Goff,goff j,17,true,575,138.0808,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2022,A.Rodgers,rodgers a,17,true,536,59.1481,espn-pbp/ep-20260920-231258
+34,Houston Texans,2022,D.Mills,mills d,15,true,481,-17.6078,espn-pbp/ep-20260920-231258
+34,Houston Texans,2022,K.Allen,allen k,2,false,77,-11.1806,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2022,M.Ryan,ryan m,12,true,449,34.4505,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2022,S.Ehlinger,ehlinger s,3,false,101,5.9421,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2022,N.Foles,foles n,2,false,43,-10.0444,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2022,T.Lawrence,lawrence t,19,true,663,98.0499,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2022,P.Mahomes,mahomes p,20,true,728,155.3844,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2022,D.Carr,carr d,15,true,486,67.1931,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2022,J.Stidham,stidham j,2,false,81,25.0058,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2022,J.Herbert,herbert j,18,true,729,130.2549,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2022,M.Stafford,stafford m,9,true,303,41.1380,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2022,B.Mayfield,mayfield b,5,false,131,13.6272,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2022,J.Wolford,wolford j,2,false,65,-3.5677,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2022,B.Perkins,perkins b,1,false,32,-8.2479,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2022,T.Tagovailoa,tagovailoa t,13,true,399,97.0780,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2022,S.Thompson,thompson s,4,false,159,-21.1399,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2022,T.Bridgewater,bridgewater t,1,false,74,5.0181,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2022,K.Cousins,cousins k,18,true,675,111.4809,espn-pbp/ep-20260920-231258
+17,New England Patriots,2022,M.Jones,jones m,14,true,447,38.1523,espn-pbp/ep-20260920-231258
+17,New England Patriots,2022,B.Zappe,zappe b,2,false,89,13.3581,espn-pbp/ep-20260920-231258
+17,New England Patriots,2022,B.Hoyer,hoyer b,1,false,6,0.1398,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2022,A.Dalton,dalton a,14,false,372,60.1010,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2022,J.Winston,winston j,3,true,114,-0.8098,espn-pbp/ep-20260920-231258
+19,New York Giants,2022,D.Jones,jones d,18,true,538,51.2212,espn-pbp/ep-20260920-231258
+19,New York Giants,2022,D.Webb,webb d,1,false,39,-10.4880,espn-pbp/ep-20260920-231258
+20,New York Jets,2022,Z.Wilson,wilson z,9,false,245,-8.7093,espn-pbp/ep-20260920-231258
+20,New York Jets,2022,J.Flacco,flacco j,4,true,194,-8.3899,espn-pbp/ep-20260920-231258
+20,New York Jets,2022,M.White,white m,4,false,174,5.3477,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2022,J.Hurts,hurts j,18,true,560,128.4732,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2022,G.Minshew,minshew g,2,false,75,3.9574,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2022,K.Pickett,pickett k,11,false,405,54.2118,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2022,M.Trubisky,trubisky m,6,true,172,3.6184,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2022,J.Garoppolo,garoppolo j,10,false,307,88.0572,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2022,B.Purdy,purdy b,8,false,232,62.9606,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2022,T.Lance,lance t,2,true,33,-6.5214,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2022,G.Smith,smith g,18,true,610,108.3025,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2022,T.Brady,brady t,18,true,785,50.4009,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2022,R.Tannehill,tannehill r,11,true,331,44.1330,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2022,M.Willis,willis m,4,false,61,-6.7337,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2022,J.Dobbs,dobbs j,2,false,66,0.8643,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2022,T.Heinicke,heinicke t,9,false,251,38.6897,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2022,C.Wentz,wentz c,7,true,281,-23.8344,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2022,S.Howell,howell s,1,false,21,0.3468,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2023,J.Dobbs,dobbs j,8,true,279,2.5769,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2023,K.Murray,murray k,8,false,275,39.5486,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2023,C.Tune,tune c,1,false,22,-24.2521,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2023,D.Ridder,ridder d,13,true,401,58.2961,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2023,T.Heinicke,heinicke t,4,false,135,18.0011,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2023,L.Jackson,jackson l,18,true,538,157.6452,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2023,T.Huntley,huntley t,1,false,37,6.7675,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2023,J.Allen,allen j,19,true,637,135.3166,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2023,B.Young,young b,16,true,544,24.8628,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2023,A.Dalton,dalton a,1,false,62,7.0653,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2023,J.Fields,fields j,13,true,379,42.4507,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2023,T.Bagent,bagent t,4,false,146,14.6749,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2023,J.Burrow,burrow j,10,true,380,40.6743,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2023,J.Browning,browning j,7,false,243,43.8019,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2023,J.Flacco,flacco j,6,false,245,6.4997,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2023,D.Watson,watson d,6,true,170,11.9585,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2023,D.Thompson-Robinson,thompson-robinson d,3,false,110,-19.1751,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2023,P.Walker,walker p,2,false,113,8.6590,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2023,J.Driskel,driskel j,1,false,26,-2.5438,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2023,D.Prescott,prescott d,18,true,681,286.5619,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2023,R.Wilson,wilson r,15,true,459,58.6308,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2023,J.Stidham,stidham j,2,false,64,17.2964,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2023,J.Goff,goff j,20,true,708,181.5395,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2023,J.Love,love j,19,true,649,205.2710,espn-pbp/ep-20260920-231258
+34,Houston Texans,2023,C.Stroud,stroud c,17,true,570,154.6866,espn-pbp/ep-20260920-231258
+34,Houston Texans,2023,C.Keenum,keenum c,2,false,58,-5.0803,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2023,G.Minshew,minshew g,13,false,502,68.5848,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2023,A.Richardson,richardson a,4,true,88,2.7438,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2023,T.Lawrence,lawrence t,16,true,590,117.5554,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2023,C.Beathard,beathard c,1,false,50,18.5240,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2023,P.Mahomes,mahomes p,20,true,768,134.6016,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2023,B.Gabbert,gabbert b,1,false,36,-5.7128,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2023,A.O'Connell,o'connell a,10,false,342,33.7225,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2023,J.Garoppolo,garoppolo j,6,true,164,29.8002,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2023,B.Hoyer,hoyer b,1,false,43,13.3641,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2023,J.Herbert,herbert j,13,true,476,102.5725,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2023,E.Stick,stick e,4,false,179,28.4509,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2023,M.Stafford,stafford m,16,true,574,182.8897,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2023,B.Rypien,rypien b,1,false,39,-12.4168,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2023,C.Wentz,wentz c,1,false,27,10.1700,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2023,T.Tagovailoa,tagovailoa t,18,true,611,162.4902,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2023,K.Cousins,cousins k,8,true,327,63.5940,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2023,J.Dobbs,dobbs j,4,false,161,24.4571,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2023,N.Mullens,mullens n,3,false,150,20.2658,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2023,J.Hall,hall j,2,false,20,-0.8185,espn-pbp/ep-20260920-231258
+17,New England Patriots,2023,M.Jones,jones m,11,true,354,4.2336,espn-pbp/ep-20260920-231258
+17,New England Patriots,2023,B.Zappe,zappe b,6,false,213,-36.5438,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2023,D.Carr,carr d,17,true,540,120.5332,espn-pbp/ep-20260920-231258
+19,New York Giants,2023,T.DeVito,devito t,6,false,178,22.4002,espn-pbp/ep-20260920-231258
+19,New York Giants,2023,D.Jones,jones d,6,true,163,3.2730,espn-pbp/ep-20260920-231258
+19,New York Giants,2023,T.Taylor,taylor t,5,false,178,35.2934,espn-pbp/ep-20260920-231258
+20,New York Jets,2023,Z.Wilson,wilson z,12,true,375,9.4356,espn-pbp/ep-20260920-231258
+20,New York Jets,2023,T.Siemian,siemian t,3,false,161,-8.3045,espn-pbp/ep-20260920-231258
+20,New York Jets,2023,T.Boyle,boyle t,2,false,77,-19.0138,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2023,J.Hurts,hurts j,18,true,581,94.8200,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2023,K.Pickett,pickett k,12,true,340,12.5430,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2023,M.Rudolph,rudolph m,4,false,114,7.2362,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2023,M.Trubisky,trubisky m,2,false,110,-8.3796,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2023,B.Purdy,purdy b,19,true,560,198.2713,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2023,S.Darnold,darnold s,1,false,46,10.6393,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2023,G.Smith,smith g,15,true,515,141.8564,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2023,D.Lock,lock d,2,false,79,6.7795,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2023,B.Mayfield,mayfield b,19,true,670,140.4470,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2023,W.Levis,levis w,9,false,256,28.0365,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2023,R.Tannehill,tannehill r,8,true,242,44.3808,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2023,S.Howell,howell s,17,true,631,29.1358,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2024,K.Murray,murray k,17,true,567,128.9732,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2024,K.Cousins,cousins k,14,true,473,80.5292,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2024,M.Penix,penix m,3,false,111,24.6076,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2024,L.Jackson,jackson l,19,true,535,198.2449,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2024,J.Allen,allen j,19,true,557,179.3284,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2024,M.Trubisky,trubisky m,1,false,25,4.2167,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2024,B.Young,young b,12,true,392,47.9279,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2024,A.Dalton,dalton a,5,false,166,21.9103,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2024,C.Williams,williams c,17,true,593,91.3748,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2024,J.Burrow,burrow j,17,true,675,215.1338,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2024,J.Winston,winston j,7,false,295,44.3080,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2024,D.Watson,watson d,7,true,224,-2.1723,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2024,D.Thompson-Robinson,thompson-robinson d,2,false,118,-30.1072,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2024,B.Zappe,zappe b,1,false,31,-4.0153,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2024,C.Rush,rush c,8,false,328,35.1356,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2024,D.Prescott,prescott d,8,true,303,31.0008,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2024,T.Lance,lance t,1,false,44,9.0609,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2024,B.Nix,nix b,18,true,589,85.4917,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2024,J.Goff,goff j,18,true,568,223.6813,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2024,J.Love,love j,16,true,484,104.2547,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2024,M.Willis,willis m,2,false,57,36.3814,espn-pbp/ep-20260920-231258
+34,Houston Texans,2024,C.Stroud,stroud c,19,true,622,125.9798,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2024,A.Richardson,richardson a,11,true,273,-4.6583,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2024,J.Flacco,flacco j,6,false,260,80.7128,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2024,T.Lawrence,lawrence t,10,true,293,41.7326,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2024,M.Jones,jones m,7,false,271,9.0777,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2024,P.Mahomes,mahomes p,19,true,685,169.1942,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2024,C.Wentz,wentz c,1,false,19,-1.5614,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2024,G.Minshew,minshew g,9,true,319,40.5750,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2024,A.O'Connell,o'connell a,7,false,252,19.7713,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2024,D.Ridder,ridder d,1,false,87,4.6698,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2024,J.Herbert,herbert j,18,true,563,141.5125,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2024,M.Stafford,stafford m,18,true,616,172.2939,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2024,J.Garoppolo,garoppolo j,1,false,41,14.0464,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2024,T.Tagovailoa,tagovailoa t,11,true,409,129.4700,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2024,T.Huntley,huntley t,5,false,140,15.9302,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2024,S.Thompson,thompson s,1,false,34,4.0879,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2024,S.Darnold,darnold s,18,true,619,180.8457,espn-pbp/ep-20260920-231258
+17,New England Patriots,2024,D.Maye,maye d,11,false,360,45.2452,espn-pbp/ep-20260920-231258
+17,New England Patriots,2024,J.Brissett,brissett j,5,true,169,20.9898,espn-pbp/ep-20260920-231258
+17,New England Patriots,2024,J.Milton,milton j,1,false,31,6.0023,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2024,D.Carr,carr d,10,true,289,66.0158,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2024,S.Rattler,rattler s,6,false,242,-22.8964,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2024,J.Haener,haener j,1,false,41,-6.9703,espn-pbp/ep-20260920-231258
+19,New York Giants,2024,D.Jones,jones d,10,true,357,17.3937,espn-pbp/ep-20260920-231258
+19,New York Giants,2024,D.Lock,lock d,5,false,187,0.6451,espn-pbp/ep-20260920-231258
+19,New York Giants,2024,T.DeVito,devito t,2,false,50,12.5733,espn-pbp/ep-20260920-231258
+20,New York Jets,2024,A.Rodgers,rodgers a,17,true,610,105.2082,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2024,J.Hurts,hurts j,19,true,476,172.2635,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2024,K.Pickett,pickett k,1,false,46,14.0869,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2024,T.McKee,mckee t,1,false,44,15.0729,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2024,R.Wilson,wilson r,12,false,376,90.3830,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2024,J.Fields,fields j,6,true,173,58.8391,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2024,B.Purdy,purdy b,15,true,472,167.9506,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2024,J.Dobbs,dobbs j,1,false,47,7.5354,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2024,B.Allen,allen b,1,false,30,-8.3534,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2024,G.Smith,smith g,17,true,608,124.6553,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2024,B.Mayfield,mayfield b,18,true,611,216.2078,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2024,W.Levis,levis w,12,true,315,27.2597,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2024,M.Rudolph,rudolph m,5,false,235,36.2584,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2024,J.Daniels,daniels j,19,true,615,185.6222,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2024,M.Mariota,mariota m,1,false,47,30.6700,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2025,J.Brissett,brissett j,12,false,465,98.0874,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2025,K.Murray,murray k,5,true,171,58.2743,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2025,M.Penix,penix m,9,true,289,43.9580,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2025,K.Cousins,cousins k,8,false,272,58.2774,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2025,L.Jackson,jackson l,13,true,316,109.2798,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2025,T.Huntley,huntley t,2,false,69,15.0624,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2025,C.Rush,rush c,2,false,54,-13.2084,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2025,J.Allen,allen j,18,true,547,175.4956,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2025,M.Trubisky,trubisky m,1,false,35,24.5703,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2025,B.Young,young b,17,true,543,75.5849,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2025,A.Dalton,dalton a,1,false,38,20.4823,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2025,C.Williams,williams c,19,true,656,114.6160,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2025,J.Burrow,burrow j,8,true,266,89.9679,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2025,J.Flacco,flacco j,6,false,262,51.7035,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2025,J.Browning,browning j,3,false,135,-8.0441,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2025,S.Sanders,sanders s,7,false,213,22.9869,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2025,D.Gabriel,gabriel d,6,false,189,-1.4715,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2025,J.Flacco,flacco j,4,true,171,-22.0791,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2025,D.Prescott,prescott d,17,true,627,169.2880,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2025,B.Nix,nix b,18,true,657,130.4375,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2025,J.Stidham,stidham j,1,false,29,-1.1801,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2025,J.Goff,goff j,17,true,568,191.4936,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2025,J.Love,love j,16,true,479,165.2431,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2025,M.Willis,willis m,1,false,29,19.5335,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2025,C.Tune,tune c,1,false,16,-8.8917,espn-pbp/ep-20260920-231258
+34,Houston Texans,2025,C.Stroud,stroud c,16,true,507,77.5983,espn-pbp/ep-20260920-231258
+34,Houston Texans,2025,D.Mills,mills d,3,false,156,28.2135,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2025,D.Jones,jones d,13,true,401,128.4270,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2025,P.Rivers,rivers p,3,false,97,27.9973,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2025,R.Leonard,leonard r,1,false,73,-2.3338,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2025,T.Lawrence,lawrence t,18,true,601,181.6565,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2025,P.Mahomes,mahomes p,14,true,527,132.1626,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2025,C.Oladokun,oladokun c,2,false,56,-6.1533,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2025,G.Minshew,minshew g,1,false,14,-6.8184,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2025,G.Smith,smith g,15,true,462,70.1506,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2025,K.Pickett,pickett k,2,false,45,-17.4638,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2025,J.Herbert,herbert j,17,true,558,144.4884,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2025,T.Lance,lance t,1,false,54,-20.7115,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2025,M.Stafford,stafford m,20,true,731,240.4114,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2025,T.Tagovailoa,tagovailoa t,14,true,376,54.2047,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2025,Q.Ewers,ewers q,3,false,78,19.1207,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2025,J.McCarthy,mccarthy j,10,true,255,40.8406,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2025,C.Wentz,wentz c,5,false,176,34.2144,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2025,M.Brosmer,brosmer m,2,false,76,-4.1680,espn-pbp/ep-20260920-231258
+17,New England Patriots,2025,D.Maye,maye d,21,true,626,254.6066,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2025,T.Shough,shough t,9,false,336,56.0155,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2025,S.Rattler,rattler s,8,true,272,38.4288,espn-pbp/ep-20260920-231258
+19,New York Giants,2025,J.Dart,dart j,12,false,361,80.4101,espn-pbp/ep-20260920-231258
+19,New York Giants,2025,R.Wilson,wilson r,3,true,124,3.9746,espn-pbp/ep-20260920-231258
+19,New York Giants,2025,J.Winston,winston j,2,false,66,31.6153,espn-pbp/ep-20260920-231258
+20,New York Jets,2025,J.Fields,fields j,9,true,204,26.3366,espn-pbp/ep-20260920-231258
+20,New York Jets,2025,B.Cook,cook b,4,false,153,-28.3427,espn-pbp/ep-20260920-231258
+20,New York Jets,2025,T.Taylor,taylor t,4,false,135,19.4950,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2025,J.Hurts,hurts j,17,true,496,102.5199,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2025,T.McKee,mckee t,1,false,44,-0.0158,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2025,A.Rodgers,rodgers a,17,true,516,101.1591,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2025,M.Rudolph,rudolph m,1,false,53,15.1486,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2025,B.Purdy,purdy b,11,true,358,110.1937,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2025,M.Jones,jones m,8,false,293,65.8717,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2025,S.Darnold,darnold s,20,true,579,190.7104,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2025,B.Mayfield,mayfield b,17,true,578,82.9319,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2025,C.Ward,ward c,16,true,559,46.3664,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2025,B.Allen,allen b,1,false,27,-18.0231,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2025,M.Mariota,mariota m,8,false,228,45.5938,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2025,J.Daniels,daniels j,7,true,198,37.8911,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2025,J.Johnson,johnson j,2,false,57,21.7253,espn-pbp/ep-20260920-231258
+22,Arizona Cardinals,2026,J.Brissett,brissett j,2,true,69,15.5224,espn-pbp/ep-20260920-231258
+1,Atlanta Falcons,2026,C.Rush,rush c,2,true,42,-6.6721,espn-pbp/ep-20260920-231258
+33,Baltimore Ravens,2026,L.Jackson,jackson l,2,true,58,23.7313,espn-pbp/ep-20260920-231258
+2,Buffalo Bills,2026,J.Allen,allen j,2,true,65,30.0483,espn-pbp/ep-20260920-231258
+29,Carolina Panthers,2026,B.Young,young b,2,true,76,28.0260,espn-pbp/ep-20260920-231258
+3,Chicago Bears,2026,C.Williams,williams c,2,true,60,24.2236,espn-pbp/ep-20260920-231258
+4,Cincinnati Bengals,2026,J.Burrow,burrow j,2,true,67,12.7165,espn-pbp/ep-20260920-231258
+5,Cleveland Browns,2026,D.Watson,watson d,2,true,53,7.5367,espn-pbp/ep-20260920-231258
+6,Dallas Cowboys,2026,D.Prescott,prescott d,2,true,71,36.7910,espn-pbp/ep-20260920-231258
+7,Denver Broncos,2026,B.Nix,nix b,2,true,62,10.7889,espn-pbp/ep-20260920-231258
+8,Detroit Lions,2026,J.Goff,goff j,2,true,72,33.9732,espn-pbp/ep-20260920-231258
+9,Green Bay Packers,2026,J.Love,love j,2,true,72,5.3669,espn-pbp/ep-20260920-231258
+34,Houston Texans,2026,C.Stroud,stroud c,2,true,98,32.2604,espn-pbp/ep-20260920-231258
+11,Indianapolis Colts,2026,D.Jones,jones d,2,true,62,8.5909,espn-pbp/ep-20260920-231258
+30,Jacksonville Jaguars,2026,T.Lawrence,lawrence t,2,true,55,17.6552,espn-pbp/ep-20260920-231258
+12,Kansas City Chiefs,2026,P.Mahomes,mahomes p,2,true,66,13.4609,espn-pbp/ep-20260920-231258
+13,Las Vegas Raiders,2026,K.Cousins,cousins k,2,true,60,18.0302,espn-pbp/ep-20260920-231258
+24,Los Angeles Chargers,2026,J.Herbert,herbert j,2,true,60,23.5473,espn-pbp/ep-20260920-231258
+14,Los Angeles Rams,2026,M.Stafford,stafford m,2,true,59,20.8898,espn-pbp/ep-20260920-231258
+15,Miami Dolphins,2026,M.Willis,willis m,2,true,55,1.9989,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2026,C.Wentz,wentz c,1,false,42,10.3054,espn-pbp/ep-20260920-231258
+16,Minnesota Vikings,2026,K.Murray,murray k,1,true,5,-2.9477,espn-pbp/ep-20260920-231258
+17,New England Patriots,2026,D.Maye,maye d,2,true,57,-0.4164,espn-pbp/ep-20260920-231258
+18,New Orleans Saints,2026,T.Shough,shough t,2,true,87,20.4213,espn-pbp/ep-20260920-231258
+19,New York Giants,2026,J.Dart,dart j,2,true,34,21.1399,espn-pbp/ep-20260920-231258
+20,New York Jets,2026,G.Smith,smith g,2,true,66,20.3963,espn-pbp/ep-20260920-231258
+21,Philadelphia Eagles,2026,J.Hurts,hurts j,2,true,62,20.4958,espn-pbp/ep-20260920-231258
+23,Pittsburgh Steelers,2026,A.Rodgers,rodgers a,2,true,84,-4.0342,espn-pbp/ep-20260920-231258
+25,San Francisco 49ers,2026,B.Purdy,purdy b,2,true,58,29.8576,espn-pbp/ep-20260920-231258
+26,Seattle Seahawks,2026,D.Lock,lock d,2,true,50,18.2943,espn-pbp/ep-20260920-231258
+27,Tampa Bay Buccaneers,2026,B.Mayfield,mayfield b,2,true,68,5.4008,espn-pbp/ep-20260920-231258
+10,Tennessee Titans,2026,C.Ward,ward c,2,true,54,14.1797,espn-pbp/ep-20260920-231258
+28,Washington Commanders,2026,J.Daniels,daniels j,2,true,52,4.3602,espn-pbp/ep-20260920-231258
