@@ -1,8 +1,12 @@
 from typing import NamedTuple
 
-# Leagues. Only college football is on file so far; the files live under a
-# directory per league so another one is a new directory, not a new schema.
+# Leagues. The files live under a directory per league, so another one is
+# a new directory, not a new schema. Rows are keyed by call-it-what-you-want
+# ids in the league's namespace: the NCAA's for college football, the NFL's
+# own for the NFL, which numbers its teams from scratch.
 NCAAFB = "ncaafb"
+NFL = "nfl"
+LEAGUES = (NCAAFB, NFL)
 
 # Why a head coach's tenure ended, as a category. The text it was read from
 # is kept beside it (`CoachChange.reason_text`), because the line between
@@ -20,13 +24,17 @@ INTERIM_REPLACED = "interim_replaced"
 OTHER = "other"
 REASONS = (FIRED, LEFT_FOR_JOB, RESIGNED, RETIRED, HEALTH, INTERIM_REPLACED, OTHER)
 
-# Which of a Wikipedia season article's two coaching tables a change came
-# from. "In-season" also carries preseason changes and the December hires a
-# school makes before its bowl game; "end of season" is changes announced
-# during the season that take effect after it.
+# Which of a Wikipedia season article's coaching tables a change came from.
+# College articles have two: "in-season" also carries preseason changes and
+# the December hires a school makes before its bowl game; "end of season" is
+# changes announced during the season that take effect after it. NFL
+# articles split theirs the other way: "off-season" is every change between
+# the previous season and this one, and "in-season" is only the coaches who
+# didn't finish this one.
 IN_SEASON = "in_season"
 END_OF_SEASON = "end_of_season"
-TABLES = (IN_SEASON, END_OF_SEASON)
+OFFSEASON = "offseason"
+TABLES = (IN_SEASON, END_OF_SEASON, OFFSEASON)
 
 
 class CoachChange(NamedTuple):
@@ -39,8 +47,9 @@ class CoachChange(NamedTuple):
     change after the regular season is the next one, even when an interim
     or the new hire coaches the bowl game in between.
 
-    `midseason` is a coach who didn't finish the regular season: gone by
-    November 20. `season` is then the one he didn't finish.
+    `midseason` is a coach who didn't finish the regular season: in
+    college, gone by November 20; in the NFL, a row of the in-season table.
+    `season` is then the one he didn't finish.
     `outgoing_interim` marks a row where the coach leaving was himself an
     interim, which is what `INTERIM_REPLACED` rows usually are. To ask why
     the coach who opened a season is gone, skip those -- or use
@@ -71,8 +80,10 @@ class CoachingStaff(NamedTuple):
 
     The `*_year` fields are each coach's season at the school, as the
     article numbers them: 1 is a first-year coordinator. None where the
-    infobox didn't say. A shared role (co-coordinators) is written with the
-    names joined by " / ".
+    infobox didn't say, which is always for the NFL, whose infobox has no
+    such fields. A shared role (co-coordinators) is written with the names
+    joined by " / ", and so is an NFL head coach replaced during the
+    season: the one who opened it comes first.
     """
 
     espn_id: str

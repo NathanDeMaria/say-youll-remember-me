@@ -1,0 +1,196 @@
+espn_id,team,season,table,midseason,date,outgoing,outgoing_interim,reason,reason_text,incoming,incoming_interim,source
+14,Los Angeles Rams,2006,offseason,false,2005-10-10,Mike Martz,false,fired,Fired,Scott Linehan,false,2006 NFL season
+16,Minnesota Vikings,2006,offseason,false,2006-01-01,Mike Tice,false,fired,Fired,Brad Childress,false,2006 NFL season
+9,Green Bay Packers,2006,offseason,false,2006-01-02,Mike Sherman,false,fired,Fired,Mike McCarthy,false,2006 NFL season
+2,Buffalo Bills,2006,offseason,false,2006-01-12,Mike Mularkey,false,resigned,Resigned,Dick Jauron,false,2006 NFL season
+20,New York Jets,2006,offseason,false,2006-01-17,Herm Edwards,false,left_for_job,Traded,Eric Mangini,false,2006 NFL season
+34,Houston Texans,2006,offseason,false,2006-01-26,Dom Capers,false,fired,Fired,Gary Kubiak,false,2006 NFL season
+8,Detroit Lions,2006,offseason,false,,Steve Mariucci,false,fired,Fired,Rod Marinelli,false,2006 NFL season
+12,Kansas City Chiefs,2006,offseason,false,,Dick Vermeil,false,retired,Retired,Herm Edwards,false,2006 NFL season
+13,Las Vegas Raiders,2006,offseason,false,,Norv Turner,false,fired,Fired,Art Shell,false,2006 NFL season
+18,New Orleans Saints,2006,offseason,false,,Jim Haslett,false,fired,Fired,Sean Payton,false,2006 NFL season
+22,Arizona Cardinals,2007,offseason,false,,Dennis Green,false,fired,Fired,Ken Whisenhunt,false,2007 NFL season
+1,Atlanta Falcons,2007,offseason,false,,Jim Mora,false,fired,Fired,Bobby Petrino,false,2007 NFL season
+1,Atlanta Falcons,2007,in_season,true,,Bobby Petrino,false,left_for_job,Resigned: Petrino resigned after going 3–10 to take job at University of Arkansas; Thomas took over and went 1–2 as interim coach.,Emmitt Thomas,true,2007 NFL season
+6,Dallas Cowboys,2007,offseason,false,,Bill Parcells,false,retired,Retired,Wade Phillips,false,2007 NFL season
+13,Las Vegas Raiders,2007,offseason,false,,Art Shell,false,fired,Fired,Lane Kiffin,false,2007 NFL season
+24,Los Angeles Chargers,2007,offseason,false,,Marty Schottenheimer,false,fired,Fired,Norv Turner,false,2007 NFL season
+15,Miami Dolphins,2007,offseason,false,,Nick Saban,false,left_for_job,Resigned to coach the University of Alabama,Cam Cameron,false,2007 NFL season
+23,Pittsburgh Steelers,2007,offseason,false,,Bill Cowher,false,resigned,Resigned,Mike Tomlin,false,2007 NFL season
+14,Los Angeles Rams,2008,in_season,true,2008-09-29,Scott Linehan,false,fired,Dismissed September 29 four games into the season,Jim Haslett,true,2008 NFL season
+13,Las Vegas Raiders,2008,in_season,true,2008-09-30,Lane Kiffin,false,fired,Relieved of duties September 30 after four games,Tom Cable,true,2008 NFL season
+25,San Francisco 49ers,2008,in_season,true,2008-10-20,Mike Nolan,false,fired,Fired October 20 after seven games,Mike Singletary,true,2008 NFL season
+1,Atlanta Falcons,2008,offseason,false,,Bobby Petrino,false,left_for_job,Petrino resigned after 13 games to take the head coaching job at the University of Arkansas.,Mike Smith,false,2008 NFL season
+33,Baltimore Ravens,2008,offseason,false,,Brian Billick,false,fired,Fired,John Harbaugh,false,2008 NFL season
+15,Miami Dolphins,2008,offseason,false,,Cam Cameron,false,fired,Fired,Tony Sparano,false,2008 NFL season
+28,Washington Commanders,2008,offseason,false,,Joe Gibbs,false,retired,Retired,Jim Zorn,false,2008 NFL season
+14,Los Angeles Rams,2009,offseason,false,2008-09-29,Scott Linehan,false,fired,Fired,Steve Spagnuolo,false,2009 NFL season
+13,Las Vegas Raiders,2009,offseason,false,2008-09-30,Lane Kiffin,false,fired,Fired,Tom Cable,false,2009 NFL season
+25,San Francisco 49ers,2009,offseason,false,2008-10-20,Mike Nolan,false,fired,Fired,Mike Singletary,false,2009 NFL season
+11,Indianapolis Colts,2009,offseason,false,2009-01-12,Tony Dungy,false,retired,Retired,Jim Caldwell,false,2009 NFL season
+12,Kansas City Chiefs,2009,offseason,false,2009-01-23,Herman Edwards,false,fired,Fired,Todd Haley,false,2009 NFL season
+2,Buffalo Bills,2009,in_season,true,,Dick Jauron,false,fired,Fired Nov 17 after 9 games,Perry Fewell,true,2009 NFL season
+5,Cleveland Browns,2009,offseason,false,,Romeo Crennel,false,fired,Fired,Eric Mangini,false,2009 NFL season
+7,Denver Broncos,2009,offseason,false,,Mike Shanahan,false,fired,Fired,Josh McDaniels,false,2009 NFL season
+8,Detroit Lions,2009,offseason,false,,Rod Marinelli,false,fired,Fired,Jim Schwartz,false,2009 NFL season
+20,New York Jets,2009,offseason,false,,Eric Mangini,false,fired,Fired,Rex Ryan,false,2009 NFL season
+26,Seattle Seahawks,2009,offseason,false,,Mike Holmgren,false,retired,Retired,Jim L. Mora,false,2009 NFL season
+27,Tampa Bay Buccaneers,2009,offseason,false,,Jon Gruden,false,fired,Fired,Raheem Morris,false,2009 NFL season
+28,Washington Commanders,2010,offseason,false,2010-01-05,Jim Zorn,false,fired,Fired,Mike Shanahan,false,2010 NFL season
+2,Buffalo Bills,2010,offseason,false,2010-01-14,Dick Jauron,false,fired,Fired,Chan Gailey,false,2010 NFL season
+6,Dallas Cowboys,2010,in_season,true,2010-11-08,Wade Phillips,false,fired,Fired,Jason Garrett,true,2010 NFL season
+16,Minnesota Vikings,2010,in_season,true,2010-11-22,Brad Childress,false,fired,Fired,Leslie Frazier,true,2010 NFL season
+7,Denver Broncos,2010,in_season,true,2010-12-05,Josh McDaniels,false,fired,Fired,Eric Studesville,true,2010 NFL season
+25,San Francisco 49ers,2010,in_season,true,2010-12-26,Mike Singletary,false,fired,Fired,Jim Tomsula,true,2010 NFL season
+26,Seattle Seahawks,2010,offseason,false,,Jim L. Mora,false,fired,Fired,Pete Carroll,false,2010 NFL season
+6,Dallas Cowboys,2011,offseason,false,2010-11-08,Wade Phillips,false,fired,Fired,Jason Garrett,false,2011 NFL season
+16,Minnesota Vikings,2011,offseason,false,2010-11-22,Brad Childress,false,fired,Fired,Leslie Frazier,false,2011 NFL season
+7,Denver Broncos,2011,offseason,false,2010-12-05,Josh McDaniels,false,fired,Fired,John Fox,false,2011 NFL season
+29,Carolina Panthers,2011,offseason,false,2010-12-31,John Fox,false,fired,Expired contract,Ron Rivera,false,2011 NFL season
+5,Cleveland Browns,2011,offseason,false,2011-01-03,Eric Mangini,false,fired,Fired,Pat Shurmur,false,2011 NFL season
+13,Las Vegas Raiders,2011,offseason,false,2011-01-04,Tom Cable,false,fired,Expired contract,Hue Jackson,false,2011 NFL season
+10,Tennessee Titans,2011,offseason,false,2011-01-27,Jeff Fisher,false,resigned,Resigned,Mike Munchak,false,2011 NFL season
+12,Kansas City Chiefs,2011,in_season,true,2011-12-18,Todd Haley,false,fired,Fired,Romeo Crennel,true,2011 NFL season
+30,Jacksonville Jaguars,2011,in_season,true,,Jack Del Rio,false,fired,Fired,Mel Tucker,true,2011 NFL season
+15,Miami Dolphins,2011,in_season,true,,Tony Sparano,false,fired,Fired,Todd Bowles,true,2011 NFL season
+25,San Francisco 49ers,2011,offseason,false,,Mike Singletary,false,fired,Fired,Jim Harbaugh,false,2011 NFL season
+14,Los Angeles Rams,2012,offseason,false,2012-01-02,Steve Spagnuolo,false,fired,Fired,Jeff Fisher,false,2012 NFL season
+18,New Orleans Saints,2012,offseason,false,2012-03-21,Sean Payton,false,other,Suspended,Joe Vitt,false,2012 NFL season
+11,Indianapolis Colts,2012,offseason,false,,Jim Caldwell,false,fired,Fired,Chuck Pagano,false,2012 NFL season
+30,Jacksonville Jaguars,2012,offseason,false,,Jack Del Rio,false,fired,Fired,Mike Mularkey,false,2012 NFL season
+12,Kansas City Chiefs,2012,offseason,false,,Todd Haley,false,fired,Fired,Romeo Crennel,false,2012 NFL season
+13,Las Vegas Raiders,2012,offseason,false,,Hue Jackson,false,fired,Fired,Dennis Allen,false,2012 NFL season
+15,Miami Dolphins,2012,offseason,false,,Tony Sparano,false,fired,Fired,Joe Philbin,false,2012 NFL season
+27,Tampa Bay Buccaneers,2012,offseason,false,,Raheem Morris,false,fired,Fired,Greg Schiano,false,2012 NFL season
+18,New Orleans Saints,2013,offseason,false,2013-01-22,Joe Vitt,false,other,Reinstated,Sean Payton,false,2013 NFL season
+34,Houston Texans,2013,in_season,true,2013-11-03,Gary Kubiak,false,fired,Medical leave / (weeks 9–10) / / Fired / (weeks 15–17),Wade Phillips,true,2013 NFL season
+22,Arizona Cardinals,2013,offseason,false,,Ken Whisenhunt,false,fired,Fired,Bruce Arians,false,2013 NFL season
+2,Buffalo Bills,2013,offseason,false,,Chan Gailey,false,fired,Fired,Doug Marrone,false,2013 NFL season
+3,Chicago Bears,2013,offseason,false,,Lovie Smith,false,fired,Fired,Marc Trestman,false,2013 NFL season
+5,Cleveland Browns,2013,offseason,false,,Pat Shurmur,false,fired,Fired,Rob Chudzinski,false,2013 NFL season
+30,Jacksonville Jaguars,2013,offseason,false,,Mike Mularkey,false,fired,Fired,Gus Bradley,false,2013 NFL season
+12,Kansas City Chiefs,2013,offseason,false,,Romeo Crennel,false,fired,Fired,Andy Reid,false,2013 NFL season
+24,Los Angeles Chargers,2013,offseason,false,,Norv Turner,false,fired,Fired,Mike McCoy,false,2013 NFL season
+21,Philadelphia Eagles,2013,offseason,false,,Andy Reid,false,fired,Fired,Chip Kelly,false,2013 NFL season
+34,Houston Texans,2014,offseason,false,2013-12-06,Gary Kubiak,false,fired,Fired,Bill O'Brien,false,2014 NFL season
+5,Cleveland Browns,2014,offseason,false,2013-12-29,Rob Chudzinski,false,fired,Fired,Mike Pettine,false,2014 NFL season
+8,Detroit Lions,2014,offseason,false,2013-12-30,Jim Schwartz,false,fired,Fired,Jim Caldwell,false,2014 NFL season
+16,Minnesota Vikings,2014,offseason,false,2013-12-30,Leslie Frazier,false,fired,Fired,Mike Zimmer,false,2014 NFL season
+27,Tampa Bay Buccaneers,2014,offseason,false,2013-12-30,Greg Schiano,false,fired,Fired,Lovie Smith,false,2014 NFL season
+28,Washington Commanders,2014,offseason,false,2013-12-30,Mike Shanahan,false,fired,Fired,Jay Gruden,false,2014 NFL season
+10,Tennessee Titans,2014,offseason,false,2014-01-04,Mike Munchak,false,fired,Fired,Ken Whisenhunt,false,2014 NFL season
+13,Las Vegas Raiders,2014,in_season,true,2014-09-29,Dennis Allen,false,fired,Fired,Tony Sparano,true,2014 NFL season
+13,Las Vegas Raiders,2015,offseason,false,2014-09-29,Dennis Allen,false,fired,Fired,Jack Del Rio,false,2015 NFL season
+3,Chicago Bears,2015,offseason,false,2014-12-29,Marc Trestman,false,fired,Fired,John Fox,false,2015 NFL season
+20,New York Jets,2015,offseason,false,2014-12-29,Rex Ryan,false,fired,Fired,Todd Bowles,false,2015 NFL season
+2,Buffalo Bills,2015,offseason,false,2014-12-31,Doug Marrone,false,resigned,Resigned,Rex Ryan,false,2015 NFL season
+7,Denver Broncos,2015,offseason,false,2015-01-12,John Fox,false,fired,Mutual decision,Gary Kubiak,false,2015 NFL season
+25,San Francisco 49ers,2015,offseason,false,2015-01-14,Jim Harbaugh,false,fired,Mutually Part Ways,Jim Tomsula,false,2015 NFL season
+1,Atlanta Falcons,2015,offseason,false,,Mike Smith,false,fired,Fired,Dan Quinn,false,2015 NFL season
+15,Miami Dolphins,2015,in_season,true,,Joe Philbin,false,fired,Fired,Dan Campbell,true,2015 NFL season
+21,Philadelphia Eagles,2015,in_season,true,,Chip Kelly,false,fired,Fired,Pat Shurmur,true,2015 NFL season
+10,Tennessee Titans,2015,in_season,true,,Ken Whisenhunt,false,fired,Fired,Mike Mularkey,true,2015 NFL season
+21,Philadelphia Eagles,2016,offseason,false,2015-12-29,Chip Kelly,false,fired,Fired,Doug Pederson,false,2016 NFL season
+15,Miami Dolphins,2016,offseason,false,2016-01-09,Joe Philbin,false,fired,Fired,Adam Gase,false,2016 NFL season
+5,Cleveland Browns,2016,offseason,false,2016-01-13,Mike Pettine,false,fired,Fired,Hue Jackson,false,2016 NFL season
+19,New York Giants,2016,offseason,false,2016-01-14,Tom Coughlin,false,resigned,Resigned,Ben McAdoo,false,2016 NFL season
+25,San Francisco 49ers,2016,offseason,false,2016-01-14,Jim Tomsula,false,fired,Fired,Chip Kelly,false,2016 NFL season
+27,Tampa Bay Buccaneers,2016,offseason,false,2016-01-14,Lovie Smith,false,fired,Fired,Dirk Koetter,false,2016 NFL season
+10,Tennessee Titans,2016,offseason,false,2016-01-16,Ken Whisenhunt,false,fired,Fired,Mike Mularkey,false,2016 NFL season
+2,Buffalo Bills,2016,in_season,true,,Rex Ryan,false,fired,Fired,Anthony Lynn,true,2016 NFL season
+30,Jacksonville Jaguars,2016,in_season,true,,Gus Bradley,false,fired,Fired,Doug Marrone,true,2016 NFL season
+14,Los Angeles Rams,2016,in_season,true,,Jeff Fisher,false,fired,Fired,John Fassel,true,2016 NFL season
+30,Jacksonville Jaguars,2017,offseason,false,2017-01-09,Gus Bradley,false,fired,Fired,Doug Marrone,false,2017 NFL season
+2,Buffalo Bills,2017,offseason,false,2017-01-11,Rex Ryan,false,fired,Fired,Sean McDermott,false,2017 NFL season
+7,Denver Broncos,2017,offseason,false,2017-01-11,Gary Kubiak,false,retired,Retired,Vance Joseph,false,2017 NFL season
+24,Los Angeles Chargers,2017,offseason,false,2017-01-12,Mike McCoy,false,fired,Fired,Anthony Lynn,false,2017 NFL season
+14,Los Angeles Rams,2017,offseason,false,2017-01-12,Jeff Fisher,false,fired,Fired,Sean McVay,false,2017 NFL season
+25,San Francisco 49ers,2017,offseason,false,2017-02-06,Chip Kelly,false,fired,Fired,Kyle Shanahan,false,2017 NFL season
+19,New York Giants,2017,in_season,true,2017-12-04,Ben McAdoo,false,fired,Fired,Steve Spagnuolo,true,2017 NFL season
+19,New York Giants,2018,offseason,false,2017-12-04,Ben McAdoo,false,fired,Fired,Pat Shurmur,false,2018 NFL season
+13,Las Vegas Raiders,2018,offseason,false,2018-01-06,Jack Del Rio,false,fired,Fired,Jon Gruden,false,2018 NFL season
+3,Chicago Bears,2018,offseason,false,2018-01-08,John Fox,false,fired,Fired,Matt Nagy,false,2018 NFL season
+10,Tennessee Titans,2018,offseason,false,2018-01-20,Mike Mularkey,false,fired,Mutual decision,Mike Vrabel,false,2018 NFL season
+22,Arizona Cardinals,2018,offseason,false,2018-01-22,Bruce Arians,false,retired,Retired,Steve Wilks,false,2018 NFL season
+8,Detroit Lions,2018,offseason,false,2018-02-05,Jim Caldwell,false,fired,Fired,Matt Patricia,false,2018 NFL season
+11,Indianapolis Colts,2018,offseason,false,2018-02-06,Chuck Pagano,false,fired,Fired,Frank Reich,false,2018 NFL season
+5,Cleveland Browns,2018,in_season,true,2018-10-29,Hue Jackson,false,fired,Fired,Gregg Williams,true,2018 NFL season
+9,Green Bay Packers,2018,in_season,true,2018-12-02,Mike McCarthy,false,fired,Fired,Joe Philbin,true,2018 NFL season
+5,Cleveland Browns,2019,offseason,false,2018-10-29,Hue Jackson,false,fired,Fired,Freddie Kitchens,false,2019 NFL season
+9,Green Bay Packers,2019,offseason,false,2018-12-02,Mike McCarthy,false,fired,Fired,Matt LaFleur,false,2019 NFL season
+20,New York Jets,2019,offseason,false,2018-12-30,Todd Bowles,false,fired,Fired,Adam Gase,false,2019 NFL season
+27,Tampa Bay Buccaneers,2019,offseason,false,2018-12-30,Dirk Koetter,false,fired,Fired,Bruce Arians,false,2019 NFL season
+22,Arizona Cardinals,2019,offseason,false,2018-12-31,Steve Wilks,false,fired,Fired,Kliff Kingsbury,false,2019 NFL season
+4,Cincinnati Bengals,2019,offseason,false,2018-12-31,Marvin Lewis,false,fired,Mutual decision,Zac Taylor,false,2019 NFL season
+7,Denver Broncos,2019,offseason,false,2018-12-31,Vance Joseph,false,fired,Fired,Vic Fangio,false,2019 NFL season
+15,Miami Dolphins,2019,offseason,false,2018-12-31,Adam Gase,false,fired,Fired,Brian Flores,false,2019 NFL season
+28,Washington Commanders,2019,in_season,true,2019-10-07,Jay Gruden,false,fired,Fired,Bill Callahan,true,2019 NFL season
+29,Carolina Panthers,2019,in_season,true,2019-12-03,Ron Rivera,false,fired,Fired,Perry Fewell,true,2019 NFL season
+28,Washington Commanders,2020,offseason,false,2019-10-07,Jay Gruden,false,fired,Fired,Ron Rivera,false,2020 NFL season
+29,Carolina Panthers,2020,offseason,false,2019-12-03,Ron Rivera,false,fired,Fired,Matt Rhule,false,2020 NFL season
+5,Cleveland Browns,2020,offseason,false,2019-12-29,Freddie Kitchens,false,fired,Fired,Kevin Stefanski,false,2020 NFL season
+19,New York Giants,2020,offseason,false,2019-12-30,Pat Shurmur,false,fired,Fired,Joe Judge,false,2020 NFL season
+6,Dallas Cowboys,2020,offseason,false,2020-01-05,Jason Garrett,false,fired,Contract expired,Mike McCarthy,false,2020 NFL season
+34,Houston Texans,2020,in_season,true,2020-10-05,Bill O'Brien,false,fired,Fired,Romeo Crennel,true,2020 NFL season
+1,Atlanta Falcons,2020,in_season,true,2020-10-11,Dan Quinn,false,fired,Fired,Raheem Morris,true,2020 NFL season
+8,Detroit Lions,2020,in_season,true,2020-11-28,Matt Patricia,false,fired,Fired,Darrell Bevell,true,2020 NFL season
+34,Houston Texans,2021,offseason,false,2020-10-05,Bill O'Brien,false,fired,Fired,David Culley,false,2021 NFL season
+1,Atlanta Falcons,2021,offseason,false,2020-10-11,Dan Quinn,false,fired,Fired,Arthur Smith,false,2021 NFL season
+8,Detroit Lions,2021,offseason,false,2020-11-28,Matt Patricia,false,fired,Fired,Dan Campbell,false,2021 NFL season
+20,New York Jets,2021,offseason,false,2021-01-03,Adam Gase,false,fired,Fired,Robert Saleh,false,2021 NFL season
+30,Jacksonville Jaguars,2021,offseason,false,2021-01-04,Doug Marrone,false,fired,Fired,Urban Meyer,false,2021 NFL season
+24,Los Angeles Chargers,2021,offseason,false,2021-01-04,Anthony Lynn,false,fired,Fired,Brandon Staley,false,2021 NFL season
+21,Philadelphia Eagles,2021,offseason,false,2021-01-11,Doug Pederson,false,fired,Fired,Nick Sirianni,false,2021 NFL season
+30,Jacksonville Jaguars,2021,in_season,true,2021-12-15,Urban Meyer,false,fired,Fired,Darrell Bevell,true,2021 NFL season
+13,Las Vegas Raiders,2021,in_season,true,,Jon Gruden,false,resigned,Resigned,Rich Bisaccia,true,2021 NFL season
+13,Las Vegas Raiders,2022,offseason,false,2021-10-11,Jon Gruden,false,resigned,Resigned,Josh McDaniels,false,2022 NFL season
+30,Jacksonville Jaguars,2022,offseason,false,2021-12-16,Urban Meyer,false,fired,Fired,Doug Pederson,false,2022 NFL season
+7,Denver Broncos,2022,offseason,false,2022-01-09,Vic Fangio,false,fired,Fired,Nathaniel Hackett,false,2022 NFL season
+3,Chicago Bears,2022,offseason,false,2022-01-10,Matt Nagy,false,fired,Fired,Matt Eberflus,false,2022 NFL season
+15,Miami Dolphins,2022,offseason,false,2022-01-10,Brian Flores,false,fired,Fired,Mike McDaniel,false,2022 NFL season
+16,Minnesota Vikings,2022,offseason,false,2022-01-10,Mike Zimmer,false,fired,Fired,Kevin O'Connell,false,2022 NFL season
+19,New York Giants,2022,offseason,false,2022-01-11,Joe Judge,false,fired,Fired,Brian Daboll,false,2022 NFL season
+34,Houston Texans,2022,offseason,false,2022-01-13,David Culley,false,fired,Fired,Lovie Smith,false,2022 NFL season
+18,New Orleans Saints,2022,offseason,false,2022-01-25,Sean Payton,false,retired,Retired,Dennis Allen,false,2022 NFL season
+27,Tampa Bay Buccaneers,2022,offseason,false,2022-03-30,Bruce Arians,false,retired,Retired,Todd Bowles,false,2022 NFL season
+29,Carolina Panthers,2022,in_season,true,2022-10-10,Matt Rhule,false,fired,Fired,Steve Wilks,true,2022 NFL season
+11,Indianapolis Colts,2022,in_season,true,2022-11-07,Frank Reich,false,fired,Fired,Jeff Saturday,true,2022 NFL season
+7,Denver Broncos,2022,in_season,true,2022-12-26,Nathaniel Hackett,false,fired,Fired,Jerry Rosburg,true,2022 NFL season
+29,Carolina Panthers,2023,offseason,false,2022-10-10,Matt Rhule,false,fired,Fired,Frank Reich,false,2023 NFL season
+11,Indianapolis Colts,2023,offseason,false,2022-11-07,Frank Reich,false,fired,Fired,Shane Steichen,false,2023 NFL season
+7,Denver Broncos,2023,offseason,false,2022-12-26,Nathaniel Hackett,false,fired,Fired,Sean Payton,false,2023 NFL season
+34,Houston Texans,2023,offseason,false,2023-01-08,Lovie Smith,false,fired,Fired,DeMeco Ryans,false,2023 NFL season
+22,Arizona Cardinals,2023,offseason,false,2023-01-09,Kliff Kingsbury,false,fired,Fired,Jonathan Gannon,false,2023 NFL season
+13,Las Vegas Raiders,2023,in_season,true,2023-10-31,Josh McDaniels,false,fired,Fired,Antonio Pierce,true,2023 NFL season
+29,Carolina Panthers,2023,in_season,true,2023-11-27,Frank Reich,false,fired,Fired,Chris Tabor,true,2023 NFL season
+24,Los Angeles Chargers,2023,in_season,true,2023-12-15,Brandon Staley,false,fired,Fired,Giff Smith,true,2023 NFL season
+13,Las Vegas Raiders,2024,offseason,false,2023-10-31,Josh McDaniels,false,fired,Fired,Antonio Pierce,false,2024 NFL season
+29,Carolina Panthers,2024,offseason,false,2023-11-27,Frank Reich,false,fired,Fired,Dave Canales,false,2024 NFL season
+24,Los Angeles Chargers,2024,offseason,false,2023-12-15,Brandon Staley,false,fired,Fired,Jim Harbaugh,false,2024 NFL season
+1,Atlanta Falcons,2024,offseason,false,2024-01-08,Arthur Smith,false,fired,Fired,Raheem Morris,false,2024 NFL season
+28,Washington Commanders,2024,offseason,false,2024-01-08,Ron Rivera,false,fired,Fired,Dan Quinn,false,2024 NFL season
+10,Tennessee Titans,2024,offseason,false,2024-01-09,Mike Vrabel,false,fired,Fired,Brian Callahan,false,2024 NFL season
+26,Seattle Seahawks,2024,offseason,false,2024-01-10,Pete Carroll,false,fired,Reassigned,Mike Macdonald,false,2024 NFL season
+17,New England Patriots,2024,offseason,false,2024-01-11,Bill Belichick,false,fired,Mutual agreement,Jerod Mayo,false,2024 NFL season
+20,New York Jets,2024,in_season,true,2024-10-08,Robert Saleh,false,fired,Fired,Jeff Ulbrich,true,2024 NFL season
+18,New Orleans Saints,2024,in_season,true,2024-11-04,Dennis Allen,false,fired,Fired,Darren Rizzi,true,2024 NFL season
+3,Chicago Bears,2024,in_season,true,2024-11-29,Matt Eberflus,false,fired,Fired,Thomas Brown,true,2024 NFL season
+20,New York Jets,2025,offseason,false,2024-10-08,Robert Saleh,false,fired,Fired,Aaron Glenn,false,2025 NFL season
+18,New Orleans Saints,2025,offseason,false,2024-11-04,Dennis Allen,false,fired,Fired,Kellen Moore,false,2025 NFL season
+3,Chicago Bears,2025,offseason,false,2024-11-29,Matt Eberflus,false,fired,Fired,Ben Johnson,false,2025 NFL season
+17,New England Patriots,2025,offseason,false,2025-01-05,Jerod Mayo,false,fired,Fired,Mike Vrabel,false,2025 NFL season
+30,Jacksonville Jaguars,2025,offseason,false,2025-01-06,Doug Pederson,false,fired,Fired,Liam Coen,false,2025 NFL season
+13,Las Vegas Raiders,2025,offseason,false,2025-01-07,Antonio Pierce,false,fired,Fired,Pete Carroll,false,2025 NFL season
+6,Dallas Cowboys,2025,offseason,false,2025-01-13,Mike McCarthy,false,fired,Contract expired,Brian Schottenheimer,false,2025 NFL season
+10,Tennessee Titans,2025,in_season,true,2025-10-13,Brian Callahan,false,fired,Fired,Mike McCoy,true,2025 NFL season
+19,New York Giants,2025,in_season,true,2025-11-10,Brian Daboll,false,fired,Fired,Mike Kafka,true,2025 NFL season
+10,Tennessee Titans,2026,offseason,false,2025-10-13,Brian Callahan,false,fired,Fired,Robert Saleh,false,2026 NFL season
+19,New York Giants,2026,offseason,false,2025-11-10,Brian Daboll,false,fired,Fired,John Harbaugh,false,2026 NFL season
+1,Atlanta Falcons,2026,offseason,false,2026-01-04,Raheem Morris,false,fired,Fired,Kevin Stefanski,false,2026 NFL season
+22,Arizona Cardinals,2026,offseason,false,2026-01-05,Jonathan Gannon,false,fired,Fired,Mike LaFleur,false,2026 NFL season
+5,Cleveland Browns,2026,offseason,false,2026-01-05,Kevin Stefanski,false,fired,Fired,Todd Monken,false,2026 NFL season
+13,Las Vegas Raiders,2026,offseason,false,2026-01-05,Pete Carroll,false,fired,Fired,Klint Kubiak,false,2026 NFL season
+33,Baltimore Ravens,2026,offseason,false,2026-01-06,John Harbaugh,false,fired,Fired,Jesse Minter,false,2026 NFL season
+15,Miami Dolphins,2026,offseason,false,2026-01-08,Mike McDaniel,false,fired,Fired,Jeff Hafley,false,2026 NFL season
+23,Pittsburgh Steelers,2026,offseason,false,2026-01-13,Mike Tomlin,false,resigned,Resigned,Mike McCarthy,false,2026 NFL season
+2,Buffalo Bills,2026,offseason,false,2026-01-19,Sean McDermott,false,fired,Fired,Joe Brady,false,2026 NFL season

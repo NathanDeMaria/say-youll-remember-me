@@ -19,13 +19,20 @@ staff("Michigan Wolverines", 2021)
 
 week_one_starter("LSU Tigers", 2019)
 # QuarterbackSeason(player='Joe Burrow', starts=15, attempts=518, epa=261.1584, ...)
+
+departure("Miami Dolphins", 2007, "nfl")
+# CoachChange(outgoing='Nick Saban', reason='left_for_job', incoming='Cam Cameron', ...)
 ```
+
+Every question takes a league, `ncaafb` unless given.
 
 Teams are asked about by any name
 [call-it-what-you-want](https://github.com/NathanDeMaria/call-it-what-you-want)
 knows, or by ESPN id, and every row is keyed by the canonical ESPN id it
 answers with -- so "Appalachian State Mountaineers" and "App State
-Mountaineers" are one team here, as they are there. That package is the
+Mountaineers" are one team here, as they are there, and so are the Oakland
+and Las Vegas Raiders. The NFL numbers its teams from scratch, so its ids
+are looked up in that package's `nfl` namespace. That package is the
 only dependency; reading the data pulls in nothing else, and
 `imports_test.py` keeps it that way.
 
@@ -34,10 +41,10 @@ and `quarterback_seasons()` return every row as a typed `NamedTuple`.
 
 ## The data
 
-`say_youll_remember_me/data/<league>/<kind>.csv`, one row per observation.
-Only college football (`ncaafb`) so far. Blank cells are None, booleans
-`true` / `false`. Snapshot of 2026-09-24: 2026 rows cover the season to
-date.
+`say_youll_remember_me/data/<league>/<kind>.csv`, one row per observation:
+college football (`ncaafb`), then the NFL (`nfl`, below). Blank cells are
+None, booleans `true` / `false`. Snapshot of 2026-09-24: 2026 rows cover
+the season to date.
 
 ### `head_coach_changes.csv` -- 468 changes, seasons 2013-2026
 
@@ -120,12 +127,46 @@ for, which is how a transfer's record follows him.
 initial are one key. It's rare within a season and a team, less rare across
 the country, so check the team before treating two rows as one player.
 
+### The NFL
+
+Same three files and columns, under `data/nfl/`.
+
+**`head_coach_changes.csv` -- 195 changes, seasons 2006-2026.** The
+head-coach tables of *20XX NFL season*, 2006-2026, which split the other
+way from college: `table` is `offseason` (every change between the last
+season and this one; `season` is the article's) or `in_season` (this
+season's coaches who didn't finish it; `midseason`). A coach fired
+mid-season usually appears twice, in that season's in-season table and
+the next one's off-season table; `departure` answers with the earlier.
+Reasons: `fired` 172, `retired` 9, `resigned` 8, `left_for_job` 4 (Herm
+Edwards traded to Kansas City, Nick Saban to Alabama, Bobby Petrino to
+Arkansas in both tables), `other` 2 (Sean Payton's 2012 suspension and
+reinstatement). An NFL "contract expired" is a firing: a team that wanted
+him would have extended it. A medical leave he came back from isn't a
+change and isn't on file. Dates come from the notes, where they're given.
+
+**`coaching_staffs.csv` -- 704 team-seasons, 2005-2026.** The *2019 Kansas
+City Chiefs season* infobox, whose head coach field is `coach`. A coach
+replaced during the season is joined with " / " after the one who opened
+it ("Jay Gruden / Bill Callahan"). The NFL infobox numbers nobody's
+seasons, so the `*_year` columns are empty, and it names coordinators for
+only about half the team-seasons (345 offensive, 341 defensive). Agrees
+with the change tables on who opened every season but two, both Payton's
+suspension.
+
+**`quarterbacks.csv` -- 1,212 quarterback-team-seasons, 2006-2026.** Built
+the college way, from the NFL's plays: starts from 2006, `attempts` and
+`epa` from 2014 by `lucky_ones`' NFL model (expected points run
+20260920-231258). Playoff games count as starts. Two games since 2014 --
+one in 2017, one in 2019 -- are counted for starts and left unpriced.
+
 ## Rebuilding
 
 ```bash
 uv run syrm coaches --first 2013 --last 2025 --cache ~/.cache/syrm
 uv run syrm staffs --first 2014 --last 2026 --cache ~/.cache/syrm
 uv run syrm quarterbacks --first 2026 --last 2026
+uv run syrm coaches --league nfl --first 2006 --last 2026 --cache ~/.cache/syrm
 ```
 
 Writes into `data/`, to be reviewed and committed like any other change.

@@ -210,7 +210,7 @@ wheels = [
 [[package]]
 name = "call-it-what-you-want"
 version = "0.1.0"
-source = { git = "https://github.com/NathanDeMaria/call-it-what-you-want.git?rev=f185eb03ac5bc3d9e0ff27f9a4172520e62af132#f185eb03ac5bc3d9e0ff27f9a4172520e62af132" }
+source = { git = "https://github.com/NathanDeMaria/call-it-what-you-want.git?rev=b815fc3008fe958d8731c8523919d13a2a936b0d#b815fc3008fe958d8731c8523919d13a2a936b0d" }
 
 [[package]]
 name = "colorama"
@@ -973,7 +973,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "call-it-what-you-want", git = "https://github.com/NathanDeMaria/call-it-what-you-want.git?rev=f185eb03ac5bc3d9e0ff27f9a4172520e62af132" },
+    { name = "call-it-what-you-want", git = "https://github.com/NathanDeMaria/call-it-what-you-want.git?rev=b815fc3008fe958d8731c8523919d13a2a936b0d" },
     { name = "endgame-aws", marker = "python_full_version >= '3.14' and extra == 'plays'", git = "https://github.com/NathanDeMaria/EndGame.git?subdirectory=py-endgame-aws&rev=78f76618b2b81cebb4a161775e057fb97d691d18" },
     { name = "lucky-ones", extras = ["data"], marker = "python_full_version >= '3.14' and extra == 'plays'", git = "https://github.com/NathanDeMaria/the-lucky-ones.git?rev=99e79fb9ed68deef0800b53d580677d1036b1dca" },
 ]
