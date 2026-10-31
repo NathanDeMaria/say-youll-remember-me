@@ -85,7 +85,7 @@ def resolve(name: str, league: str = NCAAFB) -> str | None:
             continue
         try:
             return teams.by_name(candidate).espn_id
-        except (UnknownTeamError, AmbiguousTeamError):
+        except UnknownTeamError, AmbiguousTeamError:
             continue
     if league == NFL:
         return None
@@ -102,7 +102,7 @@ def resolve(name: str, league: str = NCAAFB) -> str | None:
 def _football_name(espn_id: str, teams: Teams) -> str:
     try:
         return teams.by_espn_id(espn_id).current_name(league=NCAAFB)
-    except (NoNamesError, AmbiguousNameError):
+    except NoNamesError, AmbiguousNameError:
         return ""
 
 
@@ -114,7 +114,7 @@ def current_name(espn_id: str, league: str = NCAAFB) -> str:
     for context in (NCAAFB, None):
         try:
             return team.current_name(league=context)
-        except (NoNamesError, AmbiguousNameError):
+        except NoNamesError, AmbiguousNameError:
             continue
     return espn_id
 
