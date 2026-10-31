@@ -1,9 +1,15 @@
-.ipynb_checkpoints/
+__pycache__/
+.venv/
+dist/
 .pytest_cache/
 .ruff_cache/
-.venv/
-__pycache__/
-dist/
+.env
+
+# Machine-local devcontainer settings; local.env.example is the tracked copy
+.devcontainer/local.env
+
+# This repo's own (the rules above are mirrorball's)
+.ipynb_checkpoints/
 *.json
 
 !.vscode/

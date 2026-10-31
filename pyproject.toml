@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "What changed about a team between seasons: head coaches, coordinators, quarterbacks."
 readme = "README.md"
 authors = []
-requires-python = ">=3.12"
+# The oldest Python this supports, not the one it's developed on: a library
+# that asks for a newer interpreter than its consumers run can't be installed.
+requires-python = ">=3.14"
 # Team identity comes from call-it-what-you-want, whose base install is
 # itself dependency-free -- so reading this package's data pulls in nothing
 # third-party beyond it. `imports_test.py` keeps that true.
@@ -15,13 +17,11 @@ dependencies = ["call-it-what-you-want"]
 # aiobotocore), and the expected points model that prices each snap
 # (lucky-ones, and pyarrow through its `data` extra). Kept out of the base
 # install so reading the data stays a one-dependency operation.
-#
-# lucky-ones needs Python 3.14 where the rest of this package doesn't, so
-# the extra says so rather than raising the floor for every reader.
+
 [project.optional-dependencies]
 plays = [
-    "endgame-aws; python_version >= '3.14'",
-    "lucky-ones[data]; python_version >= '3.14'",
+    "endgame-aws",
+    "lucky-ones[data]",
 ]
 
 [project.scripts]
@@ -31,18 +31,26 @@ syrm = "say_youll_remember_me.sync:main"
 # keyed, and which ids count as the same team is that package's answer.
 [tool.uv.sources]
 call-it-what-you-want = { git = "https://github.com/NathanDeMaria/call-it-what-you-want.git", rev = "090767f122c6808ca3a0ccfb5305d04f5d7772e7" }
-# The same revs cassandra pins, so the quarterback file is read from the same
-# play store and priced by the same expected points fit as cassandra's EPA
-# index. Moving either is a change to what `epa` means; the file's `source`
-# column names the fit's run.
-endgame-aws = { git = "https://github.com/NathanDeMaria/EndGame.git", rev = "78f76618b2b81cebb4a161775e057fb97d691d18", subdirectory = "py-endgame-aws" }
+# The quarterback file is read from this play store and priced by this
+# expected points fit. Moving either can change what `epa` means; the file's
+# `source` column names the fit's run.
+#
+# endgame-aws is at b336c04 (EndGame #120) rather than the 78f7661 it was
+# built on, for a pyarrow range that reaches 26 -- the first with Python 3.15
+# wheels. Nothing between the two touches football: `get_processed_plays_store`
+# and the football parquet are unchanged, the rest is basketball and odds.
+endgame-aws = { git = "https://github.com/NathanDeMaria/EndGame.git", rev = "b336c0490ca34b49b355bbce372a0d3998c4fbf2", subdirectory = "py-endgame-aws" }
 lucky-ones = { git = "https://github.com/NathanDeMaria/the-lucky-ones.git", rev = "99e79fb9ed68deef0800b53d580677d1036b1dca" }
 
 [dependency-groups]
 dev = [
-    "pytest>=8.3.5",
-    "ruff>=0.16.1",
-    "ty>=0.0.65",
+    # The `plays` extra in the working environment: its modules and tests are
+    # part of this repo even though readers opt in, so `uv sync` (and CI) has
+    # to be able to import them.
+    "say-youll-remember-me[plays]",
+    "pytest>=9.0.2",
+    "ruff>=0.17.3",
+    "ty>=0.0.94",
 ]
 
 [build-system]
@@ -52,11 +60,28 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["say_youll_remember_me"]
 
+# Below here is the template's. `copier update` brings changes to it from
+# mirrorball, so per-repo additions are better made as new keys than as edits.
+
 [tool.ruff]
 line-length = 88
 
 [tool.ruff.lint]
-select = ["E", "F", "I"]
+# Ruff's defaults (E4, E7, E9, F), import sorting, and pyupgrade -- which
+# reads requires-python to decide what's outdated.
+select = ["E4", "E7", "E9", "F", "I", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["say_youll_remember_me"]
+
+[tool.ty.terminal]
+# A warning fails `make check` and CI, same as an error. Silence one on purpose
+# with `# ty: ignore[rule]`, which ty itself flags once it's no longer needed.
+error-on-warning = true
+
+[tool.pytest]
+# Unknown markers, bad config keys and xfails that pass are failures.
+strict = true
 
 [tool.ruff.lint.per-file-ignores]
 # these just re-export names for the public API
