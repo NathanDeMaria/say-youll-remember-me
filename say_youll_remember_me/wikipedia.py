@@ -158,7 +158,7 @@ def fetch_leads(
             try:
                 query = json.loads(_get(API, data=body))["query"]
                 break
-            except (json.JSONDecodeError, KeyError):
+            except json.JSONDecodeError, KeyError:
                 time.sleep(30 * (attempt + 1))
         else:
             raise RuntimeError(
