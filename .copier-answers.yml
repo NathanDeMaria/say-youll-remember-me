@@ -1,0 +1,9 @@
+# Changes here will be overwritten by Copier
+_commit: v1.0.0
+_src_path: gh:NathanDeMaria/mirrorball
+aws: true
+description: 'What changed about a team between seasons: head coaches, coordinators,
+    quarterbacks.'
+kind: library
+module_name: say_youll_remember_me
+project_name: say-youll-remember-me
