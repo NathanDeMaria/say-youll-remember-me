@@ -7,6 +7,8 @@ from .types import (
     IN_SEASON,
     INTERIM_REPLACED,
     LEFT_FOR_JOB,
+    NCAAMBB,
+    NCAAWBB,
     NFL,
     OFFSEASON,
     OTHER,
@@ -19,6 +21,7 @@ from .wikipedia import (
     parse_table,
     plain,
     reason_of,
+    season_article,
     staff,
     team_of,
 )
@@ -180,6 +183,96 @@ def test_coaching_changes_from_a_season_article() -> None:
         True,
     )
     assert norvell.reason == INTERIM_REPLACED
+
+
+def test_basketball_article_titles() -> None:
+    assert season_article(2023, NCAAMBB) == (
+        "2023–24 NCAA Division I men's basketball season"
+    )
+    assert season_article(1999, NCAAWBB) == (
+        "1999–2000 NCAA Division I women's basketball season"
+    )
+
+
+def test_team_of_a_basketball_link() -> None:
+    assert team_of("[[Arkansas Razorbacks men's basketball|Arkansas]]") == (
+        "Arkansas Razorbacks"
+    )
+    assert team_of("[[Southern Lady Jaguars basketball|Southern]]") == (
+        "Southern Lady Jaguars"
+    )
+
+
+BASKETBALL_ARTICLE = """== Coaching changes ==
+Many teams will change coaches during the season and after it ends.
+
+{| class="wikitable"
+!Team
+!Former<br />
+!Interim<br />
+!New<br />
+!Reason
+|-
+| [[Arkansas Razorbacks men's basketball|Arkansas]]
+| [[Eric Musselman]]
+|
+| [[John Calipari]]
+|Musselman left Arkansas after 5 seasons to take the USC job on April 4, 2024.<ref name=M>{{cite web|url=x}}</ref> On April 10, the Razorbacks announced that John Calipari will take over.
+|-
+|[[Bryant Bulldogs men's basketball|Bryant]]
+|[[Jared Grasso]]
+|colspan="2" style="text-align:center;"|[[Phil Martelli Jr.]]
+|Grasso announced his resignation on November 13, 2023 after 5 seasons. Associate head coach Martelli Jr. was named acting head coach.
+|-
+|[[UMKC Kangaroos men's basketball|UMKC]]
+|[[Kareem Richardson]]
+|
+|[[Marvin Menzies]]
+|UMKC fired Richardson on March 14 after 6 seasons. On March 28, Northwestern assistant Menzies was hired by the Kangaroos.
+|-
+|[[Utah State Aggies men's basketball|Utah State]]
+|[[Danny Sprinkle]]
+|
+|[[Jerrod Calhoun]]
+|Following its NCAA tournament exit, on March 25, 2024, Washington announced it was hiring Danny Sprinkle for its head coaching vacancy.
+|-
+|[[George Mason Patriots women's basketball|George Mason]]
+|[[Nyla Milleson]]
+|
+|[[Vanessa Blair-Lewis]]
+|Milleson announced her resignation on March 11, 2024, after 8 seasons at GMU. Bethune–Cookman head coach Vanessa Blair-Lewis was hired by the Patriots on April 6.
+|}
+
+==Attendances==
+"""
+
+
+def test_basketball_coaching_changes() -> None:
+    arkansas, bryant, umkc, utah_state, mason = coaching_changes(
+        BASKETBALL_ARTICLE, 2023, NCAAMBB
+    )
+    assert (arkansas.team, arkansas.reason, arkansas.date, arkansas.season) == (
+        "Arkansas Razorbacks",
+        LEFT_FOR_JOB,
+        "2024-04-04",
+        2024,
+    )
+    assert not arkansas.midseason
+    # Gone in November with an acting coach finishing the season: this
+    # season's change. The acting coach kept the job, spanned across both.
+    assert (bryant.reason, bryant.midseason, bryant.season, bryant.incoming) == (
+        RESIGNED,
+        True,
+        2023,
+        "Phil Martelli Jr.",
+    )
+    assert not bryant.incoming_interim
+    # A year-less March date is in the spring the season ends in, and the
+    # successor's hiring doesn't make the firing a job change.
+    assert (umkc.reason, umkc.date, umkc.season) == (FIRED, "2024-03-14", 2024)
+    assert utah_state.reason == LEFT_FOR_JOB
+    # "GMU." ends a sentence: the next one is the successor's.
+    assert mason.reason == RESIGNED
 
 
 def test_a_season_article_without_the_section_has_no_changes() -> None:

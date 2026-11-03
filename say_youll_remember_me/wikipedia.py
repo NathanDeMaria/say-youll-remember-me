@@ -1,4 +1,4 @@
-"""Reading coaching facts out of Wikipedia's football articles.
+"""Reading coaching facts out of Wikipedia's football and basketball articles.
 
 Two sources, both in wikitext:
 
@@ -13,6 +13,10 @@ Two sources, both in wikitext:
   their columns by season ("2008 Coach", "2007 Coach(es)"), and later
   ones open each row with a header cell and span the interim column when
   there was none -- so the columns are found by what their headers say.
+  College basketball ("2023–24 NCAA Division I men's basketball season",
+  "Coaching changes"): one table, each row the team, the coach leaving, an
+  interim if there was one, the new coach, and a paragraph of why -- the
+  date is only in that paragraph.
 - **A team-season article's infobox** ("2019 LSU Tigers football team",
   "2019 Kansas City Chiefs season"): `head_coach` (the NFL's is `coach`),
   `off_coach` and `def_coach`; in college, each with a `*_year` field
@@ -36,6 +40,7 @@ from pathlib import Path
 from typing import NamedTuple
 
 from .types import (
+    BASKETBALL,
     END_OF_SEASON,
     FIRED,
     HEALTH,
@@ -43,6 +48,7 @@ from .types import (
     INTERIM_REPLACED,
     LEFT_FOR_JOB,
     NCAAFB,
+    NCAAMBB,
     NFL,
     OFFSEASON,
     OTHER,
@@ -79,6 +85,11 @@ MONTHS: tuple[str, ...] = (
 def season_article(season: int, league: str = NCAAFB) -> str:
     if league == NFL:
         return f"{season} NFL season"
+    if league in BASKETBALL:
+        # Named by both years, with an en dash: "2023–24".
+        sport = "men's" if league == NCAAMBB else "women's"
+        end = str(season + 1)
+        return f"{season}–{end if end.endswith('00') else end[-2:]} NCAA Division I {sport} basketball season"
     return f"{season} NCAA Division I FBS football season"
 
 
@@ -221,8 +232,12 @@ def team_of(cell: str) -> str | None:
     target = link_target(cell)
     if target is None:
         return None
-    target = re.sub(r"^\d{4} ", "", target)
-    return re.sub(r" (?:football( team)?|season)$", "", target).strip()
+    target = re.sub(r"^\d{4}(?:–\d{2,4})? ", "", target)
+    return re.sub(
+        r" (?:football( team)?|season|(?:men's |women's )?basketball( team)?)$",
+        "",
+        target,
+    ).strip()
 
 
 _DTS = re.compile(r"\{\{\s*dts\s*\|([^}]*)\}\}", re.I)
@@ -434,6 +449,8 @@ def coaching_changes(
     """Every row of a season article's head-coach change tables."""
     if league == NFL:
         return _nfl_changes(article, page_season)
+    if league in BASKETBALL:
+        return _basketball_changes(article, page_season)
     start = article.find("==Coaching changes==")
     if start < 0:
         return []
@@ -653,6 +670,189 @@ def _timing(table_kind: str, date: str | None, page_season: int) -> tuple[bool, 
     midseason = month in (9, 10) or (month == 11 and day <= 20)
     preseason = 2 <= month <= 8
     return midseason, page_season if (midseason or preseason) else page_season + 1
+
+
+def _basketball_changes(article: str, page_season: int) -> list[ChangeRow]:
+    """The basketball article's coaching-change table.
+
+    Its columns are the team, the coach leaving ("Former", "Outgoing"), an
+    interim, the new coach and a reason; there is no date column, so the
+    date is the first one the reason gives. An interim and new coach who
+    are the same person -- the acting coach kept the job -- arrive as one
+    cell spanned across both columns.
+    """
+    # Spaced or not: "== Coaching changes ==" is as common as the other.
+    heading = re.search(r"^==\s*Coaching changes\s*==\s*$", article, re.M)
+    if heading is None:
+        return []
+    following = re.search(r"\n==[^=]", article[heading.end() :])
+    section = (
+        article[heading.end() : heading.end() + following.start()]
+        if following
+        else article[heading.end() :]
+    )
+    found: list[ChangeRow] = []
+    for table in re.findall(r"\{\|.*?\n\|\}", section, re.S):
+        for row in parse_table(table):
+            team_cell = _column(row, "team", "school")
+            # Some rows name the school without linking it.
+            team = team_of(team_cell) or plain(team_cell) or None
+            if team is None:
+                continue
+            outgoing = plain(_column(row, "former", "outgoing", "departing"))
+            interim = plain(_column(row, "interim"))
+            new = plain(_column(row, "new", "replacement", "incoming")) or None
+            reason_text = plain(_column(row, "reason"))
+            date = _basketball_date(reason_text, page_season)
+            outgoing_interim = "interim" in outgoing.lower()
+            surname = outgoing.split()[-1] if outgoing.split() else ""
+            reason = _basketball_reason(
+                _about(reason_text, outgoing), outgoing_interim, surname
+            )
+            midseason, season = _basketball_timing(
+                date,
+                bool(interim)
+                or bool(re.search(r"\b(interim|acting)\b", reason_text, re.I)),
+                page_season,
+            )
+            found.append(
+                ChangeRow(
+                    team=team,
+                    table=IN_SEASON,
+                    season=season,
+                    midseason=midseason,
+                    date=date,
+                    outgoing=re.sub(
+                        r"\s*\(interim[^)]*\)", "", outgoing, flags=re.I
+                    ).strip(),
+                    outgoing_interim=reason == INTERIM_REPLACED,
+                    reason=reason,
+                    reason_text=reason_text,
+                    # The interim stands in for the new coach until there is one.
+                    incoming=new or interim or None,
+                    incoming_interim=new is None and bool(interim),
+                )
+            )
+    return found
+
+
+def _about(reason_text: str, outgoing: str) -> str:
+    """The reason's sentences about the coach leaving.
+
+    A basketball reason is a paragraph that goes on to the successor --
+    "Penn State assistant Fisher was hired by the school on March 29" --
+    and read whole, "hired by" makes a fired coach one who left for a job.
+    So only the first sentence naming the departing coach counts, or the
+    paragraph's first sentence when none does ("The school announced...").
+    One sentence and not every one naming him: with the citations gone a
+    sentence sometimes runs into the next, and the later ones are about
+    the successor.
+    """
+    # A full stop after a capital ends a sentence too ("at GMU. Bethune-
+    # Cookman's coach was hired..."); "St." is the one abbreviation that
+    # turns up mid-sentence, so it doesn't.
+    sentences = re.split(r"(?<=[A-Za-z0-9)\]])(?<!\bSt)\.\s+(?=[A-Z])", reason_text)
+    surname = outgoing.split()[-1] if outgoing.split() else ""
+    mine = [s for s in sentences if surname and surname.lower() in s.lower()]
+    return (mine or sentences)[0]
+
+
+# Why a basketball coach left, in the order it's asked. Firing first: a
+# coach "relieved of his duties" whose successor is then named is fired, and
+# so is one whose contract "will not be renewed". Then a job elsewhere, in
+# the ways a paragraph says it -- "left Drake ... for West Virginia",
+# "Washington announced it was hiring Danny Sprinkle" -- which `reason_of`,
+# written for football's one-line cells, mostly doesn't. Unlike football,
+# no "assistant" rule: a paragraph's first sentence often names the new
+# coach's old title, and it isn't where the old coach went.
+_BASKETBALL_FIRED = re.compile(
+    r"fired|dismiss|terminat|not (?:be )?renew|non-renew|"
+    r"w(?:ill|ould) not (?:be )?(?:return|retain|renew|brought back)|not (?:be )?retained|"
+    r"relie?ved of|relived of|part(?:ed|ing)? ways|mutual|buyout|bought out|reassign|"
+    r"let go|ousted|not have (?:his|her|their) contract|released from",
+    re.I,
+)
+_BASKETBALL_LEFT = re.compile(
+    r"\b(?:left|leaving|leave|departed)\b[^.]*\b(?:for|to (?:replace|fill|move|take|become|coach|return))\b|"
+    r"\b(?:for|took) (?:the|a|an) [^.]*?(?:job|position|opening|vacancy)\b|"
+    r"\bto (?:take|become|accept|lead|join)\b|\bhired away\b|"
+    r"\bnamed (?:the )?head coach\b|\baccepted\b|\bto return to\b",
+    re.I,
+)
+
+
+def _basketball_reason(text: str, outgoing_interim: bool, surname: str = "") -> str:
+    """Why a basketball coach left, from the sentence about him (`_about`).
+
+    "Hired" is a job elsewhere only when he is the one hired -- "Texas
+    hired Vic Schaefer away", "Washington announced it was hiring Danny
+    Sprinkle", "Byington was hired by Vanderbilt" -- and not when the
+    sentence goes on to his successor ("Williamson was hired to relieve
+    Chappell"). Asked after resigning and retiring, so a coach "who was
+    hired by Pepperdine in April" and then resigned did resign.
+    """
+    if outgoing_interim or re.search(r"permanent replacement|^replaced", text, re.I):
+        return INTERIM_REPLACED
+    if _BASKETBALL_FIRED.search(text):
+        return FIRED
+    if _BASKETBALL_LEFT.search(text):
+        return LEFT_FOR_JOB
+    if re.search(r"retir", text, re.I):
+        return RETIRED
+    if re.search(r"died|death|passed away|health|medical|illness", text, re.I):
+        return HEALTH
+    if re.search(r"resign|step(?:ped|ping|s)? (?:down|away)", text, re.I):
+        return RESIGNED
+    if surname:
+        name = re.escape(surname)
+        between = r"(?:(?!(?:to|as|by)\b)[\w.'-]+ ){0,4}"
+        if re.search(rf"\bhir(?:ed|ing) {between}{name}\b", text) or re.search(
+            rf"\b{name}\b[^.]{{0,40}}\bhired by\b", text
+        ):
+            return LEFT_FOR_JOB
+    return OTHER
+
+
+def _basketball_date(text: str, page_season: int) -> str | None:
+    """The first date a reason gives, placed in its year.
+
+    A date with no year is in the season the article covers: August
+    through December in the year it starts, January through July the next.
+    """
+    match = re.search(r"(" + "|".join(MONTHS) + r")\s+(\d{1,2})(?:,?\s+(\d{4}))?", text)
+    if not match:
+        return None
+    month = MONTHS.index(match.group(1)) + 1
+    if match.group(3):
+        year = int(match.group(3))
+    else:
+        year = page_season + (month < 8)
+    return f"{year:04d}-{month:02d}-{int(match.group(2)):02d}"
+
+
+def _basketball_timing(
+    date: str | None, interim: bool, page_season: int
+) -> tuple[bool, int]:
+    """Whether a basketball change came mid-season, and the season it first matters for.
+
+    `page_season` is the year the article's season starts. Before November
+    of it is the preseason: the change matters for this season. November
+    through February is mid-season only if an interim or acting coach took
+    over -- a coach announced as leaving in February who coached out the
+    year is a change for the next one. Anything later, or undated, first
+    matters for the next season.
+    """
+    if date is None:
+        return False, page_season + 1
+    year, month = int(date[:4]), int(date[5:7])
+    if year < page_season or (year == page_season and month < 11):
+        return False, page_season
+    in_season = (year == page_season and month >= 11) or (
+        year == page_season + 1 and month <= 2
+    )
+    if in_season and interim:
+        return True, page_season
+    return False, page_season + 1
 
 
 class StaffRow(NamedTuple):

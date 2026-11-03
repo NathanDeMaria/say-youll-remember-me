@@ -30,7 +30,7 @@ syrm = "say_youll_remember_me.sync:main"
 # Pinned rather than floating: a team's ESPN id is how every row here is
 # keyed, and which ids count as the same team is that package's answer.
 [tool.uv.sources]
-call-it-what-you-want = { git = "https://github.com/NathanDeMaria/call-it-what-you-want.git", rev = "090767f122c6808ca3a0ccfb5305d04f5d7772e7" }
+call-it-what-you-want = { git = "https://github.com/NathanDeMaria/call-it-what-you-want.git", rev = "cc9c9e19e3e56eb48f7745853613aff51ca372b8" }
 # The quarterback file is read from this play store and priced by this
 # expected points fit. Moving either can change what `epa` means; the file's
 # `source` column names the fit's run.

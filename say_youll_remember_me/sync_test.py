@@ -3,7 +3,7 @@
 from call_it_what_you_want import NCAA, default_teams
 
 from .sync import current_name, nfl_teams, resolve
-from .types import NFL
+from .types import NCAAMBB, NCAAWBB, NFL
 
 
 def _id(name: str) -> str:
@@ -60,3 +60,20 @@ def test_nfl_names_as_wikipedia_writes_them() -> None:
 def test_the_nfl_before_and_after_the_texans() -> None:
     assert len(nfl_teams(2001)) == 31
     assert len(nfl_teams(2002)) == 32
+
+
+def test_basketball_names_as_wikipedia_writes_them() -> None:
+    # ESPN dropped the "Lady" from women's mascots, and writes a hyphen.
+    assert resolve("Baylor Lady Bears", NCAAWBB) == _id("Baylor Bears")
+    assert resolve("Gardner–Webb Runnin' Bulldogs", NCAAMBB) == (
+        _id("Gardner-Webb Runnin' Bulldogs")
+    )
+    # A school under its old name.
+    assert resolve("IPFW Mastodons", NCAAMBB) == _id("Purdue Fort Wayne Mastodons")
+    # A school named without its team, as some rows are.
+    assert resolve("Albany", NCAAWBB) == _id("UAlbany Great Danes")
+
+
+def test_a_basketball_team_is_named_in_basketball() -> None:
+    # McNeese's women are the Cowgirls.
+    assert current_name(_id("McNeese Cowboys"), NCAAWBB) == "McNeese Cowgirls"

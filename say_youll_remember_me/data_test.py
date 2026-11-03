@@ -6,9 +6,12 @@ import pytest
 from . import (
     COACHING_STAFFS,
     FIRED,
+    FOOTBALL,
     HEAD_COACH_CHANGES,
     LEAGUES,
     LEFT_FOR_JOB,
+    NCAAMBB,
+    NCAAWBB,
     NFL,
     QUARTERBACKS,
     RESIGNED,
@@ -28,12 +31,13 @@ from . import (
 )
 from .data import bundled_text
 
+# Which leagues have each kind of file: basketball has head-coach changes only.
 KINDS = [
-    (HEAD_COACH_CHANGES, head_coach_changes),
-    (COACHING_STAFFS, coaching_staffs),
-    (QUARTERBACKS, quarterback_seasons),
+    (HEAD_COACH_CHANGES, head_coach_changes, LEAGUES),
+    (COACHING_STAFFS, coaching_staffs, FOOTBALL),
+    (QUARTERBACKS, quarterback_seasons, FOOTBALL),
 ]
-ALL = [(kind, read, league) for kind, read in KINDS for league in LEAGUES]
+ALL = [(kind, read, league) for kind, read, leagues in KINDS for league in leagues]
 IDS = [f"{league}-{kind}" for kind, _, league in ALL]
 
 
@@ -51,19 +55,19 @@ def test_the_files_round_trip(kind, read, league) -> None:
     assert to_csv(kind, read(league)) == bundled_text(kind, league)
 
 
-@pytest.mark.parametrize("league", LEAGUES)
+@pytest.mark.parametrize("league", FOOTBALL)
 def test_one_staff_per_team_season(league) -> None:
     keys = [(r.espn_id, r.season) for r in coaching_staffs(league)]
     assert len(keys) == len(set(keys))
 
 
-@pytest.mark.parametrize("league", LEAGUES)
+@pytest.mark.parametrize("league", FOOTBALL)
 def test_one_row_per_quarterback_team_season(league) -> None:
     keys = [(r.espn_id, r.season, r.player_key) for r in quarterback_seasons(league)]
     assert len(keys) == len(set(keys))
 
 
-@pytest.mark.parametrize("league", LEAGUES)
+@pytest.mark.parametrize("league", FOOTBALL)
 def test_at_most_one_week_one_starter_per_team_season(league) -> None:
     seen = [
         (r.espn_id, r.season) for r in quarterback_seasons(league) if r.started_week_one
@@ -122,6 +126,48 @@ def test_a_retirement() -> None:
 
 def test_no_change_is_none() -> None:
     assert departure("Georgia Bulldogs", 2024) is None
+
+
+# Basketball seasons are named by the year they start in: 2024 is 2024-25.
+
+
+def test_a_basketball_coach_who_left_for_a_job() -> None:
+    change = departure("Arkansas Razorbacks", 2024, NCAAMBB)
+    assert change is not None
+    assert (change.outgoing, change.reason, change.incoming) == (
+        "Eric Musselman",
+        LEFT_FOR_JOB,
+        "John Calipari",
+    )
+
+
+def test_a_basketball_firing_whose_successor_was_hired_away() -> None:
+    # The paragraph goes on to "Penn State assistant ... was hired", which
+    # is the successor's hiring, not where the coach went.
+    change = departure("Cal Poly Mustangs", 2024, NCAAMBB)
+    assert change is not None
+    assert (change.outgoing, change.reason) == ("John Smith", FIRED)
+
+
+def test_a_basketball_coach_gone_mid_season_answers_for_the_next_one() -> None:
+    change = departure("Bryant Bulldogs", 2024, NCAAMBB)
+    assert change is not None
+    assert (change.outgoing, change.midseason, change.season) == (
+        "Jared Grasso",
+        True,
+        2023,
+    )
+
+
+def test_a_womens_coach_hired_away() -> None:
+    change = departure("Mississippi State Bulldogs", 2020, NCAAWBB)
+    assert change is not None
+    assert (change.outgoing, change.reason) == ("Vic Schaefer", LEFT_FOR_JOB)
+
+
+def test_one_basketball_name_two_sports() -> None:
+    # The same school in both basketballs, by the name each league uses.
+    assert team_id("Baylor Bears", NCAAWBB) == team_id("Baylor Bears", NCAAMBB)
 
 
 def test_a_staff() -> None:
