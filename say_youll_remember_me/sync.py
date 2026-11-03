@@ -4,9 +4,12 @@
     syrm staffs --first 2014 --last 2026       # team-season infoboxes
     syrm quarterbacks --first 2013 --last 2026 # play-by-play; the `plays` extra
     syrm coaches --league nfl --first 2006 --last 2026
+    syrm coaches --league ncaambb --first 2009 --last 2025  # 2009-10 .. 2025-26
 
 `--league` is `ncaafb` unless given. College files cover FBS team-seasons;
-NFL files cover every franchise ESPN listed that season.
+NFL files cover every franchise ESPN listed that season. Basketball
+(`ncaambb`, `ncaawbb`) has head-coach changes only, from Division I's
+season articles, each named by the year its season starts.
 
 Run from a checkout: the files are written into the package's `data/`
 directory, to be reviewed and committed like any other change. Only the
@@ -21,6 +24,7 @@ Not imported by the package, like `wikipedia` and `plays`.
 
 import argparse
 import asyncio
+import re
 import sys
 from collections.abc import Callable, Sequence
 from pathlib import Path
@@ -46,7 +50,7 @@ from .data import (
     rows_from_csv,
     to_csv,
 )
-from .types import LEAGUES, NCAAFB, NFL, CoachChange, CoachingStaff
+from .types import BASKETBALL, LEAGUES, NCAAFB, NFL, CoachChange, CoachingStaff
 
 DATA = Path(__file__).parent / "data"
 
@@ -63,6 +67,54 @@ WIKIPEDIA_NAMES = {
     "App State Mountaineers": "Appalachian State Mountaineers",
     "Delaware Blue Hens": "Delaware Fightin' Blue Hens",
 }
+
+# Basketball's, from Wikipedia's name straight to the ESPN id: the season
+# articles use whatever a school was called that year (IPFW, IUPUI, UMKC),
+# and the names they don't share with ESPN are mostly the old ones, which
+# the registry has no reason to know. A "Lady" mascot and a state in
+# parentheses are dropped by rule (`_basketball_spellings`), not listed.
+BASKETBALL_WIKIPEDIA_IDS = {
+    "IPFW Mastodons": "2870",
+    "IUPUI Jaguars": "85",
+    "Loyola Ramblers": "2350",
+    "Loyola (Chicago)": "2350",
+    "College of Charleston Cougars": "232",
+    "FIU Golden Panthers": "2229",
+    "FIU Panthers": "2229",
+    "Miami RedHawks": "193",
+    "Loyola Greyhounds": "2352",
+    "UMKC Kangaroos": "140",
+    "Arkansas-Little Rock Trojans": "2031",
+    "Texas-Arlington Mavericks": "250",
+    "George Washington Colonials": "45",
+    "Long Island Blackbirds": "2341",
+    "McNeese State": "2377",
+    "McNeese State Cowgirls": "2377",
+    "Long Beach State 49ers": "299",
+    "Saint Peter's Peahens": "2612",
+    "Hawaii Rainbow Wahine": "62",
+    "Austin Peay Lady Govs": "2046",
+    # Unlinked, and "Albany" alone is Albany State (Division II) to ESPN.
+    "Albany": "399",
+}
+
+
+def _basketball_spellings(name: str) -> list[str]:
+    """Wikipedia's spelling, then the ones ESPN might use for it.
+
+    ESPN dropped the "Lady" from women's mascots ("Baylor Bears", where
+    Wikipedia still has the Lady Bears) and writes a hyphen where Wikipedia
+    has an en dash; a school sharing a name is told apart in parentheses
+    ("St. Thomas Tommies (Minnesota)") that ESPN doesn't use.
+    """
+    spellings = [name]
+    plainer = re.sub(r"\s*\([^)]*\)$", "", name).replace("–", "-")
+    plainer = re.sub(r"\bLady ", "", plainer)
+    if plainer != name:
+        spellings.append(plainer)
+    return spellings
+
+
 _FROM_WIKIPEDIA = {wiki: ours for ours, wiki in WIKIPEDIA_NAMES.items()}
 
 # The NFL's differ in one place: ESPN called Washington just "Washington"
@@ -80,38 +132,57 @@ def resolve(name: str, league: str = NCAAFB) -> str | None:
     """The canonical ESPN id for a team as Wikipedia names it, or None."""
     teams = registry(league)
     aliases = _FROM_NFL_WIKIPEDIA if league == NFL else _FROM_WIKIPEDIA
-    for candidate in (name, aliases.get(name)):
+    if league in BASKETBALL:
+        if name in BASKETBALL_WIKIPEDIA_IDS:
+            return BASKETBALL_WIKIPEDIA_IDS[name]
+        candidates: list[str | None] = list(_basketball_spellings(name))
+    else:
+        # Wikipedia writes "Gardner–Webb" with an en dash, ESPN with a hyphen.
+        candidates = [name, aliases.get(name), name.replace("–", "-")]
+    for candidate in candidates:
         if candidate is None:
             continue
-        try:
-            return teams.by_name(candidate).espn_id
-        except UnknownTeamError, AmbiguousTeamError:
-            continue
+        # A basketball name is asked in its league first: one name can be
+        # two schools in two sports (Union's "Garnet Chargers").
+        for context in (league, None) if league in BASKETBALL else (None,):
+            try:
+                return teams.by_name(candidate, league=context).espn_id
+            except UnknownTeamError, AmbiguousTeamError:
+                continue
     if league == NFL:
         return None
     # A cell that links the school rather than its team -- "Colorado State"
-    # -- is placed when exactly one football program's name starts with it.
-    prefixed = [
-        team.espn_id
-        for team in teams
-        if _football_name(team.espn_id, teams).startswith(name + " ")
-    ]
-    return prefixed[0] if len(prefixed) == 1 else None
+    # -- is placed when exactly one program's name in the league starts
+    # with it.
+    sport = league if league in BASKETBALL else NCAAFB
+    for school in dict.fromkeys(
+        _basketball_spellings(name)
+        if league in BASKETBALL
+        else (name, name.replace("–", "-"))
+    ):
+        prefixed = [
+            team.espn_id
+            for team in teams
+            if _league_name(team.espn_id, teams, sport).startswith(school + " ")
+        ]
+        if len(prefixed) == 1:
+            return prefixed[0]
+    return None
 
 
-def _football_name(espn_id: str, teams: Teams) -> str:
+def _league_name(espn_id: str, teams: Teams, league: str = NCAAFB) -> str:
     try:
-        return teams.by_espn_id(espn_id).current_name(league=NCAAFB)
+        return teams.by_espn_id(espn_id).current_name(league=league)
     except NoNamesError, AmbiguousNameError:
         return ""
 
 
 def current_name(espn_id: str, league: str = NCAAFB) -> str:
-    """The team's name now, in football where it has one, for a reader of the file."""
+    """The team's name now, in the league's sport where it has one, for a reader of the file."""
     if league == NFL:
         return registry(NFL).by_espn_id(espn_id).current_name()
     team = default_teams(NCAA).by_espn_id(espn_id)
-    for context in (NCAAFB, None):
+    for context in (league if league in BASKETBALL else NCAAFB, None):
         try:
             return team.current_name(league=context)
         except NoNamesError, AmbiguousNameError:
@@ -244,6 +315,8 @@ def main(argv: Sequence[str] | None = None) -> None:
     args = parser.parse_args(argv)
 
     rows: Sequence[Any]
+    if args.league in BASKETBALL and args.what != "coaches":
+        parser.error(f"{args.league} has head-coach changes only")
     if args.what == "coaches":
         rows, problems = coaches(args.first, args.last, args.cache, args.league)
         kind = HEAD_COACH_CHANGES

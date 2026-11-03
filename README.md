@@ -22,6 +22,9 @@ week_one_starter("LSU Tigers", 2019)
 
 departure("Miami Dolphins", 2007, "nfl")
 # CoachChange(outgoing='Nick Saban', reason='left_for_job', incoming='Cam Cameron', ...)
+
+departure("Arkansas Razorbacks", 2024, "ncaambb")  # 2024-25
+# CoachChange(outgoing='Eric Musselman', reason='left_for_job', incoming='John Calipari', ...)
 ```
 
 Every question takes a league, `ncaafb` unless given.
@@ -42,7 +45,8 @@ and `quarterback_seasons()` return every row as a typed `NamedTuple`.
 ## The data
 
 `say_youll_remember_me/data/<league>/<kind>.csv`, one row per observation:
-college football (`ncaafb`), then the NFL (`nfl`, below). Blank cells are
+college football (`ncaafb`), then the NFL (`nfl`) and college basketball
+(`ncaambb`, `ncaawbb`), below. Blank cells are
 None, booleans `true` / `false`. Snapshot of 2026-09-24: 2026 rows cover
 the season to date.
 
@@ -160,6 +164,38 @@ the college way, from the NFL's plays: starts from 2006, `attempts` and
 20260920-231258). Playoff games count as starts. Two games since 2014 --
 one in 2017, one in 2019 -- are counted for starts and left unpriced.
 
+### College basketball
+
+Head-coach changes only, under `data/ncaambb/` and `data/ncaawbb/` -- the
+league names are call-it-what-you-want's. A season is named by the year it
+starts in, the way the stored seasons it is read against are: 2024 is
+2024-25.
+
+**`head_coach_changes.csv` -- men's 874 changes, seasons 2010-2026;
+women's 566, 2012-2026.** The "Coaching changes" table of *2023–24 NCAA
+Division I men's (women's) basketball season*, 2009-10 through 2025-26
+(the women's articles for 2010-11 and 2011-12 don't exist, and the
+women's tables are thin before 2014-15). One table, with no date column:
+the date is the first one the reason paragraph gives, a year-less one
+placed in the season (August-December the start year). A change before
+November first matters for that season; one in November through February
+is `midseason` only if an interim or acting coach finished the year; the
+rest, and the undated, first matter for the next one. `table` is always
+`in_season`.
+
+The reason is read from the paragraph's first sentence naming the coach
+who left, since the paragraph goes on to the successor and "was hired by"
+there is not where he went. Firing words first (fired, "will not be
+renewed", parted ways), then a job elsewhere ("left Drake for West
+Virginia", "took the Minnesota job", "Texas hired Vic Schaefer away"),
+then retired, health, resigned. Men's: `fired` 386, `left_for_job` 255,
+`other` 91, `resigned` 86, `retired` 49, `health` 7; women's: 205, 159,
+25, 99, 71, 7. A coach who "stepped down" days before taking another job
+reads as resigned when the paragraph doesn't say where he went (Calipari,
+Kentucky 2024). Wikipedia's names are placed with a dropped "Lady" mascot,
+a hyphen for its en dash, and a short list of old names (IPFW, IUPUI,
+UMKC) in `sync.BASKETBALL_WIKIPEDIA_IDS`.
+
 ## Rebuilding
 
 ```bash
@@ -167,6 +203,8 @@ uv run syrm coaches --first 2013 --last 2025 --cache ~/.cache/syrm
 uv run syrm staffs --first 2014 --last 2026 --cache ~/.cache/syrm
 uv run syrm quarterbacks --first 2026 --last 2026
 uv run syrm coaches --league nfl --first 2006 --last 2026 --cache ~/.cache/syrm
+uv run syrm coaches --league ncaambb --first 2009 --last 2025 --cache ~/.cache/syrm
+uv run syrm coaches --league ncaawbb --first 2009 --last 2025 --cache ~/.cache/syrm
 ```
 
 Writes into `data/`, to be reviewed and committed like any other change.

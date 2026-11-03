@@ -2,11 +2,20 @@ from typing import NamedTuple
 
 # Leagues. The files live under a directory per league, so another one is
 # a new directory, not a new schema. Rows are keyed by call-it-what-you-want
-# ids in the league's namespace: the NCAA's for college football, the NFL's
-# own for the NFL, which numbers its teams from scratch.
+# ids in the league's namespace: the NCAA's for college football and both
+# basketballs, the NFL's own for the NFL, which numbers its teams from
+# scratch. The names are call-it-what-you-want's, so a league here is one
+# there.
 NCAAFB = "ncaafb"
 NFL = "nfl"
-LEAGUES = (NCAAFB, NFL)
+NCAAMBB = "ncaambb"
+NCAAWBB = "ncaawbb"
+LEAGUES = (NCAAFB, NFL, NCAAMBB, NCAAWBB)
+# What each kind of record covers. Basketball has head-coach changes only:
+# the staff and quarterback files are football's, and the offseason facts
+# a basketball model reads are the coach's.
+FOOTBALL = (NCAAFB, NFL)
+BASKETBALL = (NCAAMBB, NCAAWBB)
 
 # Why a head coach's tenure ended, as a category. The text it was read from
 # is kept beside it (`CoachChange.reason_text`), because the line between
@@ -45,11 +54,15 @@ class CoachChange(NamedTuple):
     `season` is the season the change first matters for. A mid-season
     firing is that season -- the interim coaches the rest of it -- and a
     change after the regular season is the next one, even when an interim
-    or the new hire coaches the bowl game in between.
+    or the new hire coaches the bowl game in between. A basketball season
+    is named by the year it starts in: 2024 is 2024-25, the way the
+    seasons it is read against are stored.
 
     `midseason` is a coach who didn't finish the regular season: in
-    college, gone by November 20; in the NFL, a row of the in-season table.
-    `season` is then the one he didn't finish.
+    college football, gone by November 20; in the NFL, a row of the
+    in-season table; in basketball, gone between November and February
+    with an interim or acting coach finishing the season. `season` is then
+    the one he didn't finish.
     `outgoing_interim` marks a row where the coach leaving was himself an
     interim, which is what `INTERIM_REPLACED` rows usually are. To ask why
     the coach who opened a season is gone, skip those -- or use

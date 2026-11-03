@@ -22,6 +22,8 @@ from call_it_what_you_want import NCAA, Teams, UnknownTeamError, default_teams
 
 from .types import (
     NCAAFB,
+    NCAAMBB,
+    NCAAWBB,
     NFL,
     REASONS,
     TABLES,
@@ -168,7 +170,7 @@ def quarterback_seasons(league: str = NCAAFB) -> tuple[QuarterbackSeason, ...]:
 # The call-it-what-you-want namespace each league's ids are in. College
 # sports share one; a pro league numbers its teams from scratch, and id 2 is
 # the Bills there and Auburn here.
-_NAMESPACES = {NCAAFB: NCAA, NFL: NFL}
+_NAMESPACES = {NCAAFB: NCAA, NFL: NFL, NCAAMBB: NCAA, NCAAWBB: NCAA}
 
 
 def registry(league: str = NCAAFB) -> Teams:
@@ -191,6 +193,12 @@ def team_id(team: str, league: str = NCAAFB) -> str:
     teams = registry(league)
     try:
         return teams.by_espn_id(team).espn_id
+    except UnknownTeamError:
+        pass
+    # The asking league's names first: one name can be two schools in two
+    # sports, and placed on neither when every sport's names are pooled.
+    try:
+        return teams.by_name(team, league=league).espn_id
     except UnknownTeamError:
         return teams.by_name(team).espn_id
 

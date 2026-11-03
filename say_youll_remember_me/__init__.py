@@ -16,14 +16,18 @@ from .data import (
     week_one_starter,
 )
 from .types import (
+    BASKETBALL,
     END_OF_SEASON,
     FIRED,
+    FOOTBALL,
     HEALTH,
     IN_SEASON,
     INTERIM_REPLACED,
     LEAGUES,
     LEFT_FOR_JOB,
     NCAAFB,
+    NCAAMBB,
+    NCAAWBB,
     NFL,
     OFFSEASON,
     OTHER,
